@@ -7,6 +7,7 @@ import android.net.Uri;
 
 /**
  * 文件打开工具类
+ *@author ChenLang
  */
 
 public class FileOpen {
@@ -104,7 +105,6 @@ public class FileOpen {
 
 	// Android获取一个用于打开CHM文件的intent
 	public static Intent getChmFileIntent(String param) {
-
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
