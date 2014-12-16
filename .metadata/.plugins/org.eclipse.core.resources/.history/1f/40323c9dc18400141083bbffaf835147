@@ -10,7 +10,7 @@ import android.net.Uri;
  */
 public class FileOpen {
 
-	/**打开apk文件的Intent*/
+	// 打开APK文件j的Intent
 	public static Intent getAllIntent(String param) {
 		Intent intent = new Intent();
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -20,7 +20,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开apk文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑APK鏂囦欢鐨刬ntent
 	public static Intent getApkFileIntent(File file) {
 		Intent intent = new Intent();
 		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -30,7 +30,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开video文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑VIDEO鏂囦欢鐨刬ntent
 	public static Intent getVideoFileIntent(String param) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -41,7 +41,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	// /**打开audio文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑AUDIO鏂囦欢鐨刬ntent
 	public static Intent getAudioFileIntent(String param) {
 
 		Intent intent = new Intent("android.intent.action.VIEW");
@@ -53,7 +53,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开html文件的Intent*/
+	//	// 打开HTML文件j的Intent
 	public static Intent getHtmlFileIntent(String param) {
 		Uri uri = Uri.parse(param).buildUpon()
 				.encodedAuthority("com.android.htmlfileprovider")
@@ -63,7 +63,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开图片文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑鍥剧墖鏂囦欢鐨刬ntent
 	public static Intent getImageFileIntent(File file) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
@@ -73,7 +73,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开ppt文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑PPT鏂囦欢鐨刬ntent
 	public static Intent getPptFileIntent(String param) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
@@ -93,7 +93,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开word文件的Intent*/
+	//打开Word文件的Intent
 	public static Intent getWordFileIntent(File file) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
@@ -103,7 +103,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开chm文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑CHM鏂囦欢鐨刬ntent
 	public static Intent getChmFileIntent(String param) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
@@ -113,7 +113,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开txt文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑鏂囨湰鏂囦欢鐨刬ntent
 	public static Intent getTextFileIntent(String param, boolean paramBoolean) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
@@ -128,7 +128,7 @@ public class FileOpen {
 		return intent;
 	}
 
-	/**打开pdf文件的Intent*/
+	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑PDF鏂囦欢鐨刬ntent
 	public static Intent getPdfFileIntent(File file) {
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.addCategory("android.intent.category.DEFAULT");
