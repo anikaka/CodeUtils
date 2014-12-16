@@ -1,0 +1,2 @@
+启动Eclipse/MyEclipse后, 打开"Window -> Preferences -> General -> Workspace", 
+点Workspace页上的"Startup and Shutdown", 然后勾选"Startup and Shutdown"页中的"Prompt for workspace on startup";

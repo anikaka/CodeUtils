@@ -1,0 +1,5 @@
+验证位置时发生错误:“org.tigris.subversion.javahl.ClientException: RA layer request failed svn: Server sent unexpected return value (403 Forbidden) in response to OPTIONS request for 'https://XXXX/'
+
+解决方法：
+由于我的电脑目前是XP系统，则删除C:\Documents and Settings\Administrator\Application Data\Subversion\auth下的文件，及删除svn登录信息。网上有文章说是C:\Users\thinkpad\AppData\Roaming\Subversion\auth目录下的文件，具体目录根据实际电脑去搜索。一般是放在C盘用户文件夹下的...Subversion\auth下。
+产生原因：由于svn地址变更，或用户名密码变更，svn插件用原来默认的用户信息连接错误。（本机环境之前配置过myecipse的svn地址）
