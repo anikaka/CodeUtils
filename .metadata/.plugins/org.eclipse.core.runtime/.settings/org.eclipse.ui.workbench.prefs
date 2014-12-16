@@ -1,0 +1,8 @@
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.debug.ui.presentation\tTorg.eclipse.jdt.ui.presentation\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont
+eclipse.preferences.version=1
+org.eclipse.cdt.make.internal.ui.compare.MakefileMergeViewer=1|\u5FAE\u8F6F\u96C5\u9ED1|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-122|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.jdt.internal.ui.compare.PropertiesFileMergeViewer=1|\u5FAE\u8F6F\u96C5\u9ED1|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-122|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.jdt.ui.editors.textfont=1|\u5FAE\u8F6F\u96C5\u9ED1|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-122|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.jface.textfont=1|\u5FAE\u8F6F\u96C5\u9ED1|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-122|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|\u5FAE\u8F6F\u96C5\u9ED1|12.0|0|WINDOWS|1|-16|0|0|0|400|0|0|0|-122|3|2|1|34|\u5FAE\u8F6F\u96C5\u9ED1;
