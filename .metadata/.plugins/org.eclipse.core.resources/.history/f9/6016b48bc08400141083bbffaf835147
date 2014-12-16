@@ -4,10 +4,6 @@ import java.io.File;
 import android.content.Intent;
 import android.net.Uri;
 
-/**
- * 这是一个通过Intent打开文件的工具类
- * @author ChenLang
- */
 public class FileOpen {
 
 	// Android鑾峰彇涓�釜鐢ㄤ簬鎵撳紑APK鏂囦欢鐨刬ntent
