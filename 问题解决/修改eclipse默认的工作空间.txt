@@ -1,2 +1,7 @@
-Æô¶¯Eclipse/MyEclipseºó, ´ò¿ª"Window -> Preferences -> General -> Workspace", 
-µãWorkspaceÒ³ÉÏµÄ"Startup and Shutdown", È»ºó¹´Ñ¡"Startup and Shutdown"Ò³ÖĞµÄ"Prompt for workspace on startup";
+
+
+å¯åŠ¨Eclipse/MyEclipseå, æ‰“å¼€"Window -> Preferences -> General -> Workspace", 
+
+
+ç‚¹Workspaceé¡µä¸Šçš„"Startup and Shutdown", ç„¶åå‹¾é€‰"Startup and Shutdown"é¡µä¸­çš„"Prompt for workspace on startup";
+
