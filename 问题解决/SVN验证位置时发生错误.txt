@@ -1,5 +1,10 @@
-ÑéÖ¤Î»ÖÃÊ±·¢Éú´íÎó:¡°org.tigris.subversion.javahl.ClientException: RA layer request failed svn: Server sent unexpected return value (403 Forbidden) in response to OPTIONS request for 'https://XXXX/'
+éªŒè¯ä½ç½®æ—¶å‘ç”Ÿé”™è¯¯:â€œorg.tigris.subversion.javahl.ClientException: RA layer request failed svn: 
+Server sent unexpected return value (403 Forbidden) in response to OPTIONS request for 'https://XXXX/'
 
-½â¾ö·½·¨£º
-ÓÉÓÚÎÒµÄµçÄÔÄ¿Ç°ÊÇXPÏµÍ³£¬ÔòÉ¾³ıC:\Documents and Settings\Administrator\Application Data\Subversion\authÏÂµÄÎÄ¼ş£¬¼°É¾³ısvnµÇÂ¼ĞÅÏ¢¡£ÍøÉÏÓĞÎÄÕÂËµÊÇC:\Users\thinkpad\AppData\Roaming\Subversion\authÄ¿Â¼ÏÂµÄÎÄ¼ş£¬¾ßÌåÄ¿Â¼¸ù¾İÊµ¼ÊµçÄÔÈ¥ËÑË÷¡£Ò»°ãÊÇ·ÅÔÚCÅÌÓÃ»§ÎÄ¼ş¼ĞÏÂµÄ...Subversion\authÏÂ¡£
-²úÉúÔ­Òò£ºÓÉÓÚsvnµØÖ·±ä¸ü£¬»òÓÃ»§ÃûÃÜÂë±ä¸ü£¬svn²å¼şÓÃÔ­À´Ä¬ÈÏµÄÓÃ»§ĞÅÏ¢Á¬½Ó´íÎó¡££¨±¾»ú»·¾³Ö®Ç°ÅäÖÃ¹ımyecipseµÄsvnµØÖ·£©
+è§£å†³æ–¹æ³•ï¼š
+ç”±äºæˆ‘çš„ç”µè„‘ç›®å‰æ˜¯XPç³»ç»Ÿï¼Œåˆ™åˆ é™¤C:\Documents and Settings\Administrator\Application Data\Subversion\authä¸‹çš„æ–‡ä»¶ï¼Œ
+åŠåˆ é™¤svnç™»å½•ä¿¡æ¯ã€‚ç½‘ä¸Šæœ‰æ–‡ç« è¯´æ˜¯C:\Users\thinkpad\AppData\Roaming\Subversion\authç›®å½•ä¸‹çš„æ–‡ä»¶ï¼Œå…·ä½“ç›®å½•æ ¹æ®å®é™…ç”µè„‘å»æœç´¢ã€‚
+ä¸€èˆ¬æ˜¯æ”¾åœ¨Cç›˜ç”¨æˆ·æ–‡ä»¶å¤¹ä¸‹çš„...Subversion\authä¸‹ã€‚
+
+
+äº§ç”ŸåŸå› ï¼šç”±äºsvnåœ°å€å˜æ›´ï¼Œæˆ–ç”¨æˆ·åå¯†ç å˜æ›´ï¼Œsvnæ’ä»¶ç”¨åŸæ¥é»˜è®¤çš„ç”¨æˆ·ä¿¡æ¯è¿æ¥é”™è¯¯ã€‚ï¼ˆæœ¬æœºç¯å¢ƒä¹‹å‰é…ç½®è¿‡myecipseçš„svnåœ°å€ï¼‰
