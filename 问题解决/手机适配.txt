@@ -1,0 +1,33 @@
+1.在同样的分辨率情况下,相同尺寸,高密度比低密度显示的像素点多?
+
+
+2.在相同分辨率情况下,不同尺寸，高密度和低密度显示的区域都一样?
+
+
+3.有一张100x100和150x150的图片,分别放入drawable-hdpi和drawable-xhdpi,为什么150x150的图片反而看起来小,在同样的分辨率,不同尺寸。
+
+回答:根据px=dp*(dpi/160),dpi越大,显示的像素点越多所以图片看起来小。
+
+
+
+
+
+dpi(dots per inch)每英寸的像素点
+
+Resolution(分辨率)和电脑的分辨率概念一样，指手机屏幕纵、横方向像素个数Milestone是854*480
+
+Density-independent pixel (dip)逻辑密度单位,dip和具体像素值的对应公式是dip/pixel=dpi值/160,也就是px = dp * (dpi / 160)
+
+
+
+
+A set of six generalized densities:
+ldpi (low) ~120dpi
+
+mdpi (medium) ~160dpi
+hdpi (high) ~240dpi
+xhdpi (extra-high) ~320dpi
+xxhdpi (extra-extra-high) ~480dpi
+xxxhdpi (extra-extra-extra-high) ~640dpi
+
+官网http://developer.android.com/guide/practices/screens_support.html
