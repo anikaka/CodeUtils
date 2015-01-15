@@ -1,0 +1,24 @@
+
+1.ListView调用notifyDataSetChanged()更新无效？
+ArrayList<Hash<String,String>> arrayList1=new ArrayList<Hash<String,String>>();
+
+因为适配器刚开始绑定的是原来对象的arrayList1=new 数据源,
+如果对象引用改变调用apdater的notyfyDataSetChanged()是无效的,
+所以应该用addAll(),而不是改变对象引用。
+
+
+
+
+2.在Tabhhost Activity 标签切换不能更新,根本原因没有找到,如果哪位大牛知道的话,多多指教，
+但是有解决方案,虽然不是最好的,但是可以解决。
+
+
+1.Tabhost 来回切换如果向Intent传递了数据,最好是在onResume()方法中获取getIntent();
+原因是Tabhost 便签第一次进入会调用Activity的onCreate()
+,如果便签之间的切换就会掉用onResume(),而不会调用onResume();
+
+注意:你可能知道一定会调用onResume(),那么就会想我的listView在里调用notifyDataSetChanged()来刷新,
+我告诉你数据是在这里刷新
+,但是光调用notifyDataSetChanged()是不行的,要重新设定适配器,也就是调用ListView类的setAdapter(),才可以。
+当然,适配器对象也要新建实例，
+
