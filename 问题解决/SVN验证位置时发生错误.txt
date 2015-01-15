@@ -1,4 +1,4 @@
-验证位置时发生错误:“org.tigris.subversion.javahl.ClientException: RA layer request failed svn: 
+﻿验证位置时发生错误:“org.tigris.subversion.javahl.ClientException: RA layer request failed svn: 
 Server sent unexpected return value (403 Forbidden) in response to OPTIONS request for 'https://XXXX/'
 
 解决方法：
