@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/rlRulesTiltle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_background_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/rules"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_title_textsize" />
+    </RelativeLayout>
+    
+        <com.tongyan.yanan.common.widgets.view.PullDownView 
+        android:id="@+id/pullDownView_rules"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlRulesTiltle"
+        android:background="@color/white"/>
+    
+</RelativeLayout>

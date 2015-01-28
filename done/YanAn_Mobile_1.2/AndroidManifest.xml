@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tongyan.yanan.act"
+    android:versionCode="1"
+    android:versionName="YanAn.1.1" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-feature android:name="android.hardware.camera" />
+	
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+<!--         android:name="com.tongyan.yanan.common.utils.CrashApplication" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity 
+            android:name=".LoadingAct"
+            android:screenOrientation="portrait">            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.subside.SubsideTermPartPactAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.subside.SubsidePointAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.subside.SubsidePactSelecPointtDataList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.subside.SubsidePactSelectDataAddOrModify"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.subside.SubsidepactselectDataLook"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.progress.plan.ProgressProjectAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.progress.plan.ProgressProjectUploadAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.progress.plan.ProgressProjectUploadDateAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.progress.plan.PlanReportEditAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.progress.plan.ProgressMonthProjectAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tongyan.yanan.act.progress.plan.ProgressMonthProjectWeeksAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaMessageAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaEmailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaNoticeAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaNoticeSingleAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaReceiveTextAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaScheduleAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaScheduleAddAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaScheduleListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaScheduleDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaContactsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaContactsMenuAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaContactsSelectAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.ContactsDetailsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaRulesAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaRulesSingleAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".oa.OaReceiveTextSingleAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".progress.completion.DayCompletionListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".progress.completion.WeekCompletionListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".progress.completion.MonthCompletionListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".progress.completion.SaveCompletionDataAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicPactAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicOriginalAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicOriginalPointAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicCompactionAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicCompactionPointAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicGutterAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicGutterPointAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicPointPhotoAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicPhotoAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pic.PicPhotoLevelAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityStaticLoad"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityStaticLoadAdd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityStaticLoadAddPoint"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityStaticLoadDetailsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".quality.QualityTermPartPactAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityHardeningAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityHardingListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityHardingAddAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityHardingAddLayerAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityHardingDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityHardingLayerDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityWaveVelocityListAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityWaveVelocityAddAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityWaveVelocityAddLayerAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityWaveVelocityDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".quality.QualityWaveVelocityLayerDetailsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <service  android:name="com.tongyan.yanan.common.utils.DownloadFileService">
+            
+        </service>
+    </application>
+
+</manifest>

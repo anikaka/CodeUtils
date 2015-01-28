@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tongyan.yanan.common.widgets.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/p15_root_id"
+    android:background="@color/white"
+     >
+    <RelativeLayout 
+        android:id="@+id/contacts_depart_cotainer"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:layout_below="@+id/p15_contact_search_container"
+        >
+      <ListView  
+        android:id="@+id/contact_depart_listview"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:dividerHeight="0.1dip"
+    	android:cacheColorHint="@null"
+    	android:divider="@color/gray"
+    	android:background="@color/white"
+       />
+     <com.tongyan.yanan.common.widgets.view.RightCharacterListView 
+    	android:id="@+id/contacts_rightCharacterListView" 
+		android:background="#00000000" 
+		android:layout_width="30dip" 
+		android:layout_height="match_parent"
+		android:layout_alignParentRight="true" />
+    </RelativeLayout>
+     
+</com.tongyan.yanan.common.widgets.view.ResizeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle_progress_project_upload"
+        style="@style/layout_title_style"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/txtTitle_progress_project_upload"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="50dp"
+            android:singleLine="true"
+            android:textSize="@dimen/common_title_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_home_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlType_progress_project_upload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_title_height"
+        android:layout_below="@id/rlTitle_progress_project_upload"
+        android:background="@drawable/common_bgcolor_title" >
+
+        <TextView
+            android:id="@+id/txtType_progress_project_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_txt_margin_left"
+            android:focusable="false"
+            android:text="@string/txt_layout_progress_project_upload_type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_row_size_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlType_progress_project_upload">
+
+        <ListView
+            android:id="@+id/listView_progress_project_upload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/listView_line"
+            android:dividerHeight="0.1dp"
+            android:listSelector="@drawable/selector_common_row" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

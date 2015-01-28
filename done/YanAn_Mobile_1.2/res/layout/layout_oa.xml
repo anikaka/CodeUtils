@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/oa_calendar_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/calendar_schedule"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/oa_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/contacts"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/oa_receiveText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/receiveText"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/oa_notice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/announcement_notice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/oa_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/message_notice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/oa_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/email_notice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+    
+    <RelativeLayout
+        android:id="@+id/oa_rules"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/rules"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

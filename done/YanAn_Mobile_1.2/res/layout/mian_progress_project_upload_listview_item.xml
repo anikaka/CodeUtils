@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:clickable="false" >
+
+        <TextView
+            android:id="@+id/txtTitleItem_project_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txtSize_progress_project_item_title" />
+
+        <TextView
+            android:id="@+id/txtStartTime_project_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtTitleItem_project_upload"
+            android:layout_below="@id/txtTitleItem_project_upload"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:textSize="@dimen/txtSize_progress_project_item_date" />
+
+        <TextView
+            android:id="@+id/txtCenterTime_project_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txtStartTime_project_upload"
+            android:layout_below="@id/txtTitleItem_project_upload"
+            android:layout_toRightOf="@id/txtStartTime_project_upload"
+            android:focusable="false"
+            android:text="@string/txt_project_upload_item_centerTime"
+            android:textSize="@dimen/txtSize_progress_project_item_date" />
+
+        <TextView
+            android:id="@+id/txtEndTime_project_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txtStartTime_project_upload"
+            android:layout_below="@id/txtTitleItem_project_upload"
+            android:layout_toRightOf="@id/txtCenterTime_project_upload"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txtSize_progress_project_item_date" />
+
+        <TextView
+            android:id="@+id/txtUploadState_project_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txtSize_progress_project_item_state" />
+    </RelativeLayout>
+
+</RelativeLayout>

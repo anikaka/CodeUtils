@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/p16_contacts_list_item_parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/contacts_text_first_char_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_bgcolor_title"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:textColor="@color/white"
+        android:visibility="visible" >
+    </TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40.0dp"
+    android:layout_below="@+id/contacts_text_first_char_hint"
+    >
+    <TextView
+        android:id="@+id/contacts_text_website_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="17.0dip"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+	<CheckBox 
+	    android:id="@+id/contacts_text_checked_box"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="5dp"
+	    />
+	</RelativeLayout>
+</RelativeLayout>

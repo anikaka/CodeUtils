@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+     <include layout="@layout/common_title_layout" />
+     
+     <ScrollView 
+         android:layout_width="match_parent"
+    	 android:layout_height="match_parent"
+         >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" >
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:background="@drawable/common_bgcolor_title"
+            />
+         <TextView
+                android:id="@+id/quality_project"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/project" />
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />    
+              <TextView
+                android:id="@+id/quality_term_pact"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/pact" />
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" /> 
+              <TextView
+                android:id="@+id/quality_area_time"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/area_time" />
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" /> 
+              <TextView
+                android:id="@+id/quality_test_area"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/examineArea" />
+              
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+          
+          <TextView
+                android:id="@+id/quality_tester"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/examinePerson" />
+
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:background="@drawable/common_bgcolor_title"
+            />
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/examineUnit" />
+                <TextView
+                	android:id="@+id/quality_company"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:gravity="center_vertical"
+                />
+               
+           </LinearLayout>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+            
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/examineDate" />
+                <TextView
+                	android:id="@+id/quality_time"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:gravity="center_vertical"
+                	android:paddingLeft="5dp"
+                />
+           </LinearLayout>
+              
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" 
+            android:layout_marginTop="3dp"
+            />
+          
+          <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/area" />
+                <TextView
+                	android:id="@+id/quality_acreage"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:paddingLeft="3dp"
+                	android:gravity="center_vertical"
+                />
+           </LinearLayout>
+              
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" 
+            android:layout_marginTop="3dp"
+            />
+          <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/prees_machine" />
+                <TextView
+                	android:id="@+id/quality_machine"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:paddingLeft="3dp"
+                	android:gravity="center_vertical"
+                />
+           </LinearLayout>
+              
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" 
+            android:layout_marginTop="3dp"
+            />
+          
+          <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/hit_variate" />
+                <TextView
+                	android:id="@+id/quality_variate"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:paddingLeft="3dp"
+                	android:gravity="center_vertical"
+                />
+           </LinearLayout>
+              
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" 
+            android:layout_marginTop="3dp"
+            />
+          
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/thickness" />
+                <TextView
+                	android:id="@+id/quality_thickness"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:paddingLeft="3dp"
+                	android:gravity="center_vertical"
+                />
+           </LinearLayout>
+              
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" 
+            android:layout_marginTop="3dp"
+            />
+          
+          <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+               android:orientation="horizontal"
+               android:layout_marginTop="3dp"
+               >
+               <TextView
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/press_thickness" />
+                <TextView
+                	android:id="@+id/quality_press_thickness"
+                	android:layout_width="match_parent"
+                	android:layout_height="match_parent"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:paddingLeft="3dp"
+                	android:gravity="center_vertical"
+                />
+           </LinearLayout>
+              
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:background="@drawable/common_bgcolor_title"
+            android:layout_marginTop="3dp"
+            />
+            
+      <RelativeLayout
+        android:id="@+id/testing_layer_numbers_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+        android:clickable="true" >
+
+        <TextView
+                android:id="@+id/quality_detection_layer_numbers"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/examineLayers" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+            
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:background="@drawable/common_bgcolor_title"
+            />
+         <TextView 
+               style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_height="wrap_content"
+               android:text="@string/experimentContent"
+               android:paddingLeft="10dp"
+               />
+           <TextView
+                	android:id="@+id/quality_experiment_content"
+                	android:layout_width="match_parent"
+                	android:layout_height="100dp"
+                	android:padding="3dp"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:layout_marginLeft="5dp"
+                	android:layout_marginRight="5dp"
+                />
+           <TextView 
+               style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+               android:layout_width="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="@string/experimentVerdict"
+               android:layout_height="wrap_content"
+               android:paddingLeft="10dp"
+               />
+            <TextView
+                	android:id="@+id/quality_experiment_result"
+                	android:layout_width="match_parent"
+                	android:layout_height="100dp"
+                	android:padding="3dp"
+                	android:background="@drawable/selector_common_edittext_normal"
+                	android:layout_marginLeft="5dp"
+                	android:layout_marginRight="5dp"
+                /> 
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />    
+            
+         </LinearLayout>
+     </ScrollView>
+</LinearLayout>

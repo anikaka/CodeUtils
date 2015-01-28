@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" 
+    android:background="@color/light_gray"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle_progress_project"
+        style="@style/layout_title_style"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/txtTitle_pactselect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/txtTitle_subside_pactselect"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_title_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_home_normal"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_subside_pactselect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitle_progress_project"
+        android:divider="@color/listView_line"
+        android:dividerHeight="0.1dp"
+        android:cacheColorHint="@null"
+        android:fadingEdge="none" />
+
+</RelativeLayout>

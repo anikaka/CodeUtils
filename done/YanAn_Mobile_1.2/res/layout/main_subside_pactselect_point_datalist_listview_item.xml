@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rlHeight_layout_subside_point__listview_item_name" >
+
+        <TextView
+            android:id="@+id/txtPoint_subside_point_datalist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/common_black_text"
+            android:focusable="false"
+            android:textSize="@dimen/txtSize_layout_subside_point_datalist_listview_item" />
+
+        <!-- <ImageView
+            android:id="@+id/imgRigth_arrows_subside_pactslect_point_datalist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" /> -->
+
+        <TextView
+            android:id="@+id/txtUploadingDate_subside_point_datalist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtPoint_subside_point_datalist"
+            android:layout_below="@id/txtPoint_subside_point_datalist"
+            android:textColor="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/txtSize_subside_pactslect_point_datalist_listview_item_uploading_date" />
+
+        <TextView
+            android:id="@+id/txtUploading_subside_point_datalist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:focusable="false"
+            android:textSize="@dimen/txtSize_subside_pactslect_point_datalist_listview_item_uploading" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

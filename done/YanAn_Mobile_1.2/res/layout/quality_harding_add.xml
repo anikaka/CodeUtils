@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:background="@drawable/common_bgcolor_title" />
+
+            <TextView
+                android:id="@+id/quality_project"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/project" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/quality_term_pact"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/pact" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/quality_area_time"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/area_time" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/quality_test_area"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/examineArea" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/quality_tester"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/examinePerson" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:background="@drawable/common_bgcolor_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/examineUnit" />
+
+                <Spinner
+                    android:id="@+id/quality_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/examineDate" />
+
+                <TextView
+                    android:id="@+id/quality_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_common_edittext_normal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/area" />
+
+                <EditText
+                    android:id="@+id/quality_acreage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_common_edittext_normal"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/prees_machine" />
+
+                <EditText
+                    android:id="@+id/quality_machine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_common_edittext_normal"
+                    android:paddingLeft="1dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/hit_variate" />
+
+                <EditText
+                    android:id="@+id/quality_variate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_common_edittext_normal"
+                    android:paddingLeft="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/thickness" />
+
+                <EditText
+                    android:id="@+id/quality_thickness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_common_edittext_normal"
+                    android:paddingLeft="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/press_thickness" />
+
+                <EditText
+                    android:id="@+id/quality_press_thickness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_common_edittext_normal"
+                    android:paddingLeft="3dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/common_bgcolor_title" />
+
+            <RelativeLayout
+                android:id="@+id/testing_layer_numbers_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/quality_detection_layer_numbers"
+                    style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/examineLayers" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_right_arrows_normal" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:background="@drawable/common_bgcolor_title" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="@string/experimentContent" />
+
+            <EditText
+                android:id="@+id/quality_experiment_content"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_common_edittext_normal"
+                android:gravity="top|left"
+                android:padding="3dp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:text="@string/experimentVerdict" />
+
+            <EditText
+                android:id="@+id/quality_experiment_result"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_common_edittext_normal"
+                android:gravity="top|left"
+                android:padding="3dp" />
+
+            <LinearLayout
+                android:id="@+id/bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/common_save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_common_button"
+                    android:text="@string/ok"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/common_clear_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_common_clear_button"
+                    android:text="@string/cancle"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

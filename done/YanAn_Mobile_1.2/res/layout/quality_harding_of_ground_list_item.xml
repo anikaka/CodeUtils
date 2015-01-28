@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    >
+    
+    
+    <TextView 
+        android:id="@+id/quality_harding_of_ground_list_item_title"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/black"
+    	android:layout_marginTop="10dp"
+    	android:paddingLeft="5dp"
+        />
+    <TextView 
+        android:id="@+id/quality_harding_of_ground_list_item_content"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/black"
+    	android:paddingLeft="20dp"
+    	android:visibility="gone"
+    	android:layout_marginTop="10dp"
+        />
+	<View 
+	    android:layout_width="0dp"
+    	android:layout_height="10dp"
+	    />
+</LinearLayout>

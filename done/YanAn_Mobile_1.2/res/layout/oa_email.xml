@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <EditText
+        android:id="@+id/message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dp"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/selector_common_edittext_normal"
+        android:hint="@string/email_title" />
+
+    <EditText
+        android:id="@+id/message_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dp"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/selector_common_edittext_normal"
+        android:gravity="top|left"
+        android:hint="@string/email_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp" >
+
+        <Button
+            android:id="@+id/schedule_select_contacts_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="@string/select_contacts"
+            android:textColor="@color/black" />
+
+        <ScrollView
+            android:id="@+id/schedule_notice_members"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/send"
+            android:layout_below="@+id/schedule_select_contacts_btn"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dp"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/selector_common_edittext_normal"
+            android:padding="2dp" >
+
+            <LinearLayout
+                android:id="@+id/schedule_notice_members_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_buttonHeight"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_common_button"
+            android:text="@string/send"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

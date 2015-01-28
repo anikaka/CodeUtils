@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/light_gray">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle_progress_monthplan_week"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_background_color" >
+
+        <RelativeLayout
+            android:id="@+id/rlTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/txtTitle_progress_monthplan_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_title_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlHome_progress_monthplan_week"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/rlTitle" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_home_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_progres_monthplan_week"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/rlTitle_progress_monthplan_week"
+        android:divider="@color/listView_line"
+        android:dividerHeight="0.1dp"
+        android:listSelector="@drawable/selector_common_row" >
+    </ListView>
+<TextView
+    android:id="@+id/txtRemark_progres_monthplan_week"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/listView_progres_monthplan_week"
+    android:layout_marginLeft="20dp"
+    android:text="@string/remark"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/black" />
+<EditText 
+    android:id="@+id/editRemark_progres_monthplan_week"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_below="@id/txtRemark_progres_monthplan_week"
+    android:layout_alignLeft="@id/txtRemark_progres_monthplan_week"
+    android:gravity="top|left"
+    android:background="@drawable/selector_common_edittext_normal"
+    android:layout_marginRight="20dp" />
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editRemark_progres_monthplan_week"
+    android:layout_alignLeft="@id/editRemark_progres_monthplan_week"
+    android:layout_alignRight="@id/editRemark_progres_monthplan_week"
+    android:layout_marginTop="10dp">
+    
+<Button
+    android:id="@+id/butConfirm_progres_monthplan_week"
+    android:layout_width="150dp"
+    android:layout_height="@dimen/common_buttonHeight"
+    android:layout_weight="1"
+    android:layout_alignLeft="@id/editRemark_progres_monthplan_week"
+    android:layout_below="@id/editRemark_progres_monthplan_week"
+    android:background="@drawable/selector_layout_subside_pactselect_point_datalist_button"
+    android:text="@string/confirm"
+    android:textColor="@color/white" />
+
+<Button
+    android:id="@+id/butClear_progres_monthplan_week"
+    android:layout_width="150dp"
+    android:layout_height="@dimen/common_buttonHeight"
+    android:layout_weight="1"
+    android:background="@drawable/selector_layout_subside_pactselect_point_datalist_button"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/white"
+    android:text="@string/clear" />
+</LinearLayout>
+
+</RelativeLayout>

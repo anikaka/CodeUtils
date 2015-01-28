@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/rlContent_pactSelect_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rlHeight_pactselect_item_content"
+        android:background="@drawable/selector_common_listview" >
+
+        <TextView
+            android:id="@+id/txtContent_pactSelect_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/common_black_text"
+            android:focusable="false"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/txtSize_subside_pactselect_listView_item_content" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:focusable="false"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_right_arrows_normal" />
+        <TextView 
+            android:id="@+id/txtLotNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/txtSize_subside_pactselect_listView_item_title"
+            android:layout_toLeftOf="@id/img"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/rlTitle_pactSelect_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_listview_title_layout_subside"
+       android:background="@drawable/main_subside_pactselect_listview_item_title_bg">
+    <TextView
+        android:id="@+id/txtTitle_pactSelect_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_listview_title_layout_subside"
+        android:focusable="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtSize_subside_pactselect_listView_item_title" />
+</RelativeLayout>
+
+</RelativeLayout>

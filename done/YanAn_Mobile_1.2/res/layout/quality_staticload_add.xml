@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+	
+	<include layout="@layout/common_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >   
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:background="@drawable/common_bgcolor_title" />
+			<!-- project -->
+            <TextView
+                android:id="@+id/txtObject_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+			<!-- Pact code -->
+            <TextView
+                android:id="@+id/txtPact_staticload"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp" 
+                android:textColor="@color/black"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+			<!-- Examiner -->
+            <TextView
+                android:id="@+id/txtExaminePerson_staticload"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:layout_height="50dp" 
+                android:textColor="@color/black"
+                />
+            <View
+                android:id="@+id/viewExaminePerson_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:background="@drawable/common_bgcolor_title" />
+	       <!-- examineNo -->
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/examineNo" 
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                />
+            <EditText
+                android:id="@+id/txtExamineNo_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_common_edittext_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+            <!-- examine Unit -->
+ 	  <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/examineUnit" 
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerExamineUnit_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                />
+		</LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/gray" />
+            
+            <!-- examine Date -->
+		<LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:text="@string/examineDate"
+                android:paddingLeft="10dp"
+                 />
+
+            <TextView
+                android:id="@+id/editExamineDate_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/selector_common_edittext_normal" />
+			</LinearLayout>
+              <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:background="@drawable/common_bgcolor_title" />
+
+            <RelativeLayout
+                android:id="@+id/testing_layer_numbers_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+                android:clickable="true" >
+				<TextView
+                android:id="@+id/experimentPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/examinePoints" 
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/icon_right_arrows_normal" />
+            </RelativeLayout>
+            
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+                android:background="@drawable/common_bgcolor_title" />
+
+            <TextView
+                style="@style/txtRow_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/experimentContent" />
+
+            <EditText
+                android:id="@+id/editExperimentContent_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_common_edittext_normal"
+                android:gravity="top|left"
+                android:singleLine="false" />
+
+            <TextView
+                style="@style/txtRow_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:paddingLeft="10dp"
+                android:text="@string/experimentVerdict" />
+
+            <EditText
+                android:id="@+id/editExperimentVerdict_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/selector_common_edittext_normal"
+                android:gravity="top|left"
+                android:singleLine="false" />
+			
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+            <Button
+                android:id="@+id/butConfirm_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_common_button"
+                android:text="@string/save"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                 android:gravity="center"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/butCancel_staticload"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/selector_common_button"
+                android:text="@string/cancle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

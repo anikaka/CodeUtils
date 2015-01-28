@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">延安检测</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">保 存</string>
+	<string name="add">添加</string>
+    	<!-- common -->
+	<string  name="remark">备注</string >
+	 <string  name="confirm">确认</string>
+	 <string name="clear">清除</string>
+	 <string name="question">问题</string>
+	 <string  name="reason">原因</string>
+	 <string  name="more">更多</string>
+    <!-- Loading -->
+    <string  name="load_state">下载中...</string>
+	<!-- Login screen display text  -->
+	<string name="loing_text">登      录</string>
+	<string name="ok">确认</string>
+	<string name="cancle">取消</string>
+	<string name="send">发送</string>
+	<string name="modify">修改</string>
+	<string name="colon">：</string>
+	
+   <string	name="txt_user_login">账    号</string>
+   <string	name="txt_pwd_login">密    码</string>
+   <string name="hint_user_login">点击输入用户名</string>
+   <string name="hint_pwd_login">点击输入密码</string>
+   <string  name="txt_remember_pwd">记住密码</string>
+	<string name="construct_item">工程项目</string>
+   <string name="machine">机械</string>
+   <string name="member">人员</string>
+   <string name="others">其他</string>
+	<!--  Main -->
+	<string name="txt_main_title">沉降监测数据上传</string>
+	<string name="txt_oa">O  A</string>
+	<string name="txt_subside">沉  降</string>
+	<string name="txt_progress">进  度</string>
+	<string name="txt_quality">质  量</string>
+	<string name="txt_pic">照  片</string>
+	
+	<string name="calendar_schedule">日程安排</string>
+	<string  name="receiveText">收文查看</string>
+	<string name="rules">规章制度</string>
+	<string name="contacts">通讯录</string>
+	<string name="announcement_notice">公告通知</string>
+	<string name="message_notice">短信通知</string>
+	<string name="email_notice">邮件通知</string>
+	<string name="system_notice">系统通知</string>
+	<string name="department">部门</string>
+	<string name="all">全部</string>
+	
+	<string name="setting_server">设置服务器</string>
+	<string name="oa_all_schedule">全部日程</string>
+	<string name="oa_add_schedule">新增日程</string>
+	<string name="oa_modify_schedule">修改日程</string>
+	<string name="oa_detail_schedule">日程详情</string>
+	
+	<string name="schedule_title_hint">标题</string>
+	<string name="schedule_content_hint">内容</string>
+	<string name="schedule_is_addday_title_hint">全天事件</string>
+	<string name="schedule_time_title_hint">日程时段</string>
+	<string name="schedule_begin_time_hint">开始时间</string>
+	<string name="schedule_end_time_hint">结束时间</string>
+	<string name="schedule_notice_time_hint">通知时间</string>
+	<string name="schedule_notice_type_hint">通知类型</string>
+	
+	<string name="select_contacts">选择相关人员</string>
+	<string name="selected_contacts">已选相关人员</string>
+	<string name="message_content">短信内容</string>
+	<string name="email_title">邮件标题</string>
+	<string name="email_content">邮件内容</string>
+	
+	<string name="name">姓名：</string>
+	<string name="department_colon">部门：</string>
+	<string name="phone">手机：</string>
+	<string name="emial">邮箱：</string>
+	<string name="qq">QQ：</string>
+	
+	
+	
+	<string name="quality_hardening_of_ground">地基土压实度</string>
+	<string name="quality_pad_load">平板静载荷试验</string>
+	<string name="quality_wave_testing">波速测试</string>
+	<string name="quality_inject_testing">标准贯入试验</string>
+	
+	<!--   layout_subside_point-->
+	<string name="txtTitle_layout_subside_point">地表沉降检测点</string>
+	<string name="txtTitle_layout_subside_pactName">第一合同段</string>
+	
+	<!--  layout_subside_pactselect 合同段界面 -->
+	<string  name="txtTitle_subside_pactselect">合同段选择</string>
+	<string  name="txtTitleBottom_subside_pactselect">地表沉降监测</string>
+	
+	<!-- layout_subside_pactselect_data 数据列表 -->
+	<string  name="txtTitle_data">C1数据列表</string>
+	
+	<!--  layout_subdie_pactselect_data_look  数据查看列表-->
+	<string  name="txtValue_Supervisetype_title">监测类型 :</string>
+	<string  name="txtValue_Supervisetype_content">   变形监测:</string>
+	<string  name="txtValue_SuperviseProgram_title">监测项目 :</string>
+	<string  name="txtValue_SupervisePragram_content">   地表沉降监测</string>
+	<string  name="txtMonitorValuer_title">  本次测值 : </string>
+	<string  name="txtMonitorValuer_content"> 0.3</string>
+	<string  name="txtValueAccumulateChangeNumbe_title">  累计变化量 : </string>
+	
+	<string  name="txtValueChangeRate_title">  变化速率 : </string>
+	
+	<string  name="txtValueDataUnit_title">  数据单位 : </string>
+	<string  name="txtValueDataUnit_content"> mm</string>
+	<string  name="txtValueSuperviseDate_title">  检测时间 : </string>
+	<string  name="txtValueSuperviseDate_content"> 2014-05-22 15:22</string>
+	<string  name="txtValueUploadingDate_title">  上传时间 : </string>
+	<string  name="txtValueUploadingDate_content"> 2014-05-22 17:22</string>
+	<string  name="txtValueUploadingUser_title">上传人 :</string>
+	<string  name="txtValueUploadingUser_content">小张</string>
+	<string  name="butSave">保存</string>
+	<!--  layout_subside_oactselect_data_add_or_modify 数据新增或者修改 -->
+	
+  
+	<string  name="txtValue_supervisetype_data_add_or_modify_type_title">监测类型 :</string>
+	<string  name="txtValue_supervisetype_data_add_or_modify_type_content"> 变形监测:</string>
+	
+	<string  name="txtValue_data_add_or_modify_program_title">监测项目 :</string>
+	<string  name="txtValue_data_add_or_modify_program_content">   地表沉降监测</string>
+	
+	<string  name="txtMonitorValue_data_add_or_modify_title">  本次测值 : </string>
+	<string  name="txtMonitorValue__data_add_or_modify_content"> 0.3</string>
+		<string  name="txtMonitorDeep_data_add_or_modify_title">  埋深 : </string>
+
+	
+	<string  name="txtValueDataUnit_data_add_or_modify_title">  数据单位 : </string>
+	<string  name="txtValueDataUnit_data_add_or_modify_content"> mm</string>
+	
+	<string  name="txtValueSuperviseDate_data_add_or_modify_title">  检测时间 : </string>
+	<string  name="txtValueSuperviseDate_data_add_or_modify_content"> 2014-05-22 15:22</string>
+	
+	<string  name="txtValueUploadingDate_data_add_or_modify_title">  上传时间 : </string>
+	<string  name="txtValueUploadingDate_data_add_or_modify_content"> 2014-05-22 17:22</string>
+	
+	<string  name="txtValueUploadingUser_data_add_or_modify_title">上传人 :</string>
+	<string  name="txtValueUploadingUser_data_add_or_modify_content">小张</string>
+	
+	<string  name="butLook_layout_subside_pactselect_point_datalist">查看/修改</string>
+	<string  name="butUpload_layout_subside_pactselect_point_datalist">上 传</string>
+	<string  name="butDelete_layout_subside_pactselect_point_datalist">删除</string>
+	<string  name="butCancel_layout_subside_pactselect_point_datalist">取消</string>
+	
+	<!-- 进度上报 layout_progress.xml -->
+	<string name="txt_layout_progress_reported_project">计划上报</string>	
+	<string name="txt_layout_progress_reported_week">周计划</string>
+	<string name="txt_layout_progress_reported_month">月计划</string>
+	<string name="txt_layout_progress_reported_year">年计划</string>
+	<string name="txt_layout_progress_reported_accomplish_number">完成量上报</string>
+	<string name="txt_layout_progress_reported_accomplish_day">日完成量</string>
+	<string name="txt_layout_progress_reported_accomplish_week">周完成量</string>
+	<string name="txt_layout_progress_reported_accomplish_month">月完成量</string>
+	<string name="txt_layout_progress_reported_accomplish_year">年完成量</string>
+	<string name="txt_layout_progress_">周计划</string>
+
+	<!-- 计划上报 layout_progress_project_upload -->
+	<string name="txt_layout_progress_project_upload_type">周期选择</string>
+	<string name="txt_dialog_progssproject_upload_button_modify">填写</string>
+	<string name="txt_dialog_progssproject_upload_button_upload">上传</string>
+	<string name="txt_dialog_progssproject_upload_button_del">删除</string>
+	<!-- layout_progress_project_upload_listview_item -->
+	<string  name="txt_project_upload_item_centerTime">至</string>
+	<string  name="txt_project_upload_item_state">未完成</string>
+	
+	<!-- 计划上报日期选择 layout_progress_project_upload_date -->
+	<string  name="txt_layout_progress_project_upload_date_title">第一周</string>
+	<string name="txt_layout_progress_project_upload_date_type">日期选择</string>
+	
+	<!--单收文oa_receivetext_single   -->
+	<string  name="txtTtile_oa_receivetext_signle">标题:</string>
+	<string  name="txtDName_oa_receivetext_signle">类型:</string>
+	<string  name="txtFileNumber_oa_receivetext_signle">文号:</string>
+	<string  name="txtContent_oa_receivetext_signle">内容:</string>
+	<string  name="txtTime_oa_receivetext_signle">日期:</string>
+	<string  name="txtUser_oa_receivetext_signle">发件人:</string>
+	<string  name="txtFile_oa_receivetext_signle">附件:</string>
+	<string	 name="txtRemark_oa_receivetext_signle">备注</string>
+	<string name="download">下载</string>	
+	<string name="look">查看</string>
+	
+	<!-- 公告通知 oa_notice -->
+	<string name="content_notice">内容</string>
+	
+	    <!-- 照片上传 -->
+    <string name="construct" >施工前期</string>
+    <string name="landform">原地貌</string>
+    <string name="construction">基础建设</string>
+    <string name="compaction">强夯处理</string>
+    <string name="drain">盲沟修筑</string>
+    <string  name="sitePhotos">现场照片</string>
+    <string  name="photos">定点拍照</string>
+    <string name="hole">泉眼</string>
+    <string name="cave">窑洞</string>
+    <string name="oil">	油井</string>
+    <string name="stone">悬石</string>
+    <string name="damage">地质灾害</string>
+    <string name="search">搜索</string>
+   <string name="gutter">盲沟</string>
+   <string name="pointPhoto">定点拍照</string>
+   <string name="photograph">拍照时间列表</string>
+   <string  name="pic">照片拍摄</string>
+   <string name="picName">照片名称</string>
+   <string name="picLook">照片查看</string>
+   <string  name="picRename" >名称修改</string>
+   <string  name="fillView">放大查看</string>
+   <!-- 质量监测Quality -->
+    <string name="addStaticUpload">新增平板静载荷试验</string>
+    <string name="addStaticUploadInfo">平板静载荷试验详情</string>
+    
+    <string name="project">工程 ：</string>
+    <string name="pact">合同段 ：</string>
+    <string name="examinePerson">检测人：</string>
+    <string name="examineNo">检测编号：</string>
+    <string name="examineUnit">检测单位：</string>
+    <string name="examineDate">检测时间：</string>
+    <string name="examinePoint">本次检测点数量：</string>
+    <string name="examinePoints">本次检测点数量：0</string>
+    <string name="pointList">检测点列表</string>
+    <string name="experimentContent">实验内容：</string>
+    <string name="experimentVerdict">实验结论：</string>
+    <string name="pointNo">编号：</string>
+    <string name="pointX">坐标X：</string>
+    <string name="pointY">坐标Y：</string>
+    <string name="pointZ">坐标Z：</string>
+    <string  name="go">GO</string>
+    
+    <string name="examine_poind_add">检测点新增</string>
+    <string name="examine_poind_info">检测点信息</string>
+    
+     <string name="pointx">坐标X</string>
+    <string name="pointy">坐标Y</string>
+    <string name="pointz">坐标Z</string>
+        
+    <string name="layer_numbers">层数</string>
+    <string name="modify_layer_numbers">修改层数</string>
+    <string name="harding_point_info">压实度点信息</string>
+    <string name="press_thick">压实数</string>
+    
+    <string name="dry_density">干密度</string>
+    <string name="max_dry_density">最大干密度</string>
+    <string name="nature_of_the_soil">土的性质</string>
+    <string name="add_prees_point">添加压实度点</string>
+    <string name="area_time">区域时间：</string>
+    <string name="examineArea">检测区域：</string>
+    <string name="area">区域面积：</string>
+    <string name="prees_machine">碾压机械：</string>
+    <string name="hit_variate">冲击遍数：</string>
+    <string name="thickness">虚铺厚度：</string>
+    <string name="press_thickness">压实厚度：</string>
+    <string name="examineLayers">本次检测层数量：0</string>
+    
+    <string name="point_numbers">编号</string>
+    <string name="deep_start">深度开始值</string>
+     <string name="deep_end">深度结束值</string>
+     <string name="wave_velocity">波速</string>
+     <string  name="versionTitle">版本更新提示</string>
+     <string name="versionState">已经是最新版本</string>
+     <string  name="versionContent">您有新的版本信息,是否要立即更新?</string>
+     <string  name="remainDay">剩余工期(天数)</string>
+</resources>

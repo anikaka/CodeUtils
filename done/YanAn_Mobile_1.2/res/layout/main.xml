@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/common_title_layout" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/incluedBottom"
+        android:layout_below="@id/rl_title_v"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/incluedBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_oa"
+            android:layout_width="@dimen/width_rl"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_visiable" />
+
+            <View
+                android:id="@+id/view_oa"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_color"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_oa"
+                android:layout_width="@dimen/height"
+                android:layout_height="@dimen/width"
+                android:layout_below="@id/view_oa"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_all"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_oa_normal" />
+
+            <TextView
+                android:id="@+id/txt_oa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_oa"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_oa"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_v"
+            android:layout_width="@dimen/width_rl"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_visiable" />
+
+            <View
+                android:id="@+id/view_v"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_color"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_v"
+                android:layout_width="@dimen/height"
+                android:layout_height="@dimen/width"
+                android:layout_below="@id/view_v"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_all"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_v_normal" />
+
+            <TextView
+                android:id="@+id/txt_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_v"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_subside"
+                android:textColor="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_progress"
+            android:layout_width="@dimen/width_rl"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_visiable" />
+
+            <View
+                android:id="@+id/view_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_color"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_progress"
+                android:layout_width="@dimen/height"
+                android:layout_height="@dimen/width"
+                android:layout_below="@+id/view_progress"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_all"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_progress_normal" />
+
+            <TextView
+                android:id="@+id/txt_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_progress"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_progress"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_quality"
+            android:layout_width="@dimen/width_rl"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_visiable" />
+
+            <View
+                android:id="@+id/view_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_color"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_quality"
+                android:layout_width="@dimen/height"
+                android:layout_height="@dimen/width"
+                android:layout_below="@id/view_quality"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_all"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_quality_normal" />
+
+            <TextView
+                android:id="@+id/txt_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_quality"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_quality"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pic"
+            android:layout_width="@dimen/width_rl"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_visiable" />
+
+            <View
+                android:id="@+id/view_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_line"
+                android:background="@color/line_color"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/img_pic"
+                android:layout_width="@dimen/height"
+                android:layout_height="@dimen/width"
+                android:layout_below="@id/view_pic"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/margin_all"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_prcture_normal" />
+
+            <TextView
+                android:id="@+id/txt_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_pic"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_pic"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/txt_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/common_dialog_width"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title_common_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dialog_title_height"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/common_title_background_color"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_title_textsize" />
+
+    <EditText
+        android:id="@+id/common_content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_common_edittext_normal"
+        android:gravity="left|top"
+        android:paddingLeft="5dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/common_save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_button"
+            android:text="@string/ok"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/common_clear_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_common_clear_button"
+            android:text="@string/cancle"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

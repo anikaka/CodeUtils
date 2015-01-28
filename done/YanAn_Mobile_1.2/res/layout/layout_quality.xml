@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/quality_hardening_of_ground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/quality_hardening_of_ground"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/quality_pad_load"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/quality_pad_load"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+    <RelativeLayout
+        android:id="@+id/quality_wave_testing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/quality_wave_testing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/quality_inject_testing"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:background="@drawable/selector_common_listview"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_item_content_height"
+            android:background="@drawable/selector_common_listview"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/width_left_title_subside"
+            android:text="@string/quality_inject_testing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_right_arrows_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray" />
+</LinearLayout>

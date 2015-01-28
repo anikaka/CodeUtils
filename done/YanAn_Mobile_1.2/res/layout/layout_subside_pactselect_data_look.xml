@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle_data_look"
+        style="@style/layout_title_style"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/txtTile_data_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/txtTitle_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize_data_add_or_modify_title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_home_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitle_data_look"
+        android:background="@color/light_gray" >
+
+        <RelativeLayout
+            android:id="@+id/rlLine_supervise_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:background="@drawable/common_bgcolor_title" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlType_supervise_data_values"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/rlLine_supervise_data"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtSupervise_type_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtValue_Supervisetype_title" />
+
+            <TextView
+                android:id="@+id/txtSupervise_type_title_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtSupervise_type_title"
+                android:text="@string/txtValue_Supervisetype_content" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_supervise_data_values"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/rlType_supervise_data_values"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/rlSupervise_project"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/view_supervise_data_values"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtSupervise_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtValue_SuperviseProgram_title" />
+
+            <TextView
+                android:id="@+id/txtSupervise_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtSupervise_title"
+                android:text="@string/txtValue_SupervisePragram_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLine_change_values"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:layout_below="@id/rlSupervise_project"
+            android:background="@drawable/common_bgcolor_title" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMonitorValues"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/rlLine_change_values"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtMonitorValuer_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtMonitorValuer_title" />
+
+            <TextView
+                android:id="@+id/txtMonitorValuer_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtMonitorValuer_title"
+                android:text="@string/txtMonitorValuer_content" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_monitorValues"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/rlMonitorValues"
+            android:background="@color/gray" />
+
+              <RelativeLayout
+            android:id="@+id/rlMonitorDeep"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/view_monitorValues"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtMonitorDeep_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtMonitorDeep_data_add_or_modify_title" />
+
+            <TextView
+                android:id="@+id/txtMonitorDeep_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtMonitorDeep_title"
+                android:text="@string/txtMonitorValuer_content" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_monitorDeep"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/rlMonitorDeep"
+            android:background="@color/gray" />
+        <RelativeLayout
+            android:id="@+id/rlValueDataUnit_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/view_monitorDeep"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtDataUnit_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtValueDataUnit_title" />
+
+            <TextView
+                android:id="@+id/txtDataUnit_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtDataUnit_title"
+                android:text="@string/txtValueDataUnit_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLine_supervise_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_look"
+            android:layout_below="@id/rlValueDataUnit_title"
+            android:background="@drawable/common_bgcolor_title" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlSupervise_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/rlLine_supervise_date"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtSuperviseDate_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtValueSuperviseDate_title" />
+
+            <TextView
+                android:id="@+id/txtSuperviseDate_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtSuperviseDate_title"
+                android:text="@string/txtValueSuperviseDate_content" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_supervise_date"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/rlSupervise_date"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/rlUploading_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/view_supervise_date"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtUploadingDate_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtValueUploadingDate_title" />
+
+            <TextView
+                android:id="@+id/txtUploadingDate_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txtUploadingDate_title"
+                android:text="@string/txtValueUploadingDate_content" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_uploading_date"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/rlUploading_date"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/rlUploading_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rlHeight_layout_subside_pactselect_data_row"
+            android:layout_below="@id/view_uploading_date"
+            android:background="@drawable/selector_common_row" >
+
+            <TextView
+                android:id="@+id/txtUploadingUser_title"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txtValueUploadingUser_title" />
+
+            <TextView
+                android:id="@+id/txtUploadingUser_content"
+                style="@style/txtRow_common_layout_sudsie_pactselect_data_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/txtUploadingUser_title"
+                android:text="@string/txtValueUploadingUser_content" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_uploading_user"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/rlUploading_user"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+</RelativeLayout>

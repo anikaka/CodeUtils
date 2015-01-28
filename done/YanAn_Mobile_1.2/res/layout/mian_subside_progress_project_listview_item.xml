@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@+id/ll_content_progress_project"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height" >
+
+        <TextView
+            android:id="@+id/txt_item_content_progress_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+        <ImageView 
+            android:id="@+id/imgProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_right_arrows_normal"/>
+
+        <TextView
+            android:id="@+id/txtNumberProject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/imgProject"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/common_row_size_title" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_title_progress_project"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_title_height"
+        android:background="@drawable/main_subside_listview_item_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+ 
+        <TextView
+            android:id="@+id/txt_item_title_progress_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_row_size_title" />
+    </RelativeLayout>
+
+</RelativeLayout>

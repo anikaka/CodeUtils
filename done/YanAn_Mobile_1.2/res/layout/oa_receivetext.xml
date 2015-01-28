@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlReceiveTiltle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_background_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/receiveText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_title_textsize" />
+    </RelativeLayout>
+
+    <com.tongyan.yanan.common.widgets.view.PullDownView 
+    android:id="@+id/pull_down_view"
+    android:layout_below="@id/rlReceiveTiltle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" />
+<!--     <ListView
+        android:id="@+id/listView_Receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlReceiveTiltle"
+        android:cacheColorHint="@null"
+        android:divider="@color/gray"
+        android:dividerHeight="0.1dp"
+        android:listSelector="@drawable/selector_common_listview" /> -->
+
+</RelativeLayout>

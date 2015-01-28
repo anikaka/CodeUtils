@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_common_listview"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/progress_plan_report_list_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_title_height"
+        android:background="@color/gray"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/progress_plan_report_list_item_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/progress_plan_report_list_item_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/progress_plan_report_list_item_content_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/progress_plan_report_list_item_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left|center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center" >
+	
+    <TextView 
+        android:id="@+id/timePickerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_dialog_title_height"
+        android:text="标题"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@color/common_color"
+        />
+    <LinearLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10.0dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/timePickerTitle"
+        >
+
+        <com.tongyan.yanan.common.widgets.datetime.wheelview.WheelView
+            android:id="@+id/year"
+            android:layout_width="@dimen/view_time_picker_year"
+            android:layout_height="wrap_content" />
+
+        <com.tongyan.yanan.common.widgets.datetime.wheelview.WheelView
+            android:id="@+id/month"
+            android:layout_width="@dimen/view_time_picker_month"
+            android:layout_height="wrap_content" />
+
+        <com.tongyan.yanan.common.widgets.datetime.wheelview.WheelView
+            android:id="@+id/day"
+            android:layout_width="@dimen/view_time_picker_day"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+	
+    <LinearLayout 
+        android:id="@+id/bottom_contaienr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        
+        <Button 
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+        	android:layout_height="@dimen/common_buttonHeight"
+        	android:layout_weight="1"
+        	android:text="@string/ok"
+        	android:background="@drawable/selector_common_button"
+        	android:layout_marginRight="5dp"
+        	android:textColor="@color/white"
+            />
+        <Button 
+            android:id="@+id/cancle"
+            android:layout_width="match_parent"
+        	android:layout_height="@dimen/common_buttonHeight"
+        	android:layout_weight="1"
+            android:text="@string/cancle"
+            android:background="@drawable/selector_common_clear_button"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+    <View 
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/bottom_contaienr"
+        />
+    
+</RelativeLayout>

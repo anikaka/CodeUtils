@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+    
+   <RelativeLayout
+        android:id="@+id/rlTitle_progress_project"
+        android:layout_width="match_parent"
+		style="@style/layout_title_style" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/txtTitle_subside_pactselect"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_title_textsize" />
+
+	  <ImageView
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_alignParentRight="true"
+	      android:layout_centerVertical="true"
+	      android:layout_marginRight="10dp"
+	      android:background="@drawable/icon_home_normal" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlTitle_progress_project"
+         android:background="@color/light_gray">
+
+        <ListView
+            android:id="@+id/listView_picPact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/listView_line"
+            android:dividerHeight="0.1dp" 
+            android:cacheColorHint="@null"
+            android:listSelector="@drawable/selector_common_listview"/>
+    </RelativeLayout>
+
+</RelativeLayout>

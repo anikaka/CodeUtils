@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <RelativeLayout
+        android:id="@+id/rlTitle_layout_subside_point"
+        style="@style/layout_title_style"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:id="@+id/txtTitle_Layout_subside_point"
+            style="@style/txtTitle_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/txtTitle_layout_subside_point" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_home_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPactName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rlHeight_layout_subside_pactselect_name"
+        android:layout_below="@id/rlTitle_layout_subside_point"
+        android:background="@drawable/common_bgcolor_title" >
+
+        <TextView
+            android:id="@+id/txtPactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/txtTitle_layout_subside_pactName"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtSize_layout_subside_pactselect_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSerache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlPactName"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtSearchS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/search"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_title" />
+
+        <EditText
+            android:id="@+id/editSearchContentS"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/txtSearchS"
+            android:background="@drawable/selector_common_edittext_normal"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/butSearchS"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/editSearchContentS"
+            android:background="@drawable/selector_common_button"
+            android:text="@string/go"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_layout_subside_point"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlSerache"
+        android:cacheColorHint="@null"
+        android:divider="@color/listView_line"
+        android:dividerHeight="0.1dp"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/selector_common_listview" />
+
+</RelativeLayout>

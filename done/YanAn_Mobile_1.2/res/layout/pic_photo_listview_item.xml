@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight" >
+
+        <TextView
+            android:id="@+id/txtDate_picPhoto"
+            style="@style/txtRow_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            style="@style/txtRow_pic"
+            android:id="@+id/txtPicNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtDate_picPhoto"
+            android:layout_below="@id/txtDate_picPhoto"
+            android:layout_marginTop="3dp" />
+
+        <TextView
+            android:id="@+id/txtState_picPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/common_row_size_title"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

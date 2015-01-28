@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ListView
+        android:id="@+id/listView_subside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray"
+        android:dividerHeight="0.1dp"
+        android:fadingEdge="none"
+        android:cacheColorHint="@null"
+        android:listSelector="@drawable/selector_common_listview" >
+    </ListView>
+
+</RelativeLayout>

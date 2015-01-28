@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title_layout" />
+
+    <LinearLayout
+        android:id="@+id/rl_user_Login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_heigth"
+        android:layout_marginLeft="@dimen/leftmargn_login_edit"
+        android:layout_marginRight="@dimen/rightmargn_login_edit"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:text="@string/txt_user_login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_login" />
+
+        <EditText
+            android:id="@+id/editUser_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/light_gray"
+            android:hint="@string/hint_user_login"
+            android:singleLine="true"
+            android:textSize="@dimen/size_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/leftmargn_login_edit"
+        android:layout_marginRight="@dimen/rightmargn_login_edit" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:text="@string/txt_pwd_login"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_login" />
+
+        <EditText
+            android:id="@+id/editPwd_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/light_gray"
+            android:hint="@string/hint_pwd_login"
+            android:password="true"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/p02_login_save_pwd_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/leftmargn_login_edit"
+        android:layout_marginRight="@dimen/rightmargn_login_edit"
+        android:layout_marginTop="10.0dip" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40.0dp"
+            android:layout_weight="2.5"
+            android:gravity="center_vertical"
+            android:text="@string/txt_remember_pwd"
+            android:textColor="@color/common_black_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/cbSelected"
+                style="@style/login_save_password_checkbox_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butCommit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_heigth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_common_button"
+        android:text="@string/loing_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtSize_login_button_submit" />
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        <TextView 
+            android:id="@+id/setting_url_port"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/setting_server"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            />
+        
+    </RelativeLayout>
+    
+    
+    
+</LinearLayout>

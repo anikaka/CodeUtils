@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    <include layout="@layout/common_title_layout"/>
+    
+    <TextView 
+        android:id="@+id/oa_contacts_name"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:text="@string/name"
+        />
+    <TextView 
+        android:id="@+id/oa_contacts_department"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:text="@string/department_colon"
+        />
+    
+    <TextView 
+        android:id="@+id/oa_contacts_phone"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:text="@string/phone"
+        />
+    <TextView 
+        android:id="@+id/oa_contacts_email"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:text="@string/emial"
+        />
+    <TextView 
+        android:id="@+id/oa_contacts_qq"
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:text="@string/qq"
+        />
+
+</LinearLayout>

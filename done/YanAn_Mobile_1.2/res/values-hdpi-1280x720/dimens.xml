@@ -1,0 +1,10 @@
+<resources>
+
+     <dimen name="common_title_h">60dp</dimen>
+    
+      <dimen name="view_time_picker_year">100.0dp</dimen>
+    <dimen name="view_time_picker_month">60.0dp</dimen>
+    <dimen name="view_time_picker_day">50.0dp</dimen>
+    <dimen name="view_time_picker_hour">50.0dp</dimen>
+    <dimen name="view_time_picker_minute">50.0dp</dimen>
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/common_dialog_width"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_common_edittext_normal"
+    android:orientation="vertical" >
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="40dp"
+        android:background="@color/common_title_background_color"
+        >
+
+         <TextView
+             android:id="@+id/title_common_content"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="left|center_vertical"
+             android:paddingLeft="5dp"
+             android:textColor="@color/white"
+             android:text="@string/examine_poind_add"  />
+        
+         <Button 
+             android:id="@+id/title_right_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/modify"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="8dp"
+             android:layout_centerVertical="true"
+             android:textSize="10sp"
+             />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        <RelativeLayout 
+ 	        android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_gravity="center_vertical"
+ 	        >
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/point_numbers"
+            />
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/colon"
+            android:layout_alignParentRight="true"
+            />
+ 	    </RelativeLayout>
+       
+        <EditText 
+            android:id="@+id/quality_layer_nums"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:inputType="text"
+            android:background="@drawable/selector_common_edittext_normal"
+            />
+    </LinearLayout>
+
+ 	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        
+ 	    <RelativeLayout 
+ 	        android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_gravity="center_vertical"
+ 	        >
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/pointx"
+            />
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/colon"
+            android:layout_alignParentRight="true"
+            />
+ 	    </RelativeLayout>
+        
+        <EditText 
+            android:id="@+id/quality_point_x"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:inputType="numberDecimal"
+            android:background="@drawable/selector_common_edittext_normal"
+            />
+    </LinearLayout>
+	
+ 	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        
+        <RelativeLayout 
+ 	        android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_gravity="center_vertical"
+ 	        >
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/pointy"
+            />
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/colon"
+            android:layout_alignParentRight="true"
+            />
+ 	    </RelativeLayout>
+        
+        <EditText 
+            android:id="@+id/quality_point_y"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:inputType="numberDecimal"
+            android:background="@drawable/selector_common_edittext_normal"
+            />
+    </LinearLayout>
+ 	<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+        <RelativeLayout 
+ 	        android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_gravity="center_vertical"
+ 	        >
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/pointz"
+            />
+ 	        <TextView 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:text="@string/colon"
+           
+            android:layout_alignParentRight="true"
+            />
+ 	    </RelativeLayout>
+        
+        <EditText 
+            android:id="@+id/quality_point_z"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:inputType="numberDecimal"
+            android:background="@drawable/selector_common_edittext_normal"
+            />
+    </LinearLayout>
+   
+	<View 
+	    android:layout_width="0dp"
+        android:layout_height="5dp"
+	    />
+</LinearLayout>

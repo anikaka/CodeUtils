@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+    
+    <include layout="@layout/common_title_layout"/>
+	
+    <View 
+        android:id="@+id/oa_contacts_menu_top"
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp" 
+        android:background="@color/common_color"
+        android:layout_marginTop="5dp"
+        />
+    
+    <LinearLayout
+        android:id="@+id/oa_contacts_menu_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height" 
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:id="@+id/oa_contacts_menu_department_btn"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:background="@color/common_color"
+        	android:text="@string/department"
+        	android:textColor="@color/white"
+            />
+        <Button 
+            android:id="@+id/oa_contacts_menu_all_btn"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:background="@color/white"
+        	android:text="@string/all"
+            />
+    </LinearLayout>
+    <View 
+        android:id="@+id/oa_contacts_menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp" 
+        android:background="@color/common_color"
+        />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/oa_contacts_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        />
+    
+    
+</LinearLayout>

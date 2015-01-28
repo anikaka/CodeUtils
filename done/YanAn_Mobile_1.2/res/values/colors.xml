@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="transparent">#00000000</color> <!-- 透明 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    
+    <color name="common_color">#1b86e8</color>
+    <color name="common_title_background_color">#357cbe</color>
+    <color name="common_black_text">#333333</color>
+    <!-- 常用按钮颜色值(登录、上传) -->
+    <color  name="common_btn_bg">#1b86e8</color>
+    <color  name="common_btn_bg_h">#60a9ec</color>
+    <!-- 清除、取消一类按钮颜色值 -->
+    <color name="common_clear_btn_bg">#9aadbe</color>
+    <color name="common_clear_btn_bg_h">#6f8ca6</color>
+    
+    
+    
+    
+    <color  name="light_gray">#f1f1f1</color>
+    <color  name="dark_gray">#929292</color>
+    <color  name="gray">#999999</color>
+    <color  name="listView_line">#8d8989</color>
+    <!-- style -->
+    
+    <color  name="txtColor_layout_subside_paceselect">#929292</color>
+    <color name="txtColor_layout_subside_pactselect_data">#000000</color>
+    
+    <color name="deepBlue">#146cc3</color>
+    
+    <!-- common -->
+    <color name="bgColor_layout_subise_pactselect_data_row_normal">#f1f1f1</color>
+    <color name="bgColor_layout_subise_pactselect_data_row_pressed">#c7dcef</color>
+    <!--  Login  -->
+  
+    <!-- <color name="textColor_layout_title">#FFFFFF</color><color  name="txt">#000000</color>
+   <color  name="color_login_button_submit_normal">#1b86e8</color>
+    <color  name="color_login_button_submit_pressed">#60a9ec</color> -->
+    <!--  Main -->
+    <color name="main_top">#357cbe</color>
+    <color name="line_color">#357cbe</color>
+    <color  name="line_visiable">#d0e4f7</color>
+    <!--  Main Bottom -->
+    <color  name="color_pressed">#4398e8</color>
+    
+    <!--  -->
+  <color  name="ColorBut_layout_subside_pactselect_datalist_dialog_pressed">#c7dcef</color>
+  <color  name="ColorBut_layout_subside_pactselect_datalist_dialog_normal">#327dc1</color>
+</resources>

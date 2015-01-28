@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rowHeight_oa" >
+
+        <TextView
+            android:id="@+id/txtTitle_receiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_txt_margin_left"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/titleSize" />
+
+
+
+        <TextView
+            android:id="@+id/txtTheme_receiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitle_receiveText"
+           android:layout_alignLeft="@id/txtTitle_receiveText"
+            android:textColor="@color/gray" 
+            android:textSize="@dimen/contentSize"/>
+        
+        <TextView
+            android:id="@+id/txtTime_receiveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTheme_receiveText"
+            android:layout_alignLeft="@id/txtTheme_receiveText"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/contentSize"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

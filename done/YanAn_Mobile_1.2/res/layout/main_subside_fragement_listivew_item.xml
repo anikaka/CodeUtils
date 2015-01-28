@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_content_height"
+        android:layout_below="@+id/ll_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_left_title_subside"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_title_height"
+        android:background="@drawable/main_subside_listview_item_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+ 
+        <TextView
+            android:id="@+id/txt_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_left_title_subside"
+            android:focusable="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_row_size_title" />
+    </LinearLayout>
+
+</RelativeLayout>

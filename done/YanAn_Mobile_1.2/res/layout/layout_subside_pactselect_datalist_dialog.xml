@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    
+<RelativeLayout  
+    android:id="@+id/rl_datalist"
+    android:layout_width="@dimen/common_dialog_width"
+    android:layout_height="@dimen/common_dialog_height"
+    android:layout_centerInParent="true">
+<Button  
+    android:id="@+id/butLook_layout_subside_pactselect_point_datalist"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_buttonHeight"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textSize="@dimen/common_title_textsize"
+    android:textColor="@color/white"
+    android:text="@string/butLook_layout_subside_pactselect_point_datalist"
+    android:background="@drawable/selector_layout_subside_pactselect_point_datalist_button"/>
+
+<Button  
+    android:id="@+id/butUpload_layout_subside_pactselect_point_datalist"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_buttonHeight"
+    android:layout_marginRight="10dp"
+    android:layout_alignLeft="@id/butLook_layout_subside_pactselect_point_datalist"
+    android:layout_below="@id/butLook_layout_subside_pactselect_point_datalist"
+    android:layout_marginTop="10dp"
+    android:textSize="@dimen/common_title_textsize"
+    android:textColor="@color/white"
+    android:text="@string/butUpload_layout_subside_pactselect_point_datalist"
+    android:background="@drawable/selector_layout_subside_pactselect_point_datalist_button"/>
+
+<Button
+    android:id="@+id/butDelete_layout_subside_pactselect_point_datalist"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_buttonHeight"
+    android:layout_alignLeft="@+id/butUpload_layout_subside_pactselect_point_datalist"
+    android:layout_alignParentBottom="true"
+    android:layout_alignRight="@+id/butUpload_layout_subside_pactselect_point_datalist"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/selector_layout_subside_pactselect_point_datalist_button"
+    android:text="@string/butDelete_layout_subside_pactselect_point_datalist"
+    android:textColor="@color/white"
+    android:textSize="@dimen/common_title_textsize" />
+
+</RelativeLayout>
+
+</RelativeLayout>

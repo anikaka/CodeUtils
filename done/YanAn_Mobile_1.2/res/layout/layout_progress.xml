@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray" >
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rlTitle_reported_project"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_title_height"
+        android:background="@drawable/common_bgcolor_title" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_layout_progress_reported_project"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:focusable="false"
+            android:textSize="@dimen/common_row_size_title" />
+    </RelativeLayout>
+	
+	
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_project_week"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/rlTitle_reported_project"
+        android:background="@drawable/selector_common_row"
+         android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_week"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </RelativeLayout>
+    
+	<View 
+	    android:id="@+id/view_reported_project_week"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	    android:focusable="false"
+	    android:layout_below="@id/rlContent_reported_project_week"
+	    android:background="@color/gray"/>
+	
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_project_month"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/view_reported_project_week"
+        android:background="@drawable/selector_common_row" 
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_month"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </RelativeLayout>
+
+    	<View 
+	    android:id="@+id/view_reported_project_month"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	     android:focusable="false"
+	    android:layout_below="@id/rlContent_reported_project_month"
+	    android:background="@color/gray"/>
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_project_year"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/view_reported_project_month"
+        android:background="@drawable/selector_common_row" 
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </RelativeLayout>
+
+        	<View 
+	    android:id="@+id/view_reported_project_year"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	     android:focusable="false"
+	    android:layout_below="@id/rlContent_reported_project_year"
+	    android:background="@color/gray"/>
+    <RelativeLayout
+        android:id="@+id/rlTitle_reported_project_year"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_title_height"
+        android:layout_below="@id/view_reported_project_year"
+        android:background="@drawable/common_bgcolor_title" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+            android:text="@string/txt_layout_progress_reported_accomplish_number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_row_size_title" />
+    </RelativeLayout>
+
+    
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_accomplish_day"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/rlTitle_reported_project_year"
+        android:background="@drawable/selector_common_row" 
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_accomplish_day"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </RelativeLayout>
+        	<View 
+	    android:id="@+id/view_reported_accomplish_day"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	     android:focusable="false"
+	    android:layout_below="@id/rlContent_reported_accomplish_day"
+	    android:background="@color/gray"/>
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_accomplish_week"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/view_reported_accomplish_day"
+        android:background="@drawable/selector_common_row" 
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_accomplish_week"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </RelativeLayout>
+        	<View 
+	    android:id="@+id/view_reported_accomplish_week"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	     android:focusable="false"
+	    android:layout_below="@id/rlContent_reported_accomplish_week"
+	    android:background="@color/gray"/>
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_accomplish_month"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/view_reported_accomplish_week"
+        android:background="@drawable/selector_common_row" 
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_accomplish_month"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" 
+            android:clickable="true"/>
+    </RelativeLayout>
+        	<View 
+	    android:id="@+id/view_reported_accomplish_month"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.1dp"
+	     android:focusable="false"
+	    android:layout_below="@id/rlContent_reported_accomplish_month"
+	    android:background="@color/gray"/>
+    <RelativeLayout
+        android:id="@+id/rlContent_reported_accomplish_year"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_rowHeight"
+        android:layout_below="@id/view_reported_accomplish_month"
+        android:background="@drawable/selector_common_row" 
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeft_layout_progress_row"
+            android:text="@string/txt_layout_progress_reported_accomplish_year"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_row_size_content" />
+    </RelativeLayout>
+
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/rlContent_reported_accomplish_year"
+        android:background="@color/gray" 
+        android:focusable="false"/>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

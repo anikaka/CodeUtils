@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:background="@color/white">
+    
+    
+    <TextView 
+        android:id="@+id/versionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:background="@color/common_title_background_color"
+        android:textSize="@dimen/common_row_size_content"
+        android:text="@string/versionTitle"
+        android:gravity="center_vertical"/>
+	
+    <TextView 
+        android:id="@+id/versionContent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/versionTitle"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_row_size_title"
+        android:text="@string/versionContent"/>
+    
+    <LinearLayout 
+        android:id="@+id/butSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/versionContent">
+        <Button 
+            android:id="@+id/butConfrim"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selector_common_button"
+            android:textColor="@color/white"
+            android:text="@string/confirm"/>
+        <Button 
+            android:id="@+id/butCancel"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+			android:layout_marginRight="2dp"
+            android:background="@drawable/selector_common_clear_button"
+            android:textColor="@color/white"
+            android:text="@string/cancle"/>
+    </LinearLayout>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="3dp"
+	    android:layout_below="@id/butSelect"/>
+</RelativeLayout>
