@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="common_title_height">34dp</dimen>
+    <dimen name="common_title_font_size">14sp</dimen>
+    <dimen name="common_font_size">14.4sp</dimen>
+    <dimen name="common_listview_item_font_size">12sp</dimen>
+    <dimen name="common_general_font_size">9.2dp</dimen>
+    <dimen name="common_txt_height">50dp</dimen>
+ 	<dimen name="common_spinner_content_height">30dp</dimen>
+ <!-- +2 -->
+    <dimen name="common_small_font_size">8.4dp</dimen>
+ <!-- +2 -->
+
+
+    <!-- project_config.xml  3:5 -->
+    <dimen name="project_config_listview_width">160dp</dimen>
+    <dimen name="project_config_listview_height">32dp</dimen>
+
+    <!-- tunnel_info.xml  3:5 -->
+    <dimen name="tunnel_info_listview_height">240dp</dimen>
+
+    <!-- task_info.xml -->
+    <dimen name="task_info_listview_item_height">24dp</dimen>
+    <dimen name="task_info_listview_item_medium_font_size">12sp</dimen>
+    <dimen name="task_info_listview_item_high_font_size">9sp</dimen>
+
+    <!-- civil_portal.xml  2:5 -->
+    <dimen name="civil_portal_info_height">150dp</dimen>
+ <!-- 2:5 +10 -->
+    <dimen name="civil_portal_listview_width">134dp</dimen>
+ <!-- +30 -->
+
+    <dimen name="civil_portal_row_textview_height">16dp</dimen>
+    <dimen name="civil_portal_row_btn_width">10dp</dimen>
+    <dimen name="civil_portal_row_btn_height">10dp</dimen>
+    <dimen name="civil_portal_radioButton_height">20dp</dimen>
+    <dimen name="civil_portal_radioButton_margintop">8dp</dimen>
+    <dimen name="civil_portal_edittext_width">48dp</dimen>
+    <dimen name="civil_BZ_Edit_edittext_width">140dp</dimen>
+    <dimen name="civil_BZ_Edit_edittext_height">32dp</dimen>
+
+    <!-- ele_jc_check.xml -->
+
+    <dimen name="ele_jc_check_edit_height">198dp</dimen>
+ <!-- 2:5 +30 -->
+    <dimen name="ele_jc_check_editText_width">160dp</dimen>
+    <dimen name="ele_jc_check_editText_height">16dp</dimen>
+    <dimen name="ele_jc_check_editText_h_width">144dp</dimen>
+    <dimen name="ele_jc_check_editText_h_height">48dp</dimen>
+    <dimen name="ele_jc_check_imgButton_width">20dp</dimen>
+    <dimen name="ele_jc_check_imgButton_height">16dp</dimen>
+
+    <!-- check_from.xml -->
+    <dimen name="check_from_btn_width">180dp</dimen>
+    <dimen name="check_from_btn_height">30dp</dimen>
+
+    <!-- check_from_ele_jc.xml -->
+    <dimen name="check_from_ele_jc_no_width">16dp</dimen>
+    <dimen name="check_from_ele_jc_btn_width">80dp</dimen>
+    <dimen name="check_from_ele_jc_btn_height">20dp</dimen>
+
+    <!-- lining.xml -->
+    <dimen name="lining_map_height">590dp</dimen>
+
+    <!-- civil_config.xml -->
+    <dimen name="tabWidget_height">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+        <!-- checkproject_listview_item.xml -->
+    <dimen name="checkProject_listview_item_height">50dp</dimen>
+    
+    <!-- hidecheck_add_dialog -->
+    <dimen name="dialog_width">500dp</dimen>
+    <dimen name="dialog_title_height">40dp</dimen>
+    <dimen name="dialog_txtHeight">50dp</dimen>
+    <dimen name="dialog_btnHeight">50dp</dimen>
+    
+    <!-- hidecheck_form_dialog.xml-->
+    <dimen name="formDialog_width">350dp</dimen>
+    <dimen name="formBtn_heigth">40dp</dimen>
+    
+    <!-- hidecheck_tab_item.xml -->
+    <dimen name="ll_checkContentTop_height">400dp</dimen>
+    <dimen name="common_marginLeft">10dp</dimen>
+</resources>

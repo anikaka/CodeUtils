@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <!-- 洞口界面l配置 -->
+    <TextView
+        android:id="@+id/Civil_Por_CheckResultT1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/civil_portal_row_textview_height"
+        android:layout_weight="1"
+        android:background="@drawable/setbar"
+        android:gravity="center"
+        android:textSize="@dimen/common_small_font_size" />
+
+    <TextView
+        android:id="@+id/Civil_Por_CheckResultCheckData"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/civil_portal_row_textview_height"
+        android:layout_weight="1"
+        android:background="@drawable/setbar"
+        android:gravity="center"
+        android:textSize="@dimen/common_small_font_size" />
+
+    <TextView
+        android:id="@+id/Civil_Por_CheckResultT2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/setbar"
+        android:gravity="center"
+        android:textSize="@dimen/common_small_font_size" />
+
+    <TextView
+        android:id="@+id/Civil_Por_CheckResultT3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/civil_portal_row_textview_height"
+        android:background="@drawable/setbar"
+        android:gravity="center"
+        android:textSize="@dimen/common_small_font_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Civil_Por_CheckResultT4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/civil_portal_row_textview_height"
+        android:layout_weight="1"
+        android:background="@drawable/setbar"
+        android:gravity="center"
+        android:textSize="@dimen/common_small_font_size" />
+
+    <TextView
+        android:id="@+id/Civil_Por_CheckResultT5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/setbar"
+        android:gravity="center"
+        android:textSize="@dimen/common_small_font_size" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/civil_portal_row_textview_height"
+        android:layout_weight="1"
+        android:background="@drawable/setbar"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal" >
+
+<!--             android:layout_width="@dimen/civil_portal_row_btn_width" -->
+        <Button
+            android:id="@+id/Civil_Por_CheckResultBtn"
+            android:layout_height="@dimen/civil_portal_row_btn_height"
+			android:layout_width="@dimen/civil_portal_row_btn_width"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/delp"/>
+<!--             android:textAppearance="?android:attr/textAppearanceMedium"  -->
+        <Button
+            android:id="@+id/Civil_Por_PhotoBtn"
+            android:layout_height="@dimen/civil_portal_row_btn_height"
+            android:layout_width="@dimen/civil_portal_row_btn_width"
+             android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/s"/>
+<!--             android:textAppearance="?android:attr/textAppearanceMedium" / -->
+        <!--
+             <TextView
+            android:id="@+id/item_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="invisible" />
+        -->
+    </LinearLayout>
+</LinearLayout>

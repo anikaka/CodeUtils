@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_or_background_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewHideCheckTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/deviceTitle"
+            android:textColor="#eee"
+            android:textSize="@dimen/common_title_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_checkContentTop_height"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/CheckResultBackgroud"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                android:layout_marginLeft="@dimen/common_marginLeft"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:text="@string/Check_content"
+                android:textColor="@color/tjbt" />
+
+            <ListView
+                android:id="@+id/listViewCheckDeviceContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="@color/CheckResultBackgroud"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                android:layout_marginLeft="@dimen/common_marginLeft"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:text="设备信息录入"
+                android:textColor="@color/tjbt" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txtDeviceNameTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_marginLeft"
+                        android:text="设备名称:" />
+
+                    <EditText
+                        android:id="@+id/txtDeviceName"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtDeviceNameTitle"
+                        android:layout_marginRight="20dp" 
+                        android:hint="设备名称必须填写"/>
+
+                    <TextView
+                        android:id="@+id/txtDeviceNumberTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtDeviceName"
+                        android:text="数量(个):" />
+
+                    <EditText
+                        android:id="@+id/txtDeviceNumber"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtDeviceNumberTitle"
+                        android:layout_marginRight="20dp"
+                        android:inputType="number" 
+                        android:hint="设备数量必须填写"/>
+             
+                     <TextView
+                        android:id="@+id/txtApproachRecordTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtDeviceNumber"
+                        android:text="进场记录:" />
+                    <EditText
+                        android:id="@+id/txtApproachRecord"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtApproachRecordTitle"
+                        android:layout_marginRight="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtLoactionTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtApproachRecord"
+                        android:layout_marginLeft="@dimen/common_marginLeft"
+                        android:text="使用工程部位:" />
+
+                    <EditText
+                        android:id="@+id/txtLoaction"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtLoactionTitle"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtAcceptanceRecordTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtLoaction"
+                        android:text="监理验收记录:" />
+
+                    <EditText
+                        android:id="@+id/txtAcceptanceRecord"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtAcceptanceRecordTitle"
+                        android:layout_marginRight="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtOperatorTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtAcceptanceRecord"
+                        android:text="操作人员:" />
+
+                    <EditText
+                        android:id="@+id/txtOperator"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtOperatorTitle"
+                        android:layout_marginRight="20dp"
+                        android:hint="操作人员必须填写"/>
+
+                    <TextView
+                        android:id="@+id/txtWrittenRecordTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtOperator"
+                        android:text="是否有书面检查验收记录:" />
+
+                    <EditText
+                        android:id="@+id/txtWrittenRecord"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtWrittenRecordTitle"
+                        android:layout_marginRight="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtCertificateTitle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtWrittenRecord"
+                        android:text="检验检测合格证书:" />
+
+                    <EditText
+                        android:id="@+id/txtCertificate"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtCertificateTitle"
+                        android:layout_marginRight="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtArchivesTItle"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtCertificate"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:text="维修保养记录档案:" />
+
+                    <EditText
+                        android:id="@+id/txtArchives"
+                        style="@style/common_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dialog_txtHeight"
+                        android:layout_alignLeft="@id/txtDeviceNameTitle"
+                        android:layout_below="@id/txtArchivesTItle"
+                        android:layout_marginRight="20dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" 
+                        android:layout_below="@id/txtArchives"/>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2"
+            android:background="@color/CheckResultBackgroud"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                android:layout_marginLeft="@dimen/common_marginLeft"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/P_level"
+                    android:textColor="@color/tjbt" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_marginLeft"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioDeviceBtnYes"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/radioDeviceBtnNo"
+                        style="@style/common_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/no" />
+                </RadioGroup>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView 
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                     android:layout_marginLeft="@dimen/common_marginLeft"
+                    android:text="备注:"  />
+                <EditText 
+                    android:id="@+id/txtDeviceContentDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/common_marginLeft"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/boder_white"/>
+             	
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                  <ImageButton 
+                    android:id="@+id/imgBtnSubmitDeviceRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tj_bt_h"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_txt_height"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_marginLeft"
+            android:gravity="center_vertical"
+            android:text="检查结果" />
+
+        <ImageButton
+            android:id="@+id/imgBtnCheckRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_marginLeft"
+            android:background="@drawable/checkform1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/civil_portal_row_textview_height"
+            android:background="@color/CheckResultBackgroud"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="设备名称" />
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="数量" />
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="检查内容" />
+          
+            <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操作人" />
+            
+<!--             <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="照片编号" /> -->
+            <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="备注" />
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操 作" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewCheckDeviceRecord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+            android:layout_width="wrap_content"
+             android:layout_height="80.0dip"
+             android:background="@color/common_title_or_background_color"
+             >
+
+            <Button
+                android:id="@+id/photo_BackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_pre_btn_selector"
+                 />
+			<TextView 
+			    android:id="@+id/Tun_InfoText"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="照片管理"
+                android:textSize="30sp"
+                android:textColor="@drawable/white"
+             	/>
+            <Button
+                android:id="@+id/newphoto_photoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             	android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/right_target"
+                android:layout_marginRight="20.0dp"
+                android:background="@drawable/picture_h" />
+            
+             <TextView 
+                android:id="@+id/right_target"
+                android:layout_width="0.0dp"
+                android:layout_height="0.0dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        
+		<LinearLayout
+		    android:background="@color/p03_list_background_color"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical">
+		   <LinearLayout 
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:orientation="horizontal" >
+		       
+		       <CheckBox 
+		           android:layout_marginLeft="20dp"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:id="@+id/newphotocheckbox"
+		           android:layout_gravity="center_vertical"
+		           android:button="@drawable/newphotobuttoncheck" 
+		           />
+		       <ImageButton 
+		           android:layout_width="101dp"
+		           android:layout_height="27dp"
+		           android:layout_marginTop="5dp"
+		           android:id="@+id/newphoto_del"
+		           android:src="@drawable/newphotodel"
+		         />
+		       
+		   </LinearLayout> 
+		   <LinearLayout 
+		       android:layout_width="fill_parent"
+		       android:layout_height="fill_parent"> 
+		    <GridView 
+		        android:id="@+id/photo_GridView"
+		        android:layout_weight="1"
+		        android:layout_marginTop="10dp"
+		        android:numColumns="3" 
+		        android:layout_marginLeft="20dp"
+		        android:layout_height="fill_parent"
+		        android:verticalSpacing="10dp"
+		        android:horizontalSpacing="20dp" 
+		        android:layout_width="fill_parent"></GridView>
+		</LinearLayout>
+		</LinearLayout>
+</LinearLayout>

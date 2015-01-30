@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_sub_background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_or_background_color" >
+
+        <Button
+            android:id="@+id/ConfigBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/p03_login_btn_selector" />
+
+        <TextView
+            android:id="@+id/Check_Text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/project_msg_config"
+            android:textColor="@drawable/white"
+            android:textSize="@dimen/common_title_font_size" />
+
+        <Button
+            android:id="@+id/ConfigBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_toLeftOf="@+id/left_target"
+            android:background="@drawable/common_next_btn_selector" />
+
+        <TextView
+            android:id="@+id/left_target"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/line_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/project_config_listview_width"
+                android:layout_height="@dimen/project_config_listview_height"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:background="@color/common_sub_title_background_color" >
+
+                <ImageView
+                    android:id="@+id/line_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@drawable/p03_line_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/line_logo"
+                    android:background="@color/common_sub_title_background_color"
+                    android:text="@string/roadline"
+                    android:textSize="@dimen/common_font_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@color/p03_list_background_color"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/Config_ListView1"
+                    android:layout_width="@dimen/project_config_listview_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/p03_list_background_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_part_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/line_layout"
+            android:background="@drawable/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/project_config_listview_width"
+                android:layout_height="@dimen/project_config_listview_height"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:background="@color/common_sub_title_background_color" >
+
+                <ImageView
+                    android:id="@+id/aireport_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@drawable/p03_areapart_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/aireport_logo"
+                    android:background="@color/common_sub_title_background_color"
+                    android:text="@string/areapart"
+                    android:textSize="@dimen/common_font_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@color/p03_list_background_color"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/Config_ListView2"
+                    android:layout_width="@dimen/project_config_listview_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/p03_list_background_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/area_part_layout"
+            android:background="@drawable/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/project_config_listview_width"
+                android:layout_height="@dimen/project_config_listview_height"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="10.0dp"
+                android:background="@color/common_sub_title_background_color" >
+
+                <ImageView
+                    android:id="@+id/tunnel_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:background="@drawable/p03_tunnel_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/tunnel_logo"
+                    android:background="@color/common_sub_title_background_color"
+                    android:text="@string/tunnel"
+                    android:textSize="@dimen/common_font_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10.0dp"
+                android:layout_marginRight="10.0dp"
+                android:background="@color/p03_list_background_color"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/Config_ListView3"
+                    android:layout_width="@dimen/project_config_listview_width"
+                    android:layout_height="match_parent"
+                    android:background="@color/p03_list_background_color"
+                    android:cacheColorHint="@color/transparent"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

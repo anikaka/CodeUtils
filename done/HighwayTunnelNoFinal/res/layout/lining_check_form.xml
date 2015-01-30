@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 衬砌检查记录表界面 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_title_or_background_color"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/check_form_BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_pre_btn_selector" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Civil_Config_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            	 android:layout_gravity="center"
+                android:text="检查记录表"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/check_from_btn_height"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/checkformt" />
+        <!-- android:layout_height="50dp" -->
+
+
+        <!--
+             <Button
+            android:id="@+id/check_form_btn1"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+            android:text="里程桩号" />
+        -->
+
+        <Button
+            android:id="@+id/check_form_btn1"
+            android:layout_width="@dimen/check_from_btn_width"
+            android:layout_height="@dimen/check_from_btn_height"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+            android:text="里程桩号" />
+
+        <Button
+            android:id="@+id/check_form_btn2"
+            android:layout_width="@dimen/check_from_btn_width"
+            android:layout_height="@dimen/check_from_btn_height"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+            android:text="检查内容" />
+
+        <Button
+            android:id="@+id/check_form_btn3"
+            android:layout_width="@dimen/check_from_btn_width"
+            android:layout_height="@dimen/check_from_btn_height"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+          	android:visibility="gone"
+            android:text="病害部位" />
+
+        <Button
+            android:id="@+id/check_form_btn4"
+            android:layout_width="@dimen/check_from_btn_width"
+            android:layout_height="@dimen/check_from_btn_height"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+            android:text="判断结论"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/checkfrombaseinfo"
+                android:layout_width="@dimen/common_img_width"
+                android:layout_height="@dimen/common_img_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/checkformbaseinfo_selector"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/CheckResultBackgroud"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="里程桩号"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="检查内容"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="病害部位"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="状态描述"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="判断结论"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="340dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="病害描述"
+            android:textSize="20dp" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/CheckResultBackgroud"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="里程桩号"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="项目名称"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="检查内容"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="状态描述"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="判断结论"
+            android:textSize="@dimen/common_general_font_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="病害描述"
+            android:textSize="@dimen/common_general_font_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/check_lining_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listviewBackgroud"
+        android:divider="@null" >
+    </ListView>
+
+    <!--
+         <Button
+        android:id="@+id/checkfrombaseinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/checkformbaseinfo_selector" />
+    -->
+
+</LinearLayout>

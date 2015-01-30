@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tygeo.highwaytunnel"
+    android:versionCode="22"
+    android:versionName="2.0" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <application
+        android:name="com.tygeo.highwaytunnel.common.InfoApplication"
+        android:icon="@drawable/icons"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Login"
+            android:configChanges="orientation"
+            android:label="@style/AppTheme"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Check"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Project_configuration"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Tunnel_info"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Task_info"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Task_add"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Civil_Check"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Lining"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Portal"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Roadbed"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.html"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Check_form_Ele"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_check_form"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Chek_form"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_Check"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_Content"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_Check_jc"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_jc_chek"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_rc_check"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Check_form_lining"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.Ele_check_from_jc"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.PhotoShow"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.NewphotoShow"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.tygeo.highwaytunnel.common.NotificationUpdateActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.TY.TYBHMapForAndroid.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity 
+            android:name="com.tygeo.highwaytunnel.activity.hidecheck.HideCheckDevicePictureActivity"
+            android:screenOrientation="landscape"></activity>
+        <service android:name="com.tygeo.highwaytunnel.common.DownloadService" >
+        </service>
+
+        <activity
+            android:name="com.tygeo.highwaytunnel.activity.hidecheck.HideCheckMainActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity 
+            android:name="com.tygeo.highwaytunnel.activity.hidecheck.HideCheckTabHost"
+            android:screenOrientation="landscape">
+        </activity>
+    
+        <activity 
+            android:name="com.tygeo.highwaytunnel.activity.hidecheck.HideCheckTabItemActivity"
+            android:screenOrientation="landscape"> 
+        </activity>
+ 
+        <activity 
+            android:name="com.tygeo.highwaytunnel.activity.hidecheck.HideCheckPictureActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity 
+            android:name="com.tygeo.highwaytunnel.activity.hidecheck.HideCheckDeviceActivity"
+            android:screenOrientation="landscape">
+            
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <system-permission android:name="android.permission.INSTALL_PACKAGES" >
+    </system-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

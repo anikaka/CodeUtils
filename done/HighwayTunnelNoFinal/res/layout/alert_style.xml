@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dp"
+    android:layout_height="260dp"
+    android:orientation="vertical" 
+    android:background="@drawable/blue">
+    
+
+    <Button android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/alert_ccehck"
+        android:background="@drawable/taskdialogsele"
+        android:text="进入隧道土建结构检查"/>
+    <Button 
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+         android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/alert_tcheck"
+        android:background="@drawable/taskdialogsele"
+        android:text="进入隧道机电设施检查"/>
+    <Button 
+        android:id="@+id/hideCheck"
+        android:layout_width="match_parent"
+       	android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/taskdialogsele"
+        android:text="进入安全隐患排查"/>
+    <Button 
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+         android:layout_marginRight="20dp"
+        android:id="@+id/alert_edit"
+        android:background="@drawable/taskdialogsele"
+        android:text="编辑任务"/>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/alert_delete"
+         android:layout_marginRight="20dp"
+        android:background="@drawable/taskdialogsele"
+        android:text="删除任务"/>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/alert_Update"
+         android:layout_marginRight="20dp"
+        android:background="@drawable/taskdialogsele"
+        android:text="@string/update"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+  </LinearLayout>
+        
+</LinearLayout>

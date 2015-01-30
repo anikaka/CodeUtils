@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/formDialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#beced8">
+    
+    <Button 
+        android:id="@+id/btnHideCheck"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/formBtn_heigth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/common_button_seletor"
+        android:textColor="@color/black_color"
+        android:text="进入排查"/>
+    <Button 
+        android:id="@+id/btnForm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/formBtn_heigth"
+        android:layout_below="@id/btnHideCheck"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/common_button_seletor"
+        android:textColor="@color/black_color"
+        android:text="表头信息"/>
+    <Button 
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/formBtn_heigth"
+         android:layout_below="@id/btnForm"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/common_button_seletor"
+        android:textColor="@color/black_color"
+        android:text="上	传"/>
+    <Button 
+        android:id="@+id/btnDel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/formBtn_heigth"
+         android:layout_below="@id/btnUpload"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/common_button_seletor"
+        android:textColor="@color/black_color"
+        android:text="删	除"/>
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    android:layout_below="@id/btnDel"/>
+</RelativeLayout>

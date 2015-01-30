@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- 经常性检修记录表 -->
+  <LinearLayout 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      
+       <Button
+        android:id="@+id/check_form_ExitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/exit" />
+		
+       	
+    <Button
+        android:id="@+id/check_form_BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back" />
+	<TextView 
+	    android:id="@+id/Civil_Config_Text"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:text="检查记录表"
+       	android:textSize="20dp"
+      	android:layout_marginLeft="500dp"
+        />
+	
+	  </LinearLayout>  
+      <LinearLayout 
+          android:layout_height="180dp"
+          android:layout_width="fill_parent"
+          android:orientation="horizontal">
+          
+          <LinearLayout 
+          android:layout_height="160dp"
+          android:layout_width="480dp"
+          android:orientation="vertical"
+          android:layout_marginTop="10dp">
+          <TextView
+            android:id="@+id/check_form_text1"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="隧道名称："  />
+          <TextView
+            android:id="@+id/check_form_text2"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="隧道编号："  />
+          <TextView
+            android:id="@+id/check_form_text3"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="养护机构："  />
+          <TextView
+            android:id="@+id/check_form_text4"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="检查类别："  />
+          <TextView
+            android:id="@+id/check_form_text5"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="检查组长："  />
+          </LinearLayout>
+          
+          <LinearLayout 
+              android:layout_marginLeft="200dp"
+           android:layout_marginTop="10dp"
+          android:layout_height="180dp"
+          android:layout_width="fill_parent"
+          android:orientation="vertical">
+          <TextView
+            android:id="@+id/check_form_text6"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="路线名称："  />
+          <TextView
+            android:id="@+id/check_form_text7"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="路线编号："  />
+          <TextView
+            android:id="@+id/check_form_text8"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="检查日期："  />
+          <TextView
+            android:id="@+id/check_form_text9"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="检查类型："  />
+          <TextView
+            android:id="@+id/check_form_text10"
+            android:layout_width="300dp"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="30dp"  
+            android:text="检查成员："  />
+          
+          
+          </LinearLayout>
+          
+          
+          
+          
+          
+          </LinearLayout>"
+      <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+      <TextView 
+          android:layout_marginLeft="20dp"
+          android:layout_width="wrap_content"
+          android:layout_height="30dp"
+          android:text="列表排序： " />
+
+      <Button
+          android:id="@+id/check_form_btn1"
+          android:layout_width="220dp"
+          android:layout_height="30dp"
+          android:layout_marginLeft="20dp"
+          android:gravity="center"
+          android:text="故障日" />
+
+       <Button
+           android:id="@+id/check_form_btn2"
+           android:layout_width="220dp"
+           android:layout_height="30dp"
+           android:gravity="center"
+           android:text="设备名称" />
+
+        <Button
+            android:id="@+id/check_form_btn3"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="设备位置" />
+
+         <Button
+             android:id="@+id/check_form_btn4"
+             android:layout_width="220dp"
+             android:layout_height="30dp"
+             android:gravity="center"
+             android:text="设备编号" />
+
+          <Button
+              android:id="@+id/check_form_btn5"
+              android:layout_width="220dp"
+              android:layout_height="30dp"
+              android:gravity="center"
+              android:text="设备状态" />
+
+      </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:background="@drawable/boder_white"
+            android:gravity="center"
+            android:text="故障日"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:background="@drawable/boder_white"
+            android:gravity="center"
+            android:text="设备名称"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:background="@drawable/boder_white"
+            android:gravity="center"
+            android:text="设备位置"
+            android:textSize="20dp" />
+   
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:background="@drawable/boder_white"
+                android:gravity="center"
+                android:text="设备编号"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:background="@drawable/boder_white"
+                android:gravity="center"
+                android:text="设备状态"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/boder_white"
+                android:gravity="center"
+                android:text="设备故障"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/boder_white"
+                android:gravity="center"
+                android:text="设备故障注意事项"
+                android:textSize="20dp" />
+        
+    </LinearLayout>
+    
+    <ListView 
+       		 android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/check__listview"></ListView>
+        
+    
+		
+    <Button
+        android:id="@+id/checkfrombaseinfo"
+        android:text="基础信息"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+    
+</LinearLayout>

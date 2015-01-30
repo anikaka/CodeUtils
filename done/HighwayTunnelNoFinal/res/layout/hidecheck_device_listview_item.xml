@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    
+    <TextView 
+        style="@style/common_text"
+        android:id="@+id/txtCheckDeviceProjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+ 	    android:layout_marginTop="10dp"/>
+
+    <TextView 
+        style="@style/common_text"
+        android:id="@+id/txtCheckDeviceSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCheckDeviceProjectName"
+        android:layout_alignLeft="@id/txtCheckDeviceProjectName"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView 
+         style="@style/common_text"
+        android:id="@+id/txtCheckDevicePerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCheckDeviceSection"
+        android:layout_alignLeft="@id/txtCheckDeviceProjectName"
+      	android:layout_marginTop="10dp"/>
+    <TextView 
+         style="@style/common_text"
+        android:id="@+id/txtCheckDeviceDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCheckDevicePerson"
+        android:layout_alignLeft="@id/txtCheckDeviceProjectName"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView 
+        android:id="@+id/txtCheckDeviceUploadState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"/>
+     	<View 
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="10dp"
+ 	    android:layout_below="@id/txtCheckDeviceDate"/>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	
+	>
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			<TextView android:id="@+id/tv_value"
+			    android:textColor="@drawable/black"
+				android:layout_marginTop="10dip" android:layout_marginBottom="10dip"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="" android:textSize="20dip" android:gravity="center"
+				android:visibility="gone" android:textAppearance="?android:attr/textAppearanceMedium" />
+				
+			<TextView android:id="@+id/tv_level"
+			    android:textColor="@drawable/black"
+				android:layout_marginTop="10dip" android:layout_marginBottom="10dip"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:text="程度：" android:textSize="20dip" android:gravity="center"
+				android:visibility="gone" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="vertical">
+			
+			
+			<RadioGroup android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:id="@+id/radiogroup_level" android:visibility="gone">
+				<RadioButton android:layout_width="wrap_content" 
+				    
+					android:text="S" android:layout_height="wrap_content"  android:textColor="@drawable/black" android:checked="true" android:id="@+id/radioS"></RadioButton>
+				<RadioButton android:layout_width="wrap_content" android:textColor="@drawable/black"
+					android:text="B" android:layout_height="wrap_content" android:id="@+id/radioB"></RadioButton>
+				<RadioButton android:layout_width="wrap_content" android:textColor="@drawable/black"
+					android:text="A" android:layout_height="wrap_content" android:id="@+id/radioA"></RadioButton>
+		
+			</RadioGroup>
+
+
+		</LinearLayout>
+	</LinearLayout>
+	
+<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:id="@+id/tv_bz" android:text="病害备注："  android:textColor="@drawable/black"
+			android:layout_marginTop="10dip" android:layout_marginBottom="10dip"
+			android:textSize="20dip" android:gravity="center"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"></TextView>
+		<EditText android:id="@+id/editTextBZ" android:text=""
+			android:layout_weight="1" android:gravity="top" android:maxLength="50"
+			android:layout_width="250dip" android:layout_height="120dip"></EditText>
+	</LinearLayout>
+	<LinearLayout android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:orientation="horizontal" android:visibility="gone">
+		<TextView android:id="@+id/tv_isPhoto" android:textColor="@drawable/black"
+			android:layout_marginTop="10dip" android:layout_marginBottom="10dip"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:text="是否拍摄照片：" android:textSize="20dip" android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+		<RadioGroup android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:id="@+id/radiogroup_isPhoto">
+			<RadioButton android:layout_width="wrap_content" android:textColor="@drawable/black"
+				android:text="是" android:layout_height="wrap_content" android:id="@+id/radioY"
+				></RadioButton>
+			<RadioButton android:layout_width="wrap_content" android:textColor="@drawable/black"
+				android:text="否" android:layout_height="wrap_content" android:id="@+id/radioN" android:checked="true"></RadioButton>
+		</RadioGroup>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 经常性检修记录表 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_height"
+        android:background="@color/common_title_or_background_color"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/check_form_BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_pre_btn_selector" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+         <TextView
+            android:id="@+id/Civil_Config_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"    
+            android:text="检查记录表"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/common_title_font_size" />
+                   
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+<!--         <ImageView
+            android:layout_width="@dimen/check_from_ele_jc_no_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/checkformt" /> -->
+
+        <Button
+            android:id="@+id/check_form_btn1"
+            android:layout_width="@dimen/check_from_ele_jc_btn_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:layout_marginLeft="20dp"
+            android:background="@color/common_sub_title_background_color"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="故障日" />
+
+        <Button
+            android:id="@+id/check_form_btn2"
+            android:layout_width="@dimen/check_from_ele_jc_btn_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="设备名称" />
+
+        <Button
+            android:id="@+id/check_form_btn3"
+            android:layout_width="@dimen/check_from_ele_jc_btn_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="设备位置" />
+
+        <Button
+            android:id="@+id/check_form_btn4"
+            android:layout_width="@dimen/check_from_ele_jc_btn_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:textSize="@dimen/common_general_font_size"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+            android:text="检查项目" />
+
+        <Button
+            android:id="@+id/check_form_btn5"
+            android:layout_width="@dimen/check_from_ele_jc_btn_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:textSize="@dimen/common_general_font_size"
+            android:layout_marginLeft="10dp"
+            android:background="@color/common_sub_title_background_color"
+            android:gravity="center"
+            android:text="检查内容" />
+        
+            <Button
+	        android:id="@+id/checkfrombaseinfo"
+            android:layout_width="@dimen/check_from_ele_jc_btn_width"
+            android:layout_height="@dimen/check_from_ele_jc_btn_height"
+            android:textSize="@dimen/common_general_font_size"
+      		android:background="@color/common_sub_title_background_color"
+      		android:layout_marginLeft="10dp"
+      		android:gravity="center"
+      		android:text="基 本 信 息"
+  
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/CheckResultBackgroud"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="编号"
+           />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="故障日" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="设备名称"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="设备位置"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="检查项目"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="检查内容"
+             />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="@dimen/common_general_font_size"
+            android:gravity="center"
+            android:text="设备故故障处理"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/check__listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:background="@color/CheckResultBackgroud"
+        android:divider="@null" />
+
+
+
+</LinearLayout>

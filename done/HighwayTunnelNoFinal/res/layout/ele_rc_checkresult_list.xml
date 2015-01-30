@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    	<LinearLayout
+    	    android:orientation="horizontal"
+        android:layout_width="1240dp"
+        android:layout_height="40dp"
+        android:background="@drawable/boder_white" >
+
+     			<TextView
+				android:id="@+id/ele_rc_checkresultTV1"
+                android:layout_width="150dp"
+                style="@style/Civil_PorTheme"
+                android:textSize="10dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/boder_white"
+                />
+
+            <TextView
+                android:id="@+id/ele_rc_checkresultTV2"
+                android:layout_width="150dp"
+                style="@style/Civil_PorTheme"
+                android:textSize="10dip"
+              android:layout_height="fill_parent"
+                android:background="@drawable/boder_white"
+                />
+
+            <TextView
+       
+                android:layout_width="150dp"
+                style="@style/Civil_PorTheme"
+                android:textSize="10dip"
+                android:layout_height="fill_parent"
+                android:id="@+id/ele_rc_checkresultTV3"
+                android:background="@drawable/boder_white"
+                />
+
+            <TextView
+                android:id="@+id/ele_rc_checkresultTV4"
+             
+                android:layout_width="150dp"
+                style="@style/Civil_PorTheme"
+                android:layout_height="fill_parent"
+                android:textSize="10dip"
+                android:background="@drawable/boder_white"
+               />
+			<TextView
+			    android:id="@+id/ele_rc_checkresultTV5"
+            
+                android:layout_width="150dp"
+                style="@style/Civil_PorTheme"
+                android:textSize="10dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/boder_white"
+                 />
+            <TextView
+                android:id="@+id/ele_rc_checkresultTV6"
+         		android:layout_width="180dp"
+         		style="@style/Civil_PorTheme"
+         		android:textSize="10dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/boder_white"
+               	/>
+             <TextView
+                android:id="@+id/ele_rc_checkresultTV7"
+                style="@style/Civil_PorTheme"
+                android:layout_width="180dp"
+                android:layout_height="fill_parent"
+                android:textSize="10dip"
+                android:background="@drawable/boder_white"
+                />
+               <LinearLayout
+        		android:background="@drawable/boder_white"
+        		android:layout_width="130dp"
+   			 	android:layout_height="fill_parent">
+  <Button
+        
+    
+      android:focusable="false"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_width="80dp"
+      android:layout_height="30dp"
+      android:layout_marginLeft="20dp"
+      android:text="删除"
+    	
+      	android:textSize="10dip"
+   		android:gravity="center"
+    	android:layout_gravity="center_vertical"
+        android:id="@+id/Civil_Por_CheckResultBtn"/> 
+        
+      	<TextView 
+      	android:id="@+id/item_id"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visibility="invisible"
+		android:height="0dp"   
+      	    />
+      
+    	</LinearLayout>
+              
+       
+</LinearLayout>
+</LinearLayout>

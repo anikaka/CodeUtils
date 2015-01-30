@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_sub_background_color"
+     >
+
+
+       <RelativeLayout
+            android:layout_width="wrap_content"
+             android:layout_height="@dimen/common_title_height"
+             android:background="@color/common_title_or_background_color"
+             >
+
+            <Button
+                android:id="@+id/Tun_BackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/common_pre_btn_selector"
+                 />
+			<TextView 
+			    android:id="@+id/Tun_InfoText"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_title_font_size"
+                android:textColor="@drawable/white"
+             	/>
+            <Button
+                android:id="@+id/Tun_NextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             	android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/right_target"
+                android:layout_marginRight="20.0dp"
+                android:background="@drawable/common_next_btn_selector" />
+            
+             <TextView 
+                android:id="@+id/right_target"
+                android:layout_width="0.0dp"
+                android:layout_height="0.0dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+       
+       <LinearLayout
+           android:layout_width="match_parent"
+    	   android:layout_height="wrap_content"
+    	   android:layout_marginTop="10.0dip"
+    	   android:layout_marginLeft="20.0dip"
+    	   android:layout_marginRight="20.0dip"
+           android:background="@color/white_color"
+           android:orientation="vertical"
+           >
+             
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10.0dp"
+               android:orientation="vertical"
+               >
+           
+           <RelativeLayout 
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/project_config_listview_height"
+               android:background="@color/common_sub_title_background_color"
+               >
+               <ImageView 
+                   android:id="@+id/image_logo"
+                   android:layout_width="wrap_content"
+               	   android:layout_height="wrap_content"
+               	   android:layout_centerVertical="true"
+               	   android:layout_marginLeft="20.0dp"
+               	   android:background="@drawable/infor"
+                   />
+                <TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_centerVertical="true"
+        			android:layout_marginLeft="20.0dp"
+        			android:text="@string/tunnel_info"
+        			android:layout_toRightOf="@+id/image_logo"
+        			android:textColor="@color/white_color"
+        			android:textSize="@dimen/common_font_size"
+        			 />
+           </RelativeLayout>  
+           
+           
+	  <ListView
+	    android:id="@+id/Tun_Listview"
+	    android:layout_width="match_parent"
+		android:layout_height="@dimen/tunnel_info_listview_height"
+		android:listSelector="@color/transparent"
+		android:background="@color/info_detail_background_color"
+		/>
+           </LinearLayout>
+       </LinearLayout>
+       
+   
+  
+
+</LinearLayout>

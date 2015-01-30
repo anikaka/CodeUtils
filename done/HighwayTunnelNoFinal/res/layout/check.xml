@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_color" >
+
+    <!--
+    <Button
+        android:id="@+id/Check_LoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        style="@style/SysBtnTheme"
+       	android:text="@string/back"
+        />
+	<TextView 
+	    android:id="@+id/Check_Text1"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="登陆界面"
+        android:textSize="30dp"
+        android:textColor="#666666"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/Check_NextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        style="@style/SysBtnTheme"
+        android:text="下一步"
+        />
+    -->
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+	
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" 
+                android:focusable="true"
+ 
+			android:focusableInTouchMode="true">
+			
+            
+          
+            
+            <TextView
+             	android:layout_marginTop="150dp"
+             	android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物理地址为：" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                  android:id="@+id/Check_PsyAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+	
+        
+        
+        <EditText
+            android:id="@+id/Check_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+	        android:maxLength="30"
+	     	
+            android:hint="请输入您的注册码" />
+         <EditText
+            android:id="@+id/Check_Edit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+	        android:maxLength="30"
+            android:hint="请输入网路地址" />
+          <Spinner 
+              android:id="@+id/Spinner"
+              android:layout_marginTop="10dp"
+              android:layout_gravity="center"
+              android:layout_width="280dp"
+              android:gravity="center"
+              android:layout_height="wrap_content"/>
+        <ImageButton
+           	
+            android:id="@+id/Check_SureBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ 			android:background="@drawable/login_btn"	         
+            android:layout_marginTop="40dp"
+        	 
+            />
+        			
+    </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <LinearLayout
+            android:id="@+id/logo_target"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:text="@string/welcome_use"
+                android:textColor="@color/white_color"
+                android:textSize="24.0dp" />
+          "
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dp"
+            android:layout_toRightOf="@+id/logo_target"
+            android:background="@drawable/logo_input_bg" >
+
+            <EditText
+                android:id="@+id/Check_Edit2"
+                android:layout_width="322.0dip"
+                android:layout_height="50.0dp"
+                android:layout_marginLeft="40.0dp"
+                android:layout_marginRight="10.0dp"
+                android:layout_marginTop="75.0dp"
+                android:background="@color/common_sub_title_background_color"
+                android:paddingLeft="10.0dp"
+                android:paddingRight="10.0dp"
+                android:text="@string/net_setting_wz"
+                android:textColor="@color/black_color"
+                android:textSize="17sp" 
+                android:inputType="none"
+                android:editable="false"/>
+
+            <LinearLayout
+                android:id="@+id/check_layout"
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Check_Edit2"
+                android:layout_marginLeft="40.0dp"
+                android:background="@drawable/wljck"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <EditText
+                    android:id="@+id/check_wlEdt"
+                    android:layout_width="280dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/wlsrk"
+                    android:singleLine="true"
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/check_WlBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/nettj"
+                    android:paddingLeft="20dp"
+                    android:text="提交"
+                    android:textColor="@drawable/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/CheckNet"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@id/Check_Edit2"
+                android:layout_below="@+id/Check_Edit2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/nettj"
+                android:paddingLeft="30dp"
+                android:text="@string/NetCheck"
+                android:textColor="@color/white_color"
+                android:textSize="17dip"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/Spinner"
+                android:layout_width="322.0dip"
+                android:layout_height="50.0dp"
+                android:layout_below="@+id/Check_Edit2"
+                android:layout_marginLeft="40.0dp"
+                android:layout_marginTop="20.0dp"
+                android:background="@color/common_sub_title_background_color"
+                android:paddingLeft="10.0dp"
+                android:spinnerMode="dropdown"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/Check_SureBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Spinner"
+                android:layout_marginLeft="230.0dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/login_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <drawable name="red">#f00</drawable>  
+    <drawable name="green">#0f0</drawable>  
+    <drawable name="blue">#99CCFF</drawable>  
+    <drawable name="gray">#ccc</drawable>
+    <drawable name="bjcolor">#BEBEBE</drawable>  
+    <drawable name="hs">#99939f</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+     <drawable name="eee">#eee</drawable>
+	 <drawable name="maybehs">#E0E0E0</drawable>
+		<drawable name="black">#000000</drawable>
+	<drawable name="backgroundcolor">#C2E0F2</drawable>
+	<drawable name="textcolor">#FF000000</drawable>
+	<drawable name="trancolor">#00000000</drawable>
+	<drawable name="btnblue">#97fcfb</drawable>
+	
+	<color name="common_title_or_background_color">#0385b1</color>
+	<color name="common_sub_title_background_color">#68c4f8</color>
+	<color name="common_sub_background_color">#bef3fa</color>
+	
+	<color name="p03_list_background_color">#34495e</color>
+	<color name="p03_list_click_background_color">#2c3e50</color>
+	
+	<color name="tjbt">#034867</color>
+	
+	<color name="listviewBackgroud">#EEEEEE</color>
+	<color name="CheckResultBackgroud">#eeeeee</color>
+	<color name="white_color">#FFFFFF</color>
+	<color name="black_color">#000000</color>
+	<color name="transparent">#00000000</color>
+	<color name="listbgcolorhs">#8E8E8E</color>
+	
+	<color name="info_detail_background_color">#eeeeee</color>
+	
+	<color name="login_background_color">#0e97c5</color>
+	
+	<color name="btnPressed">#68c4f8</color>
+	  
+	<color name="common_drak_grey">#dcdcdc</color>
+
+</resources>  

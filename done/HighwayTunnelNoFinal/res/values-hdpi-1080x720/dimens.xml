@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_title_height">50dp</dimen>
+    <dimen name="common_title_font_size">20dp</dimen>
+    <dimen name="common_font_size">21.6sp</dimen>
+   <dimen  name="common_listview_item_font_size">18sp</dimen>
+    
+   <dimen  name="common_general_font_size">13.8dp</dimen>
+   <dimen name="common_small_font_size">12.6dp</dimen>
+   <!-- project_config.xml -->
+   <dimen  name="project_config_listview_width">240dp</dimen>
+   <dimen  name="project_config_listview_height">48dp</dimen>
+  
+      <!-- tunnel_info.xml  3:5-->
+   <dimen name="tunnel_info_listview_height">360dp</dimen>
+  
+    <!-- task_info.xml -->
+   <dimen name="task_info_listview_item_height">36dp</dimen>
+  <dimen  name="task_info_listview_item_medium_font_size">18sp</dimen>
+  <dimen name="task_info_listview_item_high_font_size">13.5sp</dimen>
+  
+  
+    <!-- civil_portal.xml -->
+  <dimen name="civil_portal_info_height">225dp</dimen>
+  <dimen name="civil_portal_listview_width">201dp</dimen>
+  
+  <dimen  name="civil_portal_row_textview_height">24dp</dimen>
+  <dimen  name="civil_portal_row_btn_width">12dp</dimen>
+  <dimen  name="civil_portal_row_btn_height">12dp</dimen>
+  <dimen name="civil_portal_radioButton_height">30dp</dimen>
+   <dimen name="civil_portal_radioButton_margintop">12dp</dimen>
+  <dimen  name="civil_portal_edittext_width">72dp</dimen>
+  <dimen  name="civil_BZ_Edit_edittext_width">210dp</dimen>
+  <dimen  name="civil_BZ_Edit_edittext_height">48dp</dimen>
+  
+      <!-- ele_jc_check.xml -->
+    
+  <dimen name="ele_jc_check_edit_height">297dp</dimen>
+  <dimen name="ele_jc_check_editText_width">240dp</dimen>
+  <dimen name="ele_jc_check_editText_height">24dp</dimen>
+  <dimen name="ele_jc_check_editText_h_width">216dp</dimen>
+  <dimen name="ele_jc_check_editText_h_height">72dp</dimen>
+
+  <dimen  name="ele_jc_check_imgButton_width">30dp</dimen>
+  <dimen  name="ele_jc_check_imgButton_height">24dp</dimen>
+  
+      <!-- check_from.xml -->
+  <dimen name="check_from_btn_width">270dp</dimen>
+  <dimen name="check_from_btn_height">45dp</dimen>
+  
+    <dimen name="check_from_ele_jc_no_width">24dp</dimen>
+  <dimen name="check_from_ele_jc_btn_width">128dp</dimen>
+  <dimen name="check_from_ele_jc_btn_height">30dp</dimen>
+    <!-- lining.xml -->
+  <dimen name="llining_height" >400dp</dimen>
+    <dimen name="tabWidget_height">45dp</dimen>
+</resources>

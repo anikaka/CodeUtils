@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroundcolor"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/tablebhinfotitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_tablebhinfotitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder_white"
+            android:gravity="left"
+            android:text="照片管理"
+            android:textColor="@drawable/textcolor"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical" android:layout_weight="1" >
+        <com.tygeo.highwaytunnel.widget.myImageView
+            android:id="@+id/photoimage"
+            android:layout_width="731dip"
+            android:layout_height="match_parent"
+            
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip" 
+             android:src="@drawable/nophoto"
+             />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/photomangerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="250dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:text="@string/back" />
+
+
+
+ 			<Button
+ 			    android:id="@+id/takepicBtn"
+ 			    android:layout_width="250dip"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_margin="10dip"
+ 			    android:text="@string/photograph" />
+
+
+
+ 			<Button
+ 			    android:id="@+id/delBtn"
+ 			    android:layout_width="250dip"
+ 			    android:layout_height="wrap_content"
+ 			    android:layout_margin="10dip"
+ 			    android:text="@string/delete" />
+
+           
+        </LinearLayout>
+
+        <Gallery
+            android:id="@+id/mygallery"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:gravity="center_vertical"
+            android:spacing="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

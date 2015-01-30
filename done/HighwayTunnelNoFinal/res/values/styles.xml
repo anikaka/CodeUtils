@@ -1,0 +1,80 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light"/>
+   <style name="SysBtnTheme" >
+   		<item name="android:width">80dp</item>
+   		<item name="android:height">50dp</item>
+   		<item name="android:textSize">15sp</item>
+   		<item name="android:textColor">#FFFFFF</item>
+   		<item name="android:background">#666666</item>
+   </style>
+   
+   
+   <style name="CheckListTheme" >
+   		<item name="android:width">350dp</item>
+   		<item name="android:height">100dp</item>
+   		<item name="android:textSize">40dp</item>
+   		<item name="android:gravity">center</item>
+   		<item name="android:textColor">#000000</item>
+   		
+   </style> 
+   
+   <style name="TitleTextTheme">
+       	<item name="android:width">220dp</item>
+   		<item name="android:height">40dp</item>
+   		<item name="android:textSize">30sp</item>
+   		<item name="android:gravity">center</item>
+   		<item name="android:textColor">#000000</item>
+   	
+   </style>
+   <style name="TitleInfoTheme">
+       	<item name="android:width">400dp</item>
+   		<item name="android:height">50dp</item>
+   		<item name="android:textSize">20sp</item>
+   		<item name="android:gravity">center_vertical|left</item>
+   		<item name="android:textColor">#000000</item>
+   	
+   </style>
+    <style name="TaskBigTheme">
+       
+   		<item name="android:height">40dp</item>
+   		<item name="android:textSize">30sp</item>
+   		
+   		<item name="android:gravity">center</item>
+   		<item name="android:textColor">#000000</item>
+   	
+   </style>
+    <style name="TaskLittleTheme">
+       	<item name="android:width">200dp</item>
+   		<item name="android:height">20dp</item>
+   		<item name="android:textSize">15sp</item>
+   		<item name="android:gravity">center</item>
+   		<item name="android:textColor">#000000</item>
+   	
+   </style>
+ <style name="TaskShowTheme">
+       	<item name="android:width">300dp</item>
+   		<item name="android:height">40dp</item>
+   		<item name="android:textSize">30sp</item>
+   		<item name="android:gravity">center</item>
+   		<item name="android:textColor">#000000</item>
+   	
+   </style>
+ <style name="Civil_PorTheme">
+   		<item name="android:textSize">20sp</item>
+   		<item name="android:gravity">center</item>
+   		<item name="android:textColor">#000000</item>
+   	
+   </style>
+    <style name="civillist_vv">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">#eee</item> 
+    </style>
+     
+    <style  name="common_text">
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:textSize">@dimen/common_general_font_size</item>
+    </style>
+    
+</resources>

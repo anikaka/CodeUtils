@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 路面主页面 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <TextView
+            style="@style/Civil_PorTheme"
+            android:layout_width="@dimen/civil_portal_listview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Check_content"
+            android:textColor="@color/tjbt"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <TextView
+            style="@style/Civil_PorTheme"
+            android:layout_width="@dimen/civil_portal_listview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="里程桩号"
+            android:textColor="@color/tjbt"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <TextView
+            style="@style/Civil_PorTheme"
+            android:layout_width="@dimen/civil_portal_listview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/P_level"
+            android:textColor="@color/tjbt"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <RadioGroup
+            android:id="@+id/Civil_RadioGp_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/civil_portal_row_textview_height"
+            android:orientation="horizontal" >
+<!--             android:layout_height="40dp" -->
+
+            <RadioButton
+                android:id="@+id/Civil_Config_HAVA_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:text="有"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <RadioButton
+                android:id="@+id/Civil_Config_HAVA_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:checked="true"
+                android:text="无"
+                android:textSize="@dimen/common_general_font_size" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/civil_portal_info_height"
+        android:orientation="horizontal" >
+     
+        <LinearLayout
+            android:layout_width="@dimen/civil_portal_listview_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/Civil_RoadBed_listview1"
+                android:layout_width="@dimen/civil_portal_listview_width"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/listviewBackgroud"
+                android:cacheColorHint="@null"
+                android:choiceMode="singleChoice" >
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/civil_portal_listview_width"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@color/listviewBackgroud"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/roadbedMETER"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/Civil_RoadBed_Edit1"
+                        android:layout_width="@dimen/civil_portal_edittext_width"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_black"
+                        android:textSize="@dimen/common_general_font_size"
+                        android:width="120dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="@dimen/common_general_font_size" />
+
+                    <EditText
+                        android:id="@+id/Civil_RoadBed_Edit2"
+                        android:layout_width="@dimen/civil_portal_edittext_width"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_black"
+                        android:textSize="@dimen/common_general_font_size"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="@color/listviewBackgroud"
+            android:orientation="vertical" >
+
+            <!--
+                 <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+            -->
+            <!--
+                    <LinearLayout 
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="270dp"
+   			    android:orientation="vertical">
+					
+                    <Button
+                        android:id="@+id/Civil_Config_Level_List_Btn1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:textSize="25dp" 
+                        android:text="S"/>
+                    
+                    <Button
+                        android:id="@+id/Civil_Config_Level_List_Btn2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textSize="25dp" 
+                        android:text="B"/>
+                     <Button
+                        android:id="@+id/Civil_Config_Level_List_Btn3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:textSize="25dp" 
+                        android:text="A"/>
+                     </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/listviewBackgroud"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/Civil_RadioGp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/Civil_Config_Level_List_Rbtn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/civil_portal_radioButton_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/civil_portal_radioButton_margintop"
+                        android:singleLine="true"
+                        android:textSize="@dimen/common_small_font_size" />
+
+                    <RadioButton
+                        android:id="@+id/Civil_Config_Level_List_Rbtn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/civil_portal_radioButton_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/civil_portal_radioButton_margintop"
+                        android:singleLine="true"
+                        android:textSize="@dimen/common_small_font_size" />
+
+                    <RadioButton
+                        android:id="@+id/Civil_Config_Level_List_Rbtn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/civil_portal_radioButton_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/civil_portal_radioButton_margintop"
+                        android:singleLine="true"
+                        android:textSize="@dimen/common_small_font_size" />
+                </RadioGroup>
+                <!-- </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/civil_BZ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="病害描述:"
+                    android:textSize="@dimen/common_small_font_size" />
+
+                <EditText
+                    android:id="@+id/civil_BZ_Edit"
+                    android:layout_width="@dimen/civil_BZ_Edit_edittext_width"
+                    android:layout_height="@dimen/civil_BZ_Edit_edittext_height"
+                    android:background="@drawable/boder_white"
+                    android:gravity="top"
+                    android:textSize="@dimen/common_small_font_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Civil_RoadBed_CommitBtn"
+                    android:layout_width="@dimen/common_img_width"
+                    android:layout_height="@dimen/common_img_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="2dp"
+                    android:textSize="@dimen/common_general_font_size" 
+                    android:background="@drawable/tj_bt_h"/>
+                <!-- android:background="@drawable/tj_bt_h" -->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/Civil_PorTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="检查结果"
+            android:textColor="@color/tjbt"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <Button
+            android:id="@+id/Civil_Roadbed_FormBtn"
+            android:layout_width="@dimen/common_img_width"
+            android:layout_height="@dimen/common_img_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/common_general_font_size" 
+             android:background="@drawable/checkform1"/>
+ <!-- android:background="@drawable/checkform1" -->
+ <!--  android:text="检 查 记 录 单" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/CheckResultBackgroud"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="里程桩号"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="检查内容"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="状态描述"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="判断结论"
+                android:textSize="@dimen/common_general_font_size"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="照片编号"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="病害描述"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操作"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/Civil_Roadbed_CheckResult_Listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:divider="@null" />
+    </LinearLayout>
+
+</LinearLayout>

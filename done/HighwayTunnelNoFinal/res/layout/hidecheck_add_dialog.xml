@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color"
+        android:orientation="vertical" >
+   <TextView
+            android:id="@+id/checkContentDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:background="@color/common_title_or_background_color"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/common_general_font_size" 
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/checkProjectName"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <Spinner
+                android:id="@+id/spinnerCheckProject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_small_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/tunnelName"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <Spinner
+                android:id="@+id/spinnerTunnelName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/section"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/managerUnit"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtManagerUnit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" 
+                android:hint="管理单位必须填写"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mileage"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtMileageHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="格式为0+0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="+"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <EditText
+                    android:id="@+id/start_Mileage_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mileageend"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/end_mileage_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="格式为0+0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="+"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <EditText
+                    android:id="@+id/end_mileage_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/checkPerson"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtCheckPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" 
+                android:hint="检查人员必须填写"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/checkDate"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtCheckDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:editable="false"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/common_drak_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_btnHeight"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_seletor"
+            android:text="完 成" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_drak_grey" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_btnHeight"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_seletor"
+            android:text="取 消" />
+    </LinearLayout>
+     <!--    <TextView
+            android:id="@+id/checkContentDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:background="@color/common_title_or_background_color"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/checkProjectName"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtCheckProject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/tunnelName"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtTunnelName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/managerUnit"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtManagerUnit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mileage"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtMileage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="格式为0+0+0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="+"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <EditText
+                    android:id="@+id/start_Mileage_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="格式为0+0+0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/mileageend"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/end_mileage_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="格式为0+0+0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="+"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+
+                <EditText
+                    android:id="@+id/end_mileage_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:hint="格式为0+0+0"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/common_general_font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/checkPerson"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtCheckPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_txtHeight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/checkDate"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+
+            <EditText
+                android:id="@+id/txtCheckDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:editable="false"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/common_general_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/common_drak_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_btnHeight"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_seletor"
+            android:text="完 成" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_drak_grey" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_btnHeight"
+            android:layout_weight="1"
+            android:background="@drawable/common_button_seletor"
+            android:text="取 消" />
+    </LinearLayout> -->
+
+</LinearLayout>

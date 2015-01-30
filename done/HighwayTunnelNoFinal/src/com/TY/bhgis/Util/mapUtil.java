@@ -1,0 +1,939 @@
+package com.TY.bhgis.Util;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Environment;
+import android.text.InputType;
+import android.text.method.DigitsKeyListener;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.TY.bhgis.Carto.IMap;
+import com.TY.bhgis.Carto.Map;
+import com.TY.bhgis.Database.BH;
+import com.TY.bhgis.Database.DataProvider;
+import com.TY.bhgis.Database.IBH;
+import com.TY.bhgis.Geometry.IEnvelope;
+import com.TY.bhgis.Geometry.IGeometry;
+import com.TY.bhgis.Geometry.ILine;
+import com.TY.bhgis.Geometry.ILineString;
+import com.TY.bhgis.Geometry.ILinearRing;
+import com.TY.bhgis.Geometry.IPoint;
+import com.TY.bhgis.Geometry.IPolygon;
+import com.TY.bhgis.Geometry.Line;
+import com.TY.bhgis.Geometry.LineString;
+import com.TY.bhgis.Geometry.LinearRing;
+import com.TY.bhgis.Geometry.Point;
+import com.TY.bhgis.Geometry.Polygon;
+import com.TY.bhgis.MapFeature.HighWayLining;
+import com.TY.bhgis.MapFeature.LiningPosition;
+import com.tygeo.highwaytunnel.R;
+import com.tygeo.highwaytunnel.DBhelper.DB_Provider;
+
+public class mapUtil {
+	// 最小里程桩号
+	public static int minLczh = 0;
+	// 最大里程桩号
+	public static int maxLczh = 0;
+	// 当前环号
+	public static int mLczh = 1;
+
+	public static float getLength(LineString lineString) {
+		if (lineString != null) {
+			float length = 0;
+			for (int i = 0; i < lineString.getNumPoints() - 1; i++) {
+				IPoint point1 = lineString.getPoint(i);
+				IPoint point2 = lineString.getPoint(i + 1);
+				length += Math.sqrt((point1.getX() - point2.getX())
+						* (point1.getX() - point2.getX())
+						+ (point1.getY() - point2.getY())
+						* (point1.getY() - point2.getY()));
+			}
+			return length;
+		} else {
+			return 0.0f;
+		}
+	}
+
+	// 里程桩号转换zk1+111
+	public static String getLczhStr(int lczh) {
+		String lczh_prefix = DataProvider.z_y;
+		int num_ = lczh / 1000;
+		int _num = lczh % 1000;
+		return lczh_prefix + "K" + num_ + "+" + _num;
+	}
+
+	// 里程桩号转换
+	public static int getLczh(int biglczh, int smalllczh) {
+		return biglczh * 1000 + smalllczh;
+	}
+
+	// X坐标转换
+	public static float changeX(float x) {
+		return (x - Map.dxy);
+	}
+
+	// Y坐标转换
+	public static float changeY(float y, int lczh) {
+		if (Map.flag) {
+			return (y - Map.dxy) % (lczh - mapUtil.minLczh);
+		} else {
+			return (y - Map.dxy) % (mapUtil.maxLczh - lczh);
+		}
+	}
+
+	// 返回里程
+	public static int getLCZHfromY(float y) {
+		if (Map.flag) {
+			return (int) Math.floor((y - Map.dxy)) + mapUtil.minLczh;
+		} else {
+			return mapUtil.maxLczh - (int) Math.floor((y - Map.dxy));
+		}
+		
+	}
+	
+	
+	
+	// 按表单描述添加病害
+	//0 日常 1 定期
+	/**
+	 * 
+	 * @param bhtype  对应 表CIVIL_CHECK_INFO中的CHECKID
+	 * @param positionid 对应表BHPOSITION_DIC中的positionId
+	 * @param lczh  里程
+ 	 * @param level  病害等级  S 轻微   A  一般  B 严重 
+	 * @param levelContent  病害等级内容   
+	 * @param bz  				病害描述内容
+	 * @param highWayLining
+	 * @param cqType			衬砌类型
+	 * @param checkType     检查类型
+	 * @param checkId			 对应 表CIVIL_CHECK_INFO中的CHECKID
+	 */
+	public static void addCQBH(int bhtype, int positionid, int lczh,String level, String levelContent, String bz,HighWayLining highWayLining, int cqType,int checkType,int checkId) {
+		int checkItemId=1;
+		if (checkType==1) {
+			checkItemId=9;
+		}
+		String[] fields = DataProvider.getFields(cqType);
+		String bhid = DataProvider.GetMaxBHID();
+		String[] values = getValues(false, fields, cqType);
+		IBH bh = new BH(null, DataProvider.PROJECTID + "-" + bhid, fields,values, cqType);
+		bh.setValue(findField(fields, "mileage"), String.valueOf(lczh));
+		bh.setValue(findField(fields, "BHTYPE"), String.valueOf(bhtype));
+		String positiontype = DataProvider.getPositionName(checkItemId, positionid);
+		bh.setValue(findField(fields, "check_position"), positiontype);
+		bh.setValue(findField(fields, "judge_level"), level);
+		bh.setValue(findField(fields, "level_content"), levelContent);
+		bh.setValue(findField(fields, "belong_pro"), "衬砌");
+		bh.setValue(findField(fields, "check_data"),DataProvider.getBHName(cqType));
+		bh.setValue(findField(fields, "ISCQ"), "1");
+//		bh.setValue(findField(fields, "involve"), "1");
+		bh.setValue(findField(fields, "BZ"), bz);
+		bh.setValue(findField(fields, "CHECKID"),String.valueOf(DataProvider.getCheckIDFromBHType(cqType,checkType)));
+	//	bh.setValue(findField(fields, "CHECKID"),String.valueOf(checkId));
+		bh.setValue(findField(fields, "POSITIONID"), String.valueOf(positionid));
+		bh.setShape(getShape(highWayLining, positionid,DataProvider.getGeoType(cqType)));
+		bh.store();
+		DataProvider.insertCQISNOT(bhid,"0");
+	}
+
+	// 按删除病害
+	public static void deleteCQBH(String bhid) {
+		DataProvider.BHDelete(bhid);
+	}
+
+	// 保存当前里程
+	public static void InsertCurrentZh(int current_zh) {
+		DB_Provider.InsertCurrentZh(current_zh, DataProvider.PROJECTID,DataProvider.DIRECTION);
+	}
+
+	// 给指定里程和位置生成默认的
+	private static IGeometry getShape(HighWayLining highWayLining,
+			int positiontype, int geotype) {
+
+		IEnvelope envelope = null;
+		if (highWayLining == null)
+			return null;
+		LiningPosition[] liningPositions = highWayLining.getLiningPositionFeatures();
+		if (positiontype == Integer.valueOf(Type.leftbqid)||positiontype==13) {
+			envelope = findLiningPosition(liningPositions, 18).getGeometry().getEnvelope();
+			envelope.union(findLiningPosition(liningPositions, 17).getGeometry().getEnvelope());
+		} else if (positiontype == Integer.valueOf(Type.leftgyid)||positiontype==11) {
+			envelope = findLiningPosition(liningPositions, 16).getGeometry().getEnvelope();
+			envelope.union(findLiningPosition(liningPositions, 15).getGeometry().getEnvelope());
+			envelope.union(findLiningPosition(liningPositions, 14).getGeometry().getEnvelope());
+			envelope.union(findLiningPosition(liningPositions, 13).getGeometry().getEnvelope());
+		} else if (positiontype == Integer.valueOf(Type.gdid)||positiontype==10) {
+			envelope = findLiningPosition(liningPositions, 12).getGeometry().getEnvelope();
+			envelope.union(findLiningPosition(liningPositions, 11).getGeometry().getEnvelope());
+			envelope.union(findLiningPosition(liningPositions, 21).getGeometry().getEnvelope());
+			envelope.union(findLiningPosition(liningPositions, 22).getGeometry().getEnvelope());
+		} else if (positiontype == Integer.valueOf(Type.rightgyid)||positiontype==12) {
+			envelope = findLiningPosition(liningPositions, 23).getGeometry().getEnvelope();
+			envelope.union(findLiningPosition(liningPositions, 24).getGeometry().getEnvelope());
+			envelope.union(findLiningPosition(liningPositions, 25).getGeometry().getEnvelope());
+			envelope.union(findLiningPosition(liningPositions, 26).getGeometry().getEnvelope());
+		} else if (positiontype == Integer.valueOf(Type.rightbqid)||positiontype==14) {
+			envelope = findLiningPosition(liningPositions, 27).getGeometry().getEnvelope();
+			envelope.union(findLiningPosition(liningPositions, 28).getGeometry().getEnvelope());
+		} else {
+			return null;
+		}
+		IGeometry geometry = null;
+		switch (geotype) {
+		case 1:
+			return (IGeometry) envelope.getCenterPoint();
+
+		case 2:
+			IPoint[] mPoints = new Point[13];
+			float width = envelope.getWidth();
+			float height = envelope.getHeight();
+			IPoint pt1 = new Point(envelope.getXMin(), envelope.getYMin()+ height / 2);
+			IPoint pt2 = new Point(envelope.getXMin() + width / 4,envelope.getYMin() + height);
+			IPoint pt3 = new Point(envelope.getXMin() + width / 2,envelope.getYMin() + height / 2);
+			for (int i = 0; i < 7; i++) {
+				mPoints[i] = new Point(envelope.getXMin() + width * i / 12,
+						MathUtil.getYFromCircle(pt1, pt2, pt3,
+								envelope.getXMin() + width * i / 12, true));
+			}
+			pt1 = new Point(envelope.getXMin() + width / 2, envelope.getYMin()
+					+ height / 2);
+			pt2 = new Point(envelope.getXMin() + width * 3 / 4,
+					envelope.getYMin());
+			pt3 = new Point(envelope.getXMin() + width, envelope.getYMin()
+					+ height / 2);
+			for (int i = 7; i < 13; i++) {
+
+				mPoints[i] = new Point(envelope.getXMin() + width * i / 12,
+						MathUtil.getYFromCircle(pt1, pt2, pt3,
+								envelope.getXMin() + width * i / 12, false));
+			}
+
+			LineString lineString = new LineString(mPoints);
+			return lineString;
+
+		case 3:
+			mPoints = new Point[5];
+			mPoints[0] = envelope.getLowerLeft();
+			mPoints[1] = envelope.getLowerRight();
+			mPoints[2] = envelope.getUpperRight();
+			mPoints[3] = envelope.getUpperLeft();
+			mPoints[4] = envelope.getLowerLeft();
+			ILinearRing linearRing = new LinearRing(mPoints, 0);
+			return new Polygon(linearRing);
+
+		default:
+			return geometry;
+
+		}
+
+	}
+
+	public static String getPositionID(int position,int checkType) {
+		if (position == 18 || position == 17) {
+			
+			if (checkType==1) {
+			return Type.dleftbqid;
+			}
+			return Type.leftbqid;
+		} else if (position == 16 || position == 15 || position == 14
+				|| position == 13) {
+			if (checkType==1) {
+				return Type.dleftgyid;
+				}
+			return Type.leftgyid;
+		} else if (position == 12 || position == 11 || position == 21
+				|| position == 22) {
+			if (checkType==1) {
+				return Type.dgdid;
+				}
+			return Type.gdid;
+		} else if (position == 23 || position == 24 || position == 25
+				|| position == 26) {
+			if (checkType==1) {
+				return Type.drightgyid;
+				}
+			return Type.rightgyid;
+		} else if (position == 27 || position == 28) {
+			if (checkType==1) {
+				return Type.drightbqid;
+				}
+			return Type.rightbqid;
+		} else {
+			return "-1";
+		}
+	}
+	
+	
+	/**
+	 *定期检查的病害描述输入
+	 **/
+	public static void DialogBHInfoInput(final Context mContext,
+			final int checkid) {
+		LayoutInflater factory = LayoutInflater.from(mContext);
+		final View view = factory.inflate(R.layout.dialogdqinfoedit, null);
+		final LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.dqinfoconfigInput);
+		List<java.util.Map<String, Object>> dqinfofields = DataProvider.getDQInfos(checkid);
+		LinearLayout.LayoutParams lParams = new LinearLayout.LayoutParams(300,ViewGroup.LayoutParams.WRAP_CONTENT);
+		
+		LinearLayout linearLayoutinfo = null;
+		EditText et_value = null;
+		TextView tv_name = null;
+		for (int i = 0; i < dqinfofields.size(); i++) {
+			java.util.Map<String, Object> map = dqinfofields.get(i);
+			String infoname = map.get("paramname").toString();
+			int infoid = Integer.valueOf(map.get("paramid").toString());
+			String unit = DataProvider.getBaseCSName("计量单位",DataProvider.getUnitCode(checkid, infoid));
+			tv_name = new TextView(view.getContext());
+			if (unit.equals("")) {
+				tv_name.setText(infoname + ":");
+
+			} else {
+				tv_name.setText(infoname + "(" + unit + "):");
+			}
+			et_value = new EditText(view.getContext());
+			et_value.setInputType(InputType.TYPE_CLASS_TEXT);	
+			if(i!=0){				
+				et_value.setKeyListener(new DigitsKeyListener(false,true));
+			}
+			et_value.setTag(infoid);
+			linearLayoutinfo = new LinearLayout(view.getContext());
+			linearLayoutinfo.setOrientation(LinearLayout.HORIZONTAL);
+			linearLayoutinfo.addView(tv_name);
+			linearLayoutinfo.addView(et_value, lParams);
+			linearLayout.addView(linearLayoutinfo);
+
+		}
+
+		AlertDialog dlg = new AlertDialog.Builder(mContext)
+				.setTitle("输入检查详细描述信息").setView(view)
+				.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int whichButton) {
+						String bz = "";
+						String bzvalue = "";
+						for (int i = 0; i < linearLayout.getChildCount(); i++) {
+							LinearLayout lyout = (LinearLayout) linearLayout.getChildAt(i);
+							EditText ed_infovalue = (EditText) lyout.getChildAt(1);
+							ed_infovalue.setInputType(InputType.TYPE_CLASS_TEXT);
+							int infoid = (Integer) ed_infovalue.getTag();
+							String value = ed_infovalue.getText().toString();
+							String unit = DataProvider.getBaseCSName("计量单位",
+									DataProvider.getUnitCode(checkid, infoid));
+							if (!value.equals("")) {
+								bz += DataProvider.getTJCSName(checkid, infoid)
+										+ ":" + value + unit;
+
+								bzvalue += infoid + ":" + value;
+								if (i < linearLayout.getChildCount() - 1) {
+									bz += ";";
+									bzvalue += ";";
+								}
+							}
+						}
+
+						View mView = getContentView((Activity) mContext);
+						((EditText) mView.findViewById(R.id.civil_BZ_Edit)).setText(bz);
+						((EditText) mView.findViewById(R.id.civil_BZ_Edit)).setTag(bzvalue);
+					}
+
+				}).setNegativeButton("取消", null).create();
+		try {
+			dlg.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	/****
+	 * 
+	 * @param checkid
+	 * @param positionid
+	 *            如果没有空间位置传 -1
+	 * @return
+	 */
+	public static String getTJAddErro(int checkid, int positionid) {
+		String check_content = DataProvider.getCheck_Content(checkid);
+		String position = "";
+		if (positionid != -1) {
+			position = DataProvider.getPositionName2(checkid, positionid);
+		}
+		if (position.equals("")) {
+			return "检查内容" + check_content + " 已经存在，如需添加新的请新建一个检查任务";
+		} else {
+			return "病害位置为" + position + "的检查内容" + check_content
+					+ " 已经存在，如需添加新的请新建一个检查任务";
+		}
+	}
+
+	public static void DialogErro(Context mContext, String erro) {
+		new AlertDialog.Builder(mContext).setTitle("错误信息").setMessage(erro).show();
+	}
+
+	// 获得里程的位置信息
+	public static LinkedHashMap<IPoint[], String> getParts() {
+		LinkedHashMap<IPoint[], String> parts = new LinkedHashMap();
+		float temp = 0f;
+		if (DataProvider.jcdirection.equals(Type.inhole)) {
+			for (int i = 8; i >= 1; i--) {
+				IPoint[] pts = new Point[5];
+				pts[0] = new Point(0 + temp * 1 / 16, 0.0f);
+				pts[1] = new Point(0 + 1 * (temp + 1) / 16, 0.0f);
+				pts[2] = new Point(0 + 1 * (temp + 1) / 16, 1.0f);
+				pts[3] = new Point(0 + temp * 1 / 16, 1.0f);
+				pts[4] = new Point(0 + temp * 1 / 16, 0.0f);
+				parts.put(pts, String.valueOf(i + 10));
+				temp++;
+			}
+			for (int i = 1; i <= 8; i++) {
+				IPoint[] pts = new Point[5];
+				pts[0] = new Point(0 + temp * 1 / 16, 0.0f);
+				pts[1] = new Point(0 + 1 * (temp + 1) / 16, 0.0f);
+				pts[2] = new Point(0 + 1 * (temp + 1) / 16, 1.0f);
+				pts[3] = new Point(0 + temp * 1 / 16, 1.0f);
+				pts[4] = new Point(0 + temp * 1 / 16, 0.0f);
+				parts.put(pts, String.valueOf(i + 20));
+				temp++;
+			}
+		} else {
+			for (int i = 8; i >= 1; i--) {
+				IPoint[] pts = new Point[5];
+				pts[0] = new Point(0 + temp * 1 / 16, 0.0f);
+				pts[1] = new Point(0 + 1 * (temp + 1) / 16, 0.0f);
+				pts[2] = new Point(0 + 1 * (temp + 1) / 16, 1.0f);
+				pts[3] = new Point(0 + temp * 1 / 16, 1.0f);
+				pts[4] = new Point(0 + temp * 1 / 16, 0.0f);
+				parts.put(pts, String.valueOf(i + 20));
+				temp++;
+			}
+			for (int i = 1; i <= 8; i++) {
+				IPoint[] pts = new Point[5];
+				pts[0] = new Point(0 + temp * 1 / 16, 0.0f);
+				pts[1] = new Point(0 + 1 * (temp + 1) / 16, 0.0f);
+				pts[2] = new Point(0 + 1 * (temp + 1) / 16, 1.0f);
+				pts[3] = new Point(0 + temp * 1 / 16, 1.0f);
+				pts[4] = new Point(0 + temp * 1 / 16, 0.0f);
+				parts.put(pts, String.valueOf(i + 10));
+				temp++;
+			}
+		}
+
+		return parts;
+	}
+
+	/**
+	 * 获得点在的那个部位
+	 * 
+	 * @param subwayRing
+	 * @param point
+	 * @return
+	 */
+	public static LiningPosition getLiningPosition(
+			HighWayLining mhighWayLining, IPoint pt, IMap map) {
+
+		// 假如在井接头上
+		float width = mhighWayLining.getGeometry().getEnvelope().getHeight();
+		float y = pt.getY();
+		if (pt.getY() > (map.getFullExtent().getYMax() - width)) {
+			y = y - width;
+		} else if (pt.getY() < map.getFullExtent().getXMin() + width) {
+			y = y + width;
+		}
+		IPoint point = new Point(pt.getX(), y);
+
+		LiningPosition mLiningPosition = null;
+		for (int i = 0; i < mhighWayLining.getLiningPositionFeatures().length; i++) {
+			LiningPosition liningPosition = mhighWayLining
+					.getLiningPositionFeatures()[i];
+			IGeometry geometry = liningPosition.getGeometry();
+			IPolygon polygon = (Polygon) geometry;
+			if (((Polygon) polygon).within((IGeometry) point)) {
+				mLiningPosition = liningPosition;
+				break;
+			}
+		}
+		return mLiningPosition;
+	}
+
+	// 获得点在的那个地铁环
+	public static HighWayLining getHighWayLining(
+			HighWayLining[] highWayLinings, IPoint point, IMap map) {
+		// 假如在井接头上
+		float width = highWayLinings[0].getGeometry().getEnvelope().getHeight();
+		if (point.getY() > (map.getFullExtent().getYMax() - width)) {
+			return highWayLinings[highWayLinings.length - 1];
+		} else if (point.getY() < map.getFullExtent().getYMin() + width) {
+			return highWayLinings[0];
+		}
+
+		for (int i = 0; i < highWayLinings.length; i++) {
+
+			HighWayLining highWayLining = highWayLinings[i];
+			if (highWayLining.isVisible()) {
+				IGeometry geometry = highWayLining.getGeometry();
+				geometry.recalcEnvelope();
+				IEnvelope envelope = geometry.getEnvelope();
+				if (point.getY() > envelope.getYMin()
+						&& point.getY() <= envelope.getYMax()) {
+					return highWayLining;
+				}
+			}
+		}
+		return null;
+	}
+
+	// 获得y最大的那个点
+	public static IPoint getYMaxPoint(IPoint[] points) {
+		int j = 0;
+		float y = points[0].getY();
+		for (int i = 1; i < points.length; i++) {
+
+			if (y < points[i].getY()) {
+				y = points[i].getY();
+				j = i;
+			}
+		}
+		return points[j];
+	}
+
+	// 获得y最小的那个点
+	public static IPoint getYMinPoint(IPoint[] points) {
+		int j = 0;
+		float y = points[0].getY();
+		for (int i = 1; i < points.length; i++) {
+
+			if (y > points[i].getY()) {
+				y = points[i].getY();
+				j = i;
+			}
+		}
+		return points[j];
+	}
+
+	public static void finishApp(final Context context) {
+		AlertDialog.Builder alertbBuilder = new AlertDialog.Builder(context);
+		alertbBuilder.setTitle("真的要离开？").setMessage("你确定要离开？")
+				.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						ExportSql(context);
+						int nPid = android.os.Process.myPid();
+
+						android.os.Process.killProcess(nPid);
+					}
+				})
+				.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						dialog.cancel();
+					}
+				}).create();
+		alertbBuilder.show();
+	}
+
+	/**
+	 * 用直线切割环
+	 * 
+	 * @param ring待切割的环
+	 * @param line切割的线
+	 * @param leftRing切割后的左边的环
+	 * @param rightRing切割后右边的环
+	 */
+	public static ILinearRing[] intersection(ILinearRing ring, ILine line) {
+		int count = ((LinearRing) ring).getNumPoints();
+		IPoint c = ((Line) line).getStartPoint();
+		IPoint d = ((Line) line).getEndPoint();
+		IPoint pt1 = null;
+		IPoint pt2 = null;
+		int i1 = -1;
+		int i2 = -1;
+		for (int i = 0; i < count - 1; i++) {
+			IPoint a = ((LinearRing) ring).getPoint(i);
+			IPoint b = ((LinearRing) ring).getPoint(i + 1);
+			IPoint pt = intersectPoint(a, b, c, d);
+			if (pt != null) {
+				if (pt1 == null) {
+					pt1 = pt;
+					i1 = i;
+				} else {
+					pt2 = pt;
+					i2 = i;
+				}
+
+			}
+		}
+		if (pt1 != null && pt2 != null && pt1.getX() != pt2.getX()
+				&& pt1.getY() != pt2.getY()) {
+			List<Line> lines1 = new ArrayList<Line>();
+			for (int i = 0; i < i1; i++) {
+				lines1.add(new Line(((LinearRing) ring).getPoint(i),
+						((LinearRing) ring).getPoint(i + 1), null));
+			}
+			lines1.add(new Line(((LinearRing) ring).getPoint(i1), pt1, null));
+			lines1.add(new Line(pt1, pt2, null));
+			lines1.add(new Line(pt2, ((LinearRing) ring).getPoint(i2 + 1), null));
+			for (int i = i2 + 1; i < count - 1; i++) {
+				lines1.add(new Line(((LinearRing) ring).getPoint(i),
+						((LinearRing) ring).getPoint(i + 1), null));
+			}
+
+			List<Line> lines2 = new ArrayList<Line>();
+			lines2.add(new Line(pt1, ((LinearRing) ring).getPoint(i1 + 1), null));
+			for (int i = i1 + 1; i < i2; i++) {
+				lines2.add(new Line(((LinearRing) ring).getPoint(i),
+						((LinearRing) ring).getPoint(i + 1), null));
+			}
+			lines2.add(new Line(((LinearRing) ring).getPoint(i2), pt2, null));
+			lines2.add(new Line(pt2, pt1, null));
+
+			Line[] mLines1 = new Line[lines1.size()];
+			Line[] mLines2 = new Line[lines2.size()];
+			lines1.toArray(mLines1);
+			lines2.toArray(mLines2);
+			ILinearRing[] linearRings = new LinearRing[2];
+			linearRings[0] = new LinearRing(mLines1);
+			linearRings[1] = new LinearRing(mLines2);
+			return linearRings;
+		}
+		return null;
+	}
+
+	// 从大到小排序
+	public static void sort(int[] ids) {
+		int len = ids.length;
+		for (int i = 0; i < len - 1; i++) {
+			int temp = 0;
+			for (int j = len - 1; j > i; j--) {
+				if (ids[j] - ids[j - 1] > 0) {
+					temp = ids[j];
+					ids[j] = ids[j - 1];
+					ids[j - 1] = temp;
+
+				}
+			}
+		}
+	}
+
+	/**
+	 * 用折线切割环 折线与环只有两个交点的时候才能生效
+	 * 
+	 * @param ring待切割的环
+	 * @param LineString切割的线
+	 */
+	public static ILinearRing[] intersection2(ILinearRing ring,
+			ILineString LineString) {
+		int count = ((LinearRing) ring).getNumPoints();
+
+		java.util.Map<IPoint, Integer> lineMap = new HashMap<IPoint, Integer>();
+		java.util.Map<IPoint, Integer> ringMap = new HashMap<IPoint, Integer>();
+		List<IPoint> pts = new ArrayList<IPoint>();
+		for (int j = 0; j < LineString.getNumPoints() - 1; j++) {
+			IPoint c = LineString.getPoint(j);
+			IPoint d = LineString.getPoint(j + 1);
+			for (int i = 0; i < count - 1; i++) {
+				IPoint a = ((LinearRing) ring).getPoint(i);
+				IPoint b = ((LinearRing) ring).getPoint(i + 1);
+				IPoint pt = intersectPoint(a, b, c, d);
+				if (pt != null) {
+
+					lineMap.put(pt, j);
+					ringMap.put(pt, i);
+					pts.add(pt);
+				}
+			}
+		}
+		Polygon polygon = new Polygon(ring);
+		if (lineMap.size() == 2) {
+
+			int indexLine1 = lineMap.get(pts.get(0));
+			int indexLine2 = lineMap.get(pts.get(1));
+			int indexRing1 = ringMap.get(pts.get(0));
+			int indexRing2 = ringMap.get(pts.get(1));
+			// 判断折线与面的第一个交点的下一个节点是否在面内
+			if (polygon.within(((IGeometry) (LineString
+					.getPoint(indexLine1 + 1))))
+					|| LineString.getNumPoints() == 2) {
+				int ptcount = 0;
+
+				List<IPoint> points1 = new ArrayList<IPoint>();
+				points1.add(pts.get(0));
+				for (int j = indexLine1 + 1; j < indexLine2; j++) {
+					points1.add(LineString.getPoint(j));
+				}
+				points1.add(pts.get(1));
+				if (indexRing2 >= indexRing1) {
+					for (int j = indexRing2; j > indexRing1; j--) {
+						ptcount++;
+						points1.add(((LinearRing) ring).getPoint(j));
+					}
+				} else {
+					for (int j = indexRing2 + 1; j < indexRing1 + 1; j++) {
+						ptcount++;
+						points1.add(((LinearRing) ring).getPoint(j));
+					}
+				}
+				points1.add(pts.get(0));
+
+				List<IPoint> points2 = new ArrayList<IPoint>();
+				points2.add(pts.get(0));
+				for (int j = indexLine1 + 1; j < indexLine2; j++) {
+					points2.add(LineString.getPoint(j));
+				}
+				points2.add(pts.get(1));
+				if (indexRing2 >= indexRing1) {
+					int index = indexRing2 + 1;
+					for (int j = 0; j < count - ptcount - 1; j++) {
+						if (index > count - 2) {
+							index = 0;
+						}
+						points2.add(((LinearRing) ring).getPoint(index));
+						index++;
+					}
+				} else {
+					int index = indexRing2;
+					for (int j = 0; j < count - ptcount - 1; j++) {
+						if (index < 0) {
+							index = count - 2;
+						}
+						points2.add(((LinearRing) ring).getPoint(index));
+						index--;
+					}
+				}
+				points2.add(pts.get(0));
+				IPoint[] points11 = new Point[points1.size()];
+				IPoint[] points22 = new Point[points2.size()];
+				points1.toArray(points11);
+				points2.toArray(points22);
+				ILinearRing[] linearRings = new LinearRing[2];
+				linearRings[0] = new LinearRing(points11, 0);
+				linearRings[1] = new LinearRing(points22, 0);
+				return linearRings;
+
+			} else {
+				return null;
+			}
+		}
+
+		return null;
+
+	}
+
+	// 判断geometry是否在envelope内
+
+	public static boolean isContain(IEnvelope envelope, IGeometry geometry) {
+		switch (geometry.getGeometryType()) {
+		case 1:
+			IPoint point = (IPoint) geometry;
+			return isContain(envelope, point);
+		case 3:
+			ILineString lineString = (ILineString) geometry;
+			boolean flag = true;
+			for (int i = 0; i < lineString.getNumPoints(); i++) {
+				point = lineString.getPoint(i);
+				if (!isContain(envelope, point)) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		case 5:
+			lineString = (ILineString) ((IPolygon) geometry).getExteriorRing();
+			flag = true;
+			for (int i = 0; i < lineString.getNumPoints(); i++) {
+				point = lineString.getPoint(i);
+				if (!isContain(envelope, point)) {
+					flag = false;
+					break;
+				}
+			}
+			return flag;
+		}
+		return false;
+	}
+
+	private static boolean isContain(IEnvelope envelope, IPoint point) {
+		float XMax = envelope.getXMax();
+		float XMin = envelope.getXMin();
+		float YMax = envelope.getYMax();
+		float YMin = envelope.getYMin();
+		float x = point.getX();
+		float y = point.getY();
+		if (x > XMin && x < XMax && y > YMin && y < YMax) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// 获取sd根目录路径
+	public static String getSDPath() {
+		File sdDir = null;
+		boolean sdCardExist = Environment.getExternalStorageState().equals(
+				android.os.Environment.MEDIA_MOUNTED); // 判断sd卡是否存在
+		if (sdCardExist) {
+			sdDir = Environment.getExternalStorageDirectory();// 获取跟目录
+		}
+		return sdDir.toString();
+
+	}
+
+	// 提示
+	public static void disToast(String text, Context c) {
+		Toast.makeText(c, text, Toast.LENGTH_SHORT).show();
+	}
+
+	public static void disToast(int text, Context c) {
+		Toast.makeText(c, text + "", Toast.LENGTH_SHORT).show();
+	}
+
+	// 状态栏提示
+	public static View view = null;
+
+	public static void disStatus(String text) {
+		if (view != null) {
+			// TextView tv = ((TextView) view.findViewById(R.id.Statusbar));
+			// tv.setText(text);
+		}
+
+	}
+
+	public static String getCurrentDate() {
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		return formatter.format(new java.util.Date());
+	}
+
+	public static String getCurrentDate2() {
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd;hh:mm:ss");
+		return formatter.format(new java.util.Date());
+	}
+
+	public static String getDate(long time) {
+		Date date = new Date(time);
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		return formatter.format(date);
+	}
+
+	private static void ExportSql(Context context) {
+		// try {
+		// String filepath = mapUtil.getSDPath() + "/"
+		// + context.getString(R.string.dbFilename);
+		// File file = new File(filepath);
+		// if (file.exists()) {
+		// file.delete();
+		// }
+		// file.createNewFile();
+		// FileWriter fileWriter = new FileWriter(file);
+		// PrintWriter printWriter = new PrintWriter(fileWriter);
+		// String sql = DataProvider.getSQLstring();
+		// // for (int i = 0; i < sql.split(";").length; i++) {
+		// // String sqlString = sql.split(";")[i];
+		// // printWriter.println(sqlString + ";");
+		// // }
+		// printWriter.print(sql);
+		// printWriter.close();
+		// fileWriter.close();
+		//
+		// } catch (Exception e) {
+		// e.printStackTrace();
+		// }
+
+	}
+
+	// 获得两条线段的交点
+	private static IPoint intersectPoint(IPoint a, IPoint b, IPoint c, IPoint d) {
+		float deita = (b.getX() - a.getX()) * (c.getY() - d.getY())
+				- (d.getX() - c.getX()) * (a.getY() - b.getY());
+		if (deita == 0.0) {
+			return null;
+		}
+		float x = (c.getY() * d.getX() - c.getX() * d.getY())
+				* (b.getX() - a.getX())
+				- (a.getY() * b.getX() - a.getX() * b.getY())
+				* (d.getX() - c.getX());
+		x /= deita;
+		float y = (a.getY() * b.getX() - a.getX() * b.getY())
+				* (c.getY() - d.getY())
+				- (c.getY() * d.getX() - c.getX() * d.getY())
+				* (a.getY() - b.getY());
+		y /= deita;
+
+		float OXMax = (a.getX() > b.getX() ? a.getX() : b.getX());
+		float OYMax = (a.getY() > b.getY() ? a.getY() : b.getY());
+		float OXMin = (a.getX() < b.getX() ? a.getX() : b.getX());
+		float OYMin = (a.getY() < b.getY() ? a.getY() : b.getY());
+		float NXMax = (c.getX() > d.getX() ? c.getX() : d.getX());
+		float NYMax = (c.getY() > d.getY() ? c.getY() : d.getY());
+		float NXMin = (c.getX() < d.getX() ? c.getX() : d.getX());
+		float NYMin = (c.getY() < d.getY() ? c.getY() : d.getY());
+		// if (x >= OXMin && x <= OXMax && y >= OYMin && y <= OYMax && x >=
+		// NXMin
+		// && x <= NXMax && y >= NYMin && y <= NYMax) {
+		// return new Point(x, y);
+		if (x - OXMin >= -MathUtil.tolerance
+				&& OXMax - x >= -MathUtil.tolerance
+				&& y - OYMin >= -MathUtil.tolerance
+				&& OYMax - y >= -MathUtil.tolerance
+				&& x - NXMin >= -MathUtil.tolerance
+				&& NXMax - x >= -MathUtil.tolerance
+				&& y - NYMin >= -MathUtil.tolerance
+				&& NYMax - y >= -MathUtil.tolerance) {
+			return new Point(x, y);
+		} else {
+			return null;
+		}
+	}
+
+	private static String[] getValues(boolean isPhoto, String[] fields,	int bhtype) {
+		String[] values = new String[fields.length];
+		values[findField(fields, "task_id")] = DataProvider.PROJECTID;
+		values[findField(fields, "UP_DOWN")] = String.valueOf(DataProvider.DIRECTION);
+		values[findField(fields, "BHTYPE")] = Integer.toString(bhtype);
+		if (isPhoto) {
+			values[findField(fields, "pic_id")] = DataProvider.GetMaxBHImageID();
+		} else {
+			values[findField(fields, "pic_id")] = "";
+		}
+		return values;
+	}
+
+	private static int findField(String[] fields, String fieldName) {
+		for (int i = 0; i < fields.length; i++) {
+			if (fields[i].equals(fieldName)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	private static LiningPosition findLiningPosition(LiningPosition[] liningPositions, int postion) {
+		for (int i = 0; i < liningPositions.length; i++) {
+			LiningPosition liningPosition = liningPositions[i];
+			if (liningPosition.getPosition() == postion) {
+				liningPosition.getGeometry().recalcEnvelope();
+				return liningPosition;
+			}
+		}
+		return null;
+	}
+
+	private static View getContentView(Activity ac) {
+		ViewGroup v = (ViewGroup) ac.getWindow().getDecorView().findViewById(android.R.id.content);
+		return v.getChildAt(0);
+	}
+}

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ele_jc_check_edit_height"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/common_general_font_size"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/ele_GZ"
+        	android:layout_marginTop="10dp"
+        />
+        <LinearLayout 
+          android:background="@drawable/boder_white"
+          android:layout_width="match_parent"  
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:layout_marginLeft="20dp"  
+            >  
+
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                
+             <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#eee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_marginTop="20dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"    
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:text="设备类型:"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:textSize="@dimen/common_general_font_size"
+                />
+            <EditText 
+                android:id="@+id/ele_rc_Edit1"
+                android:background="@drawable/boder_white"
+				android:textSize="@dimen/common_general_font_size"
+                android:layout_width="@dimen/ele_jc_check_editText_width"
+                android:layout_height="@dimen/ele_jc_check_editText_height"
+                />
+            <ImageButton
+                android:src="@drawable/list_a"
+                android:id="@+id/ele_jc_check_btn1"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/ele_jc_check_imgButton_width"
+                android:layout_height="@dimen/ele_jc_check_imgButton_height"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_marginTop="10dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"    
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:text="设备名称:"
+               android:textSize="@dimen/common_general_font_size"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText 
+                android:id="@+id/ele_rc_Editnew"
+                android:background="@drawable/boder_white"
+                android:textSize="@dimen/common_general_font_size"
+                android:layout_width="@dimen/ele_jc_check_editText_width"
+                android:layout_height="@dimen/ele_jc_check_editText_height"
+                />
+        <ImageButton
+                android:src="@drawable/list_a"                
+                android:id="@+id/ele_jc_check_newbtn"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/ele_jc_check_imgButton_width"
+                android:layout_height="@dimen/ele_jc_check_imgButton_height"/>
+            </LinearLayout>
+            
+            
+            
+            
+            
+            <LinearLayout 
+                 android:layout_marginTop="15dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"    
+                android:orientation="horizontal"
+                >
+                  <TextView
+                android:text="设备位置:"
+                 android:textSize="@dimen/common_general_font_size"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText 
+                android:id="@+id/ele_rc_Edit2"
+                android:background="@drawable/boder_white"
+                android:textSize="@dimen/common_general_font_size"
+                android:layout_width="@dimen/ele_jc_check_editText_width"
+                android:layout_height="@dimen/ele_jc_check_editText_height"
+                />
+            
+            
+            </LinearLayout>
+            <LinearLayout 
+                 android:layout_marginTop="15dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"    
+                android:orientation="horizontal"
+                >
+                  <TextView
+                android:text="检查项目:"
+              android:textSize="@dimen/common_general_font_size"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText 
+                android:id="@+id/ele_rc_Edit3"
+                android:background="@drawable/boder_white"
+                android:textSize="@dimen/common_general_font_size"
+                android:layout_width="@dimen/ele_jc_check_editText_width"
+                android:layout_height="@dimen/ele_jc_check_editText_height"
+                />
+          <ImageButton
+                android:src="@drawable/list_a"
+                android:id="@+id/ele_jc_check_btn2"
+                 android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/ele_jc_check_imgButton_width"
+                android:layout_height="@dimen/ele_jc_check_imgButton_height"/>
+            </LinearLayout>
+            <LinearLayout 
+                 android:layout_marginTop="15dp"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"    
+                android:orientation="horizontal"
+                >
+                  <TextView
+                android:text="设备内容:"
+                android:textSize="@dimen/common_general_font_size"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <EditText 
+                android:id="@+id/ele_rc_Edit4"
+                android:background="@drawable/boder_white"
+               android:textSize="@dimen/common_general_font_size"
+                android:layout_width="@dimen/ele_jc_check_editText_width"
+                android:layout_height="@dimen/ele_jc_check_editText_height"
+                />
+        <ImageButton
+                android:src="@drawable/list_a"
+                android:id="@+id/ele_jc_check_btn3"
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/ele_jc_check_imgButton_width"
+                android:layout_height="@dimen/ele_jc_check_imgButton_height"/>
+            </LinearLayout>
+                     
+            	<LinearLayout 
+                 android:layout_marginTop="15dp"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"    
+                android:orientation="horizontal"
+                >
+                  <TextView
+                android:text="设备状态:"
+               android:textSize="@dimen/common_general_font_size"
+                android:layout_marginLeft="50dp"
+	            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                />
+           	<RadioGroup 
+           	    android:layout_width="wrap_content"
+           	    android:layout_height="wrap_content"
+           	    android:orientation="horizontal">
+           	    <RadioButton 
+           	        android:checked="true"
+	           	    android:text="正常"
+	           	    android:id="@+id/ele_rc_check_rb1"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="@dimen/common_general_font_size"/>
+				 <RadioButton 
+	           	    android:text="异常"
+	           	    android:id="@+id/ele_rc_check_rb2"
+           	        android:layout_width="wrap_content"
+           	        android:layout_height="wrap_content"
+           	        android:textSize="@dimen/common_general_font_size"/>
+           	    	    
+           	</RadioGroup>
+   
+            </LinearLayout>
+            
+         </LinearLayout>
+       
+            
+           <LinearLayout 
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="#eee"
+               android:orientation="vertical"
+               android:gravity="center">
+            	
+            	<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备故障:"
+                            android:textSize="@dimen/common_general_font_size" />
+
+                        <EditText
+                            android:id="@+id/ele_rc_Edit5"
+                            android:layout_width="@dimen/ele_jc_check_editText_h_width"
+                            android:layout_height="@dimen/ele_jc_check_editText_h_height"
+                            android:background="@drawable/boder_white"
+                            android:editable="false"
+                            android:enabled="false"
+                            android:gravity="top"
+                            android:text="无"
+                            android:textSize="@dimen/common_general_font_size"/>
+                    </LinearLayout>
+
+            	<LinearLayout
+            	    android:layout_width="wrap_content"
+            	    android:layout_height="wrap_content"
+            	    android:layout_marginTop="10dp"
+            	    android:orientation="vertical" >
+
+            	    <TextView
+            	        android:layout_width="wrap_content"
+            	        android:layout_height="wrap_content"
+            	        android:layout_gravity="center_vertical"
+            	        android:text="设备故障注意事项:"
+            	        android:textSize="@dimen/common_general_font_size"/>
+
+            	    <EditText
+            	        android:id="@+id/ele_rc_Edit6"
+                        android:layout_width="@dimen/ele_jc_check_editText_h_width"
+                         android:layout_height="@dimen/ele_jc_check_editText_h_height"
+            	        android:layout_marginTop="5dp"
+            	        android:background="@drawable/boder_white"
+            	        android:editable="false"
+            	        android:enabled="false"
+            	        android:gravity="top"
+            	        android:text="无"
+            	        android:textSize="@dimen/common_general_font_size"/>
+            	</LinearLayout>
+			<ListView 
+           	    android:choiceMode="singleChoice"
+           	    android:id="@+id/ele_jc_check_list"
+           	    android:layout_width="match_parent"
+           	    android:layout_height="wrap_content"
+           	    android:visibility="gone"  />
+               
+           
+               <Button 
+				android:src="@drawable/tj_bt_h"             
+                android:id="@+id/ele_jc_check_commintBtn"
+                android:layout_width="@dimen/common_img_width"
+                android:layout_height="@dimen/common_img_height"
+                android:layout_gravity="right|bottom|center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/tj_bt_h"/>
+               <!-- 提交 -->
+               
+           </LinearLayout>
+        </LinearLayout>
+                
+            </LinearLayout>
+           
+        
+        
+   </LinearLayout>
+   
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="检查结果"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/common_general_font_size" />
+
+        <Button
+            android:id="@+id/ele_check_form"
+            android:layout_width="@dimen/common_img_width"
+            android:layout_height="@dimen/common_img_height"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/common_general_font_size" 
+            android:background="@drawable/checkform1" />
+<!--             android:text="检 查 记 录 表" -->
+
+    </RelativeLayout>
+<LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:orientation="horizontal"
+  	    android:background="@color/CheckResultBackgroud" >
+            
+  	      <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="编号" />
+				
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="故障日" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="设备名称" />
+
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="设备位置" />
+			<TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="检查项目" />
+            <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               	android:layout_weight="2.5"
+               	android:textSize="@dimen/common_general_font_size"
+                android:text="检查内容" />
+             <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="设备故障" />
+              <TextView
+                style="@style/Civil_PorTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/common_general_font_size"
+                android:text="删除" />
+              
+  	    
+  	</LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ele_jc_checkresult_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        />
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/Img1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg" />
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="240dp"
+            android:text="@string/sysname"
+            android:textColor="@drawable/white"
+            android:textSize="25dp" />
+
+        <ImageButton
+            android:id="@+id/login_NextIBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/login_into" />
+
+        <Button 
+            android:id="@+id/btnHideCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/hide_check"/>
+        <ImageButton
+            android:id="@+id/login_aboutIBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/login_aboutty" />
+
+        <TextView
+            android:id="@+id/login_renet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="420dp"
+            android:text="@string/reinfo"
+            android:textColor="@drawable/white"
+            android:textSize="22dp" />
+    </FrameLayout>
+
+</LinearLayout>

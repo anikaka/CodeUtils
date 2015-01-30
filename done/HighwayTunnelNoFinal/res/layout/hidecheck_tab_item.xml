@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ll_checkContentTop_height"
+        android:orientation="horizontal"
+         android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/CheckResultBackgroud">
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                android:gravity="center_vertical"
+                android:textColor="@color/tjbt"
+                android:text="@string/Check_content"
+                android:paddingLeft="@dimen/common_marginLeft"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                 android:background="@color/white_color"/>
+
+            <ListView
+                android:id="@+id/listViewCheckContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="@color/CheckResultBackgroud" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dp"
+            android:background="@color/CheckResultBackgroud">
+
+            <TextView
+                style="@style/common_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                android:gravity="center_vertical"
+           		 android:textColor="@color/tjbt"
+           		 android:paddingLeft="@dimen/common_marginLeft"
+           		  android:background="@color/white_color"
+                android:text="@string/mileage" />
+
+            <TextView
+                android:id="@+id/txtMileage"
+                style="@style/common_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                 android:layout_marginLeft="@dimen/common_marginLeft"
+                android:text="(4+015/k4+260)" />
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText 
+                    style="@style/common_text"
+                    android:id="@+id/txtStartMileage"
+                    android:layout_width="@dimen/civil_portal_edittext_width"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boder_white"
+                    android:layout_marginLeft="@dimen/common_marginLeft"/>
+                <TextView 
+                     style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="+"/>
+                <EditText 
+                     style="@style/common_text"
+                    android:id="@+id/txtEndMileage"
+                    android:layout_width="@dimen/civil_portal_edittext_width"
+                    android:layout_height="wrap_content" 
+                    android:inputType="number"
+                    android:background="@drawable/boder_white"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" 
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@color/CheckResultBackgroud">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_txt_height"
+                android:orientation="horizontal" 
+                 android:paddingLeft="@dimen/common_marginLeft"
+                 android:background="@color/white_color">
+
+                <TextView
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/tjbt"
+                    android:text="@string/P_level" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_marginLeft" >
+
+                    <RadioButton
+                        style="@style/common_text"
+                        android:id="@+id/radioBtnYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        style="@style/common_text"
+                        android:id="@+id/radioBtnNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/no" />
+                </RadioGroup>
+            </LinearLayout>
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView 
+                    style="@style/common_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                     android:layout_marginLeft="@dimen/common_marginLeft"
+                    android:text="病害描述:"  />
+                <EditText 
+                    android:id="@+id/txtContentDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/common_marginLeft"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/boder_black"/>
+             	
+                <RelativeLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                  <ImageButton 
+                    android:id="@+id/imgBtnSubmitRecord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tj_bt_h"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_txt_height"
+       android:orientation="horizontal">
+        <TextView 
+            style="@style/common_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+             android:layout_marginLeft="@dimen/common_marginLeft"
+            android:text="检查结果:"/>
+        <!-- <ImageButton 
+            android:id="@+id/imgBtnCheckRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_marginLeft"
+            android:background="@drawable/checkform1"/> -->
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/civil_portal_row_textview_height"
+            android:background="@color/CheckResultBackgroud" 
+            android:orientation="horizontal">
+            
+            <TextView 
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="里程桩号"/>
+            <TextView 
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="检查内容"/>
+            <TextView 
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="照片数量"/>
+            <TextView 
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="病害描述"/>
+            <TextView 
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="操 作"/>
+
+
+        </LinearLayout>
+        
+        <ListView 
+            android:id="@+id/listViewCheckRecord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent"
+            android:background="#e0e0e0"/>
+    </LinearLayout>
+    
+</LinearLayout>
