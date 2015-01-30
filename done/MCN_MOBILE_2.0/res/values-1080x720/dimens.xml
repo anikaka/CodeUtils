@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="common_title_h">60dp</dimen>
+    
+    
+    <dimen name="view_time_picker_year">100.0dp</dimen>
+    <dimen name="view_time_picker_month">80.0dp</dimen>
+    <dimen name="view_time_picker_day">80.0dp</dimen>
+    <dimen name="view_time_picker_hour">60.0dp</dimen>
+    <dimen name="view_time_picker_minute">60.0dp</dimen>
+    
+    <dimen name="section_gps_title_textsize">16sp</dimen>
+    
+</resources>

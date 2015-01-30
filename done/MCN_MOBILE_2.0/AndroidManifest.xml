@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tongyan.activity"
+    android:versionCode="19"
+    android:versionName="1.9.9" >
+
+	<supports-screens
+	    android:anyDensity="true"
+	    android:largeScreens="true"
+	    android:normalScreens="true"
+	    android:smallScreens="true"/>
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+	
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" ></permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" ></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" ></uses-permission>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" > </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" > </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" > </uses-permission>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" > </uses-permission>
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+	
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <application
+        android:name=".MyApplication"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.NoTitleBar"
+        android:allowTaskReparenting="true">
+         
+        <!-- wazctozatlptNDgq6dn1zwwM  测试-->
+        <!-- CorXvbdhjfC6zv8wWCW7PDdF  发布-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="CorXvbdhjfC6zv8wWCW7PDdF" />
+        
+        <!-- service -->
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
+        <service android:name="com.tongyan.service.MGPSService" android:enabled="true"></service>
+        <service android:name="com.tongyan.service.DownloadService" android:enabled="true" ></service>
+        <service android:name="com.tongyan.service.DownloadBService" android:enabled="true"></service>
+        
+        
+         <!-- receiver -->
+        <receiver android:name="com.tongyan.service.GPSBroadcastReceiver" >      
+            <intent-filter>          
+                <action  android:name="android.location.PROVIDERS_CHANGED"/>      
+          </intent-filter>  
+       </receiver>  
+        <!-- activity -->
+        <activity android:name=".LoadingAct"
+            	  android:screenOrientation="portrait">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".LoginAct"
+            	  android:screenOrientation="portrait"
+            	  android:launchMode="singleTask">
+              
+        </activity>
+        
+        <activity android:name=".MainAct"
+            android:screenOrientation="portrait"
+            	  android:launchMode="singleTask">
+            
+        </activity>
+        <!-- 在岗查询0 -->
+        <activity android:name=".gps.GpsSearchSettingAct"
+             	  android:screenOrientation="portrait">
+            
+        </activity>
+         <!-- 在岗查询1 -->
+        <activity android:name=".gps.GpsSearchEmpListAct"
+                  android:screenOrientation="portrait">
+            
+        </activity>
+         <!-- 在岗查询2 -->
+        <activity android:name=".gps.GpsEmpResultAct"
+            android:screenOrientation="portrait"  
+                  >
+        </activity>
+        
+        <activity android:name=".gps.CommandEditAct"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity android:name=".gps.CommandMenuAct"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        
+        <activity android:name=".oa.OaMsgListAct"
+            android:screenOrientation="portrait"
+            >
+           
+        </activity>
+        
+        <activity android:name=".oa.OaAgendaModifyAct"
+            	  android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        
+        <activity android:name=".oa.OaAgendaScheduleAct"
+            	  android:screenOrientation="portrait">
+       </activity>
+       
+         <activity android:name=".oa.OaAgendaAddAct"
+             android:screenOrientation="portrait"
+             >
+          </activity>
+          <activity android:name=".oa.OaAgendaAllAct"
+            android:screenOrientation="portrait"
+            	  >
+           
+        </activity>
+        <activity android:name=".oa.OaUnHandlerDocAct"
+            	  android:screenOrientation="portrait"
+            	  >        
+        </activity>
+        
+        <activity android:name=".oa.OaDocmentDetailAct"
+            	  android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name=".oa.OaApproveDocAct"
+            	  android:screenOrientation="portrait">
+        </activity>
+         
+        <activity android:name=".oa.OAContactsAct"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask"
+             >
+        </activity>
+        
+<!--         <activity android:name=".oa.P15_ContactDepartmentAct"
+            	  android:screenOrientation="portrait">
+        </activity>
+         
+          <activity android:name=".oa.P16_ContactAllAct"
+            	  android:screenOrientation="portrait">
+        </activity>
+ -->        
+        <activity android:name=".oa.OaContactsDetailAct"
+            android:screenOrientation="portrait"
+            	  >
+            
+        </activity>
+        
+        <activity android:name=".oa.OaNoticeAct" 
+                  android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        <activity android:name=".oa.OaNoticeDetailAct"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <activity android:name=".oa.OaAgendaAllDetailsAct"   
+                  android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        <activity android:name=".oa.OaAgendaSomeAct"
+             android:screenOrientation="portrait">
+   		</activity>  
+   
+   <activity android:name=".oa.OaStandardFileAct"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+        <activity android:name=".gps.P23_GpsMainAct"
+             android:screenOrientation="portrait">
+            
+        </activity>
+        
+        
+        <activity android:name=".gps.GpsRouteAct"
+            android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        
+        <activity android:name=".gps.GpsProjectLocAct"
+            	  android:screenOrientation="portrait"
+            >
+            
+        </activity>
+        
+        <activity android:name=".gps.GpsSectionUpdateListAct"
+            	  android:screenOrientation="portrait"
+            >
+           
+       </activity> 
+         <activity android:name=".gps.SectionIndexAct"
+             	  android:screenOrientation="portrait"
+             >
+           
+       </activity> 
+        
+         <activity android:name=".gps.SectionIndexDetailAct"
+             	   android:screenOrientation="portrait">
+             
+         </activity>
+         
+         <activity android:name=".gps.SectionCameraAct"
+             	   android:screenOrientation="portrait">
+             
+         </activity>
+         <activity android:name=".gps.CommandAct"
+             	   android:screenOrientation="portrait">
+             
+         </activity>
+        
+         <activity android:name=".supervice.SuperviceAct"
+             android:screenOrientation="portrait"
+             >
+            
+        </activity>
+        
+         <activity android:name=".supervice.SuperviceSettingAct"
+             android:screenOrientation="portrait"
+             >
+        </activity>
+         
+        <activity android:name=".supervice.SearchSuperviceAct"
+                  android:screenOrientation="portrait"
+             >
+            
+        </activity>
+        
+        <activity android:name=".supervice.AddSuperviseAct"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustPan">
+        	
+        </activity>
+       
+        <activity android:name=".supervice.ShowCotentSuperAct"
+                 android:screenOrientation="portrait">
+           
+       </activity> 
+        
+       <activity android:name=".risk.P34_RiskMainAct"
+                 android:screenOrientation="portrait">
+           
+       </activity>
+       
+       <activity android:name=".risk.P35_RiskTaskListAct"
+           android:screenOrientation="portrait"
+           >
+           
+       </activity>
+       
+        <activity android:name=".risk.P36_HoleCheckAct"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            >
+           
+       </activity>
+       
+       <activity android:name=".risk.P37A_RiskCollapseAct"
+           android:screenOrientation="portrait"
+           >
+           
+       </activity>
+       <activity android:name=".risk.P37B_RiskCollapseAct"
+           android:screenOrientation="portrait">
+           
+       </activity>
+       
+       <activity
+           android:name=".risk.P38_RiskShowingAct"
+           android:screenOrientation="portrait">
+           
+       </activity>
+       <activity android:name=".risk.P39_RiskHolefaceAct"
+           		 android:screenOrientation="portrait" >
+           
+       </activity>
+       
+       <activity android:name=".risk.P40_RiskDetailAct"
+            android:screenOrientation="portrait" >
+       </activity>
+       
+       <activity android:name=".supervice.P41_SuperviceMainAct"
+                 android:screenOrientation="portrait">
+           
+       </activity>
+       <activity android:name=".risk.P42_RiskShowSetAct"
+           		 android:screenOrientation="portrait">
+           
+       </activity>
+       
+       <activity android:name=".risk.P43_ShowPictureAct"
+           		 android:screenOrientation="portrait">
+       </activity>
+       <activity android:name=".SettingAct"
+           		 android:screenOrientation="portrait">
+       </activity>
+		
+       <activity android:name=".secamera.SectionCameraNoNetAct"
+           		 android:screenOrientation="portrait">
+           
+       </activity>
+       
+       <activity android:name=".secamera.SectionIndexNoNetAct"
+           		 android:screenOrientation="portrait">
+           
+       </activity>
+       
+       <activity android:name=".measure.measure.MeasureMenuAct"
+           		 android:screenOrientation="portrait">
+       </activity>
+       
+       <activity
+            android:name=".measure.measure.MidMeasureRecordAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".measure.measure.MidTermPayCertificateCountTabAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".measure.measure.PayNoticeRecordAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".measure.measure.MidMeasureRecordOptionAct"
+            android:screenOrientation="portrait" >
+        </activity>
+	<!-- 计量管理 -->
+        <activity 
+            android:name=".measure.command.CommandMenuAct"
+            android:screenOrientation="portrait" ></activity>
+  		<activity 
+  		    android:name=".measure.command.CommandApproveAct"
+  		    android:screenOrientation="portrait" ></activity>
+        </application>
+  
+   
+</manifest>
