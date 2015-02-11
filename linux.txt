@@ -9,6 +9,8 @@
 
 《LINUX内核源代码情景分析》
 
+<<Unix编程艺术>>
+
 网络类
 
 《Linux网络体系结构：Linux内核中网络协议的设计与实现》，对应的英文版是《The Linux Networking Architecture: Design and Implementation of Network Protocols in the Linux Kernel》
