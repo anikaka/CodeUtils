@@ -2,17 +2,13 @@
 
 2.Effective java  ok
 
-3.Java 解惑
-
-4.Agile Java
-
 //5.《Java编程规范》 James Gosling 
 
 6.<<深入理解java虚拟机>>  ok
 
 7.<<深入Java虚拟机>> 
 
-8<<编译原理>>
+8<<编译原理>>  ok
 
 9.<<JAVA性能优化权威指南>>  ok 
 
@@ -24,6 +20,9 @@
 <<深入理解Java虚拟机:JVM高级特性与最佳实践>> ok
 
 12<<Head First设计模式>> 
+
+
+13<<JAVA 核心技术2>> 
 
 二、进阶类
 
