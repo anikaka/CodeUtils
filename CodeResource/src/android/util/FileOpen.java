@@ -8,8 +8,10 @@ import android.net.Uri;
  * 这是一个通过Intent打开文件的工具类
  * @author ChenLang
  */
+
 public class FileOpen {
 
+	
 	/**打开apk文件的Intent*/
 	public static Intent getAllIntent(String param) {
 		Intent intent = new Intent();
@@ -55,9 +57,8 @@ public class FileOpen {
 
 	/**打开html文件的Intent*/
 	public static Intent getHtmlFileIntent(String param) {
-		Uri uri = Uri.parse(param).buildUpon()
-				.encodedAuthority("com.android.htmlfileprovider")
-				.scheme("content").encodedPath(param).build();
+		Uri uri = Uri.parse(param).buildUpon().encodedAuthority("com.android.htmlfileprovider")
+				.scheme("content").encodedPath(param).build();		
 		Intent intent = new Intent("android.intent.action.VIEW");
 		intent.setDataAndType(uri, "text/html");
 		return intent;
@@ -103,6 +104,7 @@ public class FileOpen {
 		return intent;
 	}
 
+	
 	/**打开chm文件的Intent*/
 	public static Intent getChmFileIntent(String param) {
 		Intent intent = new Intent("android.intent.action.VIEW");
@@ -128,6 +130,7 @@ public class FileOpen {
 		return intent;
 	}
 
+	
 	/**打开pdf文件的Intent*/
 	public static Intent getPdfFileIntent(File file) {
 		Intent intent = new Intent("android.intent.action.VIEW");
