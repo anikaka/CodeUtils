@@ -1,0 +1,5 @@
+android XML graphical layout无法预览 没有graphical layout而是Design?
+
+
+
+答:右击那个布局文件,然后选择open with,再选择Android Layout Editor

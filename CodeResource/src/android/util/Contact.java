@@ -9,6 +9,7 @@ import android.provider.ContactsContract;
 public class Contact {
 
 	private Context mContext;
+	
 	public Contact(Context context){
 		this.mContext=context;
 	}
@@ -31,4 +32,5 @@ public class Contact {
 		 }
 		}
 	}
+	
 }
