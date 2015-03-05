@@ -1,0 +1,19 @@
+方法一：在mainfest文件中把对应的activity设置
+android:windowSoftInputMode="stateHidden" 或者android:windowSoftInputMode="stateUnchanged"。
+
+
+方法二：可以在布局中放一个隐藏的TextView，然后在onCreate的时候requsetFocus。
+
+<TextView
+        android:id="@+id/text_notuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+	android:focusableInTouchMode="true"
+        />
+
+
+方法三
+
+ InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE); 
+           imm.hideSoftInputFromWindow(edit.getWindowToken(),0);
