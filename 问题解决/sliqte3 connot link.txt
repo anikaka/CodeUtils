@@ -1,4 +1,0 @@
-cannot locate symbol "sqlite3_enable_load_extension" referenced by "sqlite3.." CANNOT LINK EXECUTABLE?
-
-
-解决:sqlite3版本太低,可以到模拟器中获取。
