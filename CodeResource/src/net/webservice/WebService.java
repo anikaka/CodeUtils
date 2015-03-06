@@ -21,7 +21,7 @@ import android.util.Log;
 
 public class WebService {
 	
-
+/*
 	public static String requestM(Map<String,String> properties,String subM, Context mContext) throws IOException,XmlPullParserException{
 		SoapObject request = new SoapObject(Constansts.SERVICE_NAMESPACE, subM);
 		//request.addProperty("publicKey","AA8F96C7-8294-4E33-B695-AD3BB67B1B41");
@@ -55,7 +55,7 @@ public class WebService {
 		}
 		return null;
 //	}
-	
+*/	
 
 	/**
 	 * 隐患排查数据上传
