@@ -1,0 +1,17 @@
+yanan 
+
+
+ip:192.168.0.222:8086
+
+tygeo
+
+tydamin
+
+
+jiangxi
+
+epms.jxcngs.com:85
+
+admin
+
+123456
