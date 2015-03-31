@@ -1,0 +1,49 @@
+
+一、技术
+1.Activity的生命周期? 从竖屏切换到横屏的周期变化是如何的?
+
+a)一个完整周期从onCreate()->onDesotry()
+b)可视周期从 OnStart()->onStop()
+c)前台周期从onResume()->onPause()
+
+
+
+2.Android 圆形图片如何制作?
+
+利用canvas画圆,取得交集。
+
+
+3.类似于聊天,假如要显示一行文字,然后还要选择加一张图片,你会采用什么布局。
+
+用一个TextView.
+
+
+
+4.service的启动方式有哪几种,有何区别?
+
+
+
+5.如何避免ANR和内存泄露?
+
+
+6.handler的机制。
+
+
+7.Android 屏幕适配有哪几种?
+
+
+8.事件分发机制?
+
+
+9.ListView 优化的三种方式?
+
+
+
+10.如果Activity传递数据时,中间隔了两个Activity,那数据用什么传递?
+
+
+11.Android 适配方式?
+
+
+
+二、情商。
