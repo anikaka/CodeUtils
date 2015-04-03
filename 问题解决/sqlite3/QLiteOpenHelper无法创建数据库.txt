@@ -1,0 +1,6 @@
+
+1.SQLiteOpenHelper无法创建数据库的一种情况?
+答:使用SQLiteOpenHelper
+无论是直接或者使用contentprovider调用构造函数创建数据库，还不算真正意义上创建
+，需要在调用getWritableDatabase或者getReadableDatabase后才算建立成功
+所以当遇到调用构造函数后却没在file里找到数据库文件，只需要调用上边方法即可。
