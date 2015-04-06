@@ -1,49 +1,53 @@
 
-һ������
-1.Activity����������? �������л������������ڱ仯����ε�?
+一、技术
+1.Activity的生命周期? 从竖屏切换到横屏的周期变化是如何的?
 
-a)һ���������ڴ�onCreate()->onDesotry()
-b)�������ڴ� OnStart()->onStop()
-c)ǰ̨���ڴ�onResume()->onPause()
-
-
-
-2.Android Բ��ͼƬ�������?
-
-����canvas��Բ,ȡ�ý�����
-
-
-3.����������,����Ҫ��ʾһ������,Ȼ��Ҫѡ���һ��ͼƬ,������ʲô���֡�
-
-��һ��TextView.
+a)一个完整周期从onCreate()->onDesotry()
+b)可视周期从 OnStart()->onStop()
+c)前台周期从onResume()->onPause()
 
 
 
-4.service��������ʽ���ļ���,�к�����?
+2.Android 圆形图片如何制作?
+
+利用canvas画圆,取得交集。
+
+
+3.类似于聊天,假如要显示一行文字,然后还要选择加一张图片,你会采用什么布局。
+
+用一个TextView.
 
 
 
-5.��α���ANR���ڴ�й¶?
-
-
-6.handler�Ļ��ơ�
-
-
-7.Android ��Ļ�������ļ���?
-
-
-8.�¼��ַ�����?
-
-
-9.ListView �Ż������ַ�ʽ?
+4.service的启动方式有哪几种,有何区别?
 
 
 
-10.���Activity��������ʱ,�м��������Activity,��������ʲô����?
+5.如何避免ANR和内存泄露?
 
 
-11.Android ���䷽ʽ?
+6.handler的机制。
 
 
+7.Android 屏幕适配有哪几种?
 
-�������̡�
+
+8.事件分发机制?
+
+
+9.ListView 优化的三种方式?
+1.使用convertView减少View的创建次数
+2.使用标签减少控件查找次数
+3.使用分页加载的方式。
+
+
+10.如果Activity传递数据时,中间隔了两个Activity,那数据用什么传递?
+
+
+11.Android 适配方式?
+  1.在不同的drwable放入不同像素大小的图片,可以把图片做成.9png格式。
+  2.在创建多个dimens
+  3.复杂一点的话创建多个layout(很少有这么做);
+
+
+二、情商。
