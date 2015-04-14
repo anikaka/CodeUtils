@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/detail_menu_normal_bg"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView 
+            android:id="@+id/monitor_checking_points_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            />
+        <RelativeLayout 
+            android:id="@+id/monitor_checking_point"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/monitor_calendar_list_del_color"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            >
+           <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/monitor_point_delete_btn"
+            android:layout_centerInParent="true"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

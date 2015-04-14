@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <style name="mDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    
+    
+    <style name="myCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/login_checkbox_selector</item>
+    </style>
+    
+    
+    <style name="mapCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/map_checkbox_selector</item>
+    </style>
+    
+    
+        <style name="listViewTheme">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:divider">@color/gray</item>
+            <item name="android:dividerHeight">0.1dp</item>
+            <item name="android:cacheColorHint">@null</item>
+            <!-- <item name="android:layout_margin">5dp</item> -->
+            <item name="android:background">@color/detail_menu_normal_bg</item>
+        </style>
+     
+        <style  name="listViewItemFont">
+            <item name="android:textSize">@dimen/textSize_medium</item>
+            <item name="android:textColor">@color/black</item>
+        </style>
+        <style name="protectProBaseInfoTitle">
+            <item name="android:textColor">#c4c4c4</item>
+            <item name="android:textSize">@dimen/textSize_small</item>
+            <item name="android:paddingLeft">10dp</item>
+        </style>
+        <style name="protectProBaseInfoContent">
+        	<item name="android:textColor" >@color/black</item>
+        	<item name="android:textSize">@dimen/textSize_large</item>
+        	 <item name="android:paddingLeft">10dp</item>
+        </style>
+        <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal" /> 
+              
+       	<style name="lineBaseInfoLevelItem">
+ 			<item name="android:textColor">@color/black</item>	  
+         	<item name="android:textSize">@dimen/textSize_medium</item>
+         	<item name="android:layout_marginLeft">10dp</item>
+			<item name="android:layout_marginTop">5dp</item>
+         </style>
+</resources>

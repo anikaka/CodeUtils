@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    <RadioGroup 
+        android:id="@+id/curve_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RadioButton 
+            android:id="@+id/local_curve"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/local_curve"
+             android:textColor="@color/black"
+            />
+        <RadioButton 
+            android:id="@+id/accumulate_curve"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/accumulate_curve"
+             android:textColor="@color/black"
+            />
+    </RadioGroup>
+
+</LinearLayout>

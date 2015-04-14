@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <!-- 检查管理-检查任务对象按钮 -->
+    <item android:drawable="@color/light_light_blue_plus" android:state_pressed="true"></item>
+    <item android:drawable="@color/light_light_blue"></item>
+</selector>

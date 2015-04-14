@@ -3,7 +3,7 @@
 1.Activity的生命周期? 从竖屏切换到横屏的周期变化是如何的?
 
 a)一个完整周期从onCreate()->onDesotry()
-b)可视周期从 OnStart()->onStop()
+b)可视周期(又称后台周期)从 OnStart()->onStop()
 c)前台周期从onResume()->onPause()
 
 
@@ -83,5 +83,57 @@ onCreate->onBind()->onUnBind()->onDestroy();
 
 而当按下back键则不同，back键默认finish前台的activity，即activity的状态为onDestory为止，
 再次启动该activity则从onCreate开始，不会调用onSavedInstanceState方法。
+
+15.px,dp,sp的理解?
+
+
+16.广播的注册方式有什么区别?
+
+常驻型广播
+
+1.常驻型广播，当你的应用程序关闭了，如果有广播信息来，你写的广播接收器同样的能接收到，
+它的注册方式就是在你应用程序的AndroidManifast.xml 中进行注册，
+这种注册方式通常又被称作静态注册。这种方式可以理解为通过清单文件注册的广播是交给操作系统去处理的。示例代码如下：
+
+<receiver android:name=".receiver.BootCompleteReceiver" >
+  <intent-filter android:priority="1000" >
+      <action android:name="android.intent.action.BOOT_COMPLETED" />
+  </intent-filter>
+</receiver>
+
+<!-- 订阅开机结束广播 -->
+<receiver android:name=".receiver.BootCompleteReceiver" >
+  <intent-filter android:priority="1000" >
+      <action android:name="android.intent.action.BOOT_COMPLETED" />
+  </intent-filter>
+</receiver>
+
+2.非常驻型广播，当应用程序结束了，广播自然就没有了，
+比如在 Activity 中的 onCreate 或者 onResume 中注册广播接收者，
+在 onDestory 中注销广播接收者。这样你的广播接收者就一个非常驻型的了
+，这种注册方式也叫动态注册。这种方式可以理解为通过代码注册的广播是和注册者关联在一起的。
+dcardStateReceiver = new SdcardStateChanageReceiver();
+       IntentFilter filter = new IntentFilter();
+       filter.addAction(Intent.ACTION_MEDIA_REMOVED);
+       filter.addAction(Intent.ACTION_MEDIA_EJECT);
+       filter.addAction(Intent.ACTION_MEDIA_MOUNTED);
+       filter.addDataScheme("file");
+       registerReceiver(sdcardStateReceiver, filter);
+
+//注销unregisterReceiver(sdcardStateReceiver);
+
+17.设置横竖屏的方式?
+  android:screenOrientation="portrait"
+  android:screenOrientation="landscape"
+
+18.如何避免横竖屏切换时候onCreate()被重复加载?
+android:configChanges="orientation|keyboardHidden"
+
+
+19.如何给应用添加通知?
+
+
+20.数据库如何更新版本?
+
  
 二、情商。

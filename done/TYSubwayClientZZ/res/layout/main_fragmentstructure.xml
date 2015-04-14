@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:draw="http://schemas.android.com/apk/res/com.tongyan.zhengzhou.act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/check_manage_fragment_titile"
+        layout="@layout/common_title_layout" />
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/check_manage_fragment_titile"
+        android:layout_above="@+id/startAnalyze"
+        android:orientation="vertical" 
+        >
+
+        <Button
+	        android:id="@+id/base_object"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/menu_height"
+	        android:layout_weight="1"
+	        android:background="@drawable/common_blue_color_selector"
+	        android:text="@string/base_object_analyze"
+	        android:textColor="@color/white" 
+	        android:gravity="left|center_vertical"/>
+        
+	    <ListView
+	        android:id="@+id/base_object_list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="100"
+	        android:cacheColorHint="@null"
+	        android:divider="@color/misty_gray"
+	        android:dividerHeight="1dp"
+	        android:background="@color/detail_menu_normal_bg"
+	        android:visibility="gone"/>  
+	    
+	    <Button
+	        android:id="@+id/facility_object"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/menu_height"
+	        android:layout_weight="1"
+	        android:background="@drawable/common_light_blue_color_selector"
+	        android:text="@string/facility_object"
+	        android:textColor="@color/white" 
+	        android:gravity="left|center_vertical"/>
+	
+	    <ListView
+	        android:id="@+id/facility_object_list"
+	       	android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="100"
+	        android:cacheColorHint="@null"
+	        android:divider="@color/misty_gray"
+	        android:dividerHeight="1dp"
+	        android:background="@color/detail_menu_normal_bg"
+	        android:visibility="gone" />
+	    
+	    <Button
+	        android:id="@+id/check_task"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/menu_height"
+	        android:layout_weight="1"
+	        android:background="@drawable/common_light_light_blue_color_selector"
+	        android:text="@string/check_task_object"
+	        android:textColor="@color/white" 
+	        android:gravity="left|center_vertical"/>
+	
+	    <include
+	        android:id="@+id/check_task_object"
+	        android:layout_width="match_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="100"
+	        layout="@layout/check_task_object" />
+      
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/startAnalyze"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/common_green_color_selector"
+        android:text="@string/start_analyze"
+        android:textColor="@color/white" />
+    
+
+</RelativeLayout>

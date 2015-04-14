@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/detail_menu_normal_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llLineLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/protectProBaseInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目名称" />
+
+            <TextView
+                android:id="@+id/txtLineBaseInfoProjectName"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申通地铁" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/protectProBaseInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运营商" />
+
+            <TextView
+                android:id="@+id/txtLineBaseInfoCarrieroperator"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上海申通地铁有限公司" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewLineBaseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="@null" />
+
+    <LinearLayout
+        android:id="@+id/llLineLeve4BaseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtLineLevel4SectionName"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLinelevel4LeftStartMile"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLinelevel4LeftEndMile"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLineLevel4RightStartMile"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLineLevel4RightEndMile"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLine4StartStation"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLine4RightEndStation"
+            style="@style/lineBaseInfoLevelItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/detail_menu_normal_bg"
+                android:text="@string/intervalName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_medium" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/detail_menu_normal_bg"
+                android:text="@string/intervalCode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_medium" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewLineLevel4BaseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:cacheColorHint="@null"
+            android:divider="@null" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lllineLevel5BaseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtLineLevel5IntervalName"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel5IntervalNumber"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel5IntervalCode"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLinelevel5ShaftNumber"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel5IsImportInterva"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel5Remark"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                style="@style/protectProBaseInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="上行线" />
+
+            <TextView
+                android:id="@+id/txtLineLeftLevel5StartMileage"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLeftLevel5EndMileage"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLeftLevel5CheckFrequency"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/llLineLeftInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                style="@style/protectProBaseInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下行线" />
+
+            <TextView
+                android:id="@+id/txtLineRightLevel5StartMileage"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineRightLevel5EndMileage"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineRightLevel5CheckFrequency"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/llLineRightInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/lllineLevel6BaseInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtLineLevel6StationName"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel6StationType"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel6IsChangeOthers"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtLineLevel6StationNumber"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtLineLevel6StationCode"
+                style="@style/protectProBaseInfoContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+			<TextView
+			    style="@style/protectProBaseInfoTitle" 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="上行线"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtLineLeftStartMileLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtLineLeftEndMileLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtLineLeftCheckFrequencyLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                
+                <TextView
+                    android:id="@+id/txtLineLeftTunnelInfoLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:text="隧道附加信息"/>
+                
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+		  <TextView
+			    style="@style/protectProBaseInfoTitle" 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="下行线"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtLineRightStartMileLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtLineRightEndMileLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtLineRightCheckFrequencyLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                
+                 <TextView
+                    android:id="@+id/txtLineRightTunnelInfoLevel6"
+                    style="@style/protectProBaseInfoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:text="隧道附加信息"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ptr="http://schemas.android.com/apk/res/com.tongyan.zhengzhou.act"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+<!--     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> -->
+        
+<!--         <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"/> -->
+        
+<!--         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android/> -->
+            
+<!--     </RelativeLayout> -->
+<!-- <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="w"></RelativeLayout> -->
+        <include  layout="@layout/common_title_layout"/>
+    
+        <com.tongyan.zhengzhou.common.widgets.widgetspullrefresh.PullToRefreshListView
+           android:id="@+id/listViewProtectProInfo"
+	        style="@style/listViewTheme"
+	    	ptr:mode="both" />
+
+        
+</LinearLayout>

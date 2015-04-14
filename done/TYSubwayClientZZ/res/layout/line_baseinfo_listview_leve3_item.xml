@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/detail_menu_normal_bg">
+    
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3SectionName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3LeftStartMile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3LeftEndMile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3RightStartMile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3RightEndMile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3StartStationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView 
+        style="@style/lineBaseInfoLevelItem"
+        android:id="@+id/lineBaseInfoLevel3EndStationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

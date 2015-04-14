@@ -1,0 +1,260 @@
+Client_ProtectProjectInfoListResponse{
+    Client_ProtectProjectInfoListResult={
+        "s": "ok",
+        "v": {
+            "Rows": 5,
+            "List": [
+                {
+                    "ProjectID": "d20fa7f4-33d6-4ce9-aa70-2914ee4efe23",
+                    "ProjectName": "ddd",
+                    "ProjectClass": 1,
+                    "FoundationPitClass": 12334,
+                    "RedLineDistance": 12334,
+                    "ShoringType": "12334",
+                    "StructureWater": "12334",
+                    "DigArea": 12334,
+                    "DigDepth": 12334,
+                    "X": "12334",
+                    "Y": "12334",
+                    "ProjectState": 2,
+                    "ConstructionCompany": "12334",
+                    "ConstructionBy": "12334",
+                    "DetectionCompany": "12334",
+                    "SupervisorCompany": "12334",
+                    "DesignCompany": "12334",
+                    "SurveyCompany": "12334",
+                    "StartTime": "2014-06-06 00:00:00",
+                    "EndTime": "2014-06-06 00:00:00",
+                    "CreatTime": "2014-06-06 15:02:37",
+                    "UpdateTime": "2015-03-18 15:28:31",
+                    "ProjectAddress": "12334",
+                    "RelationInterval": [
+                        
+                    ],
+                    "DesignFiles": [
+                        {
+                            "FileName": "20150323052249webservice接口标准",
+                            "FilePath": "~\\UploadFile\\ProjectFile\\20150323\\20150323052249webservice接口标准.docx"
+                        }
+                    ],
+                    "ReconnanceFiles": [
+                        
+                    ],
+                    "ImplementFiles": [
+                        
+                    ],
+                    "PhotoFiles": [
+                        {
+                            "FileName": "20150324094448郑州-手持端-03地铁线路信息-详细.png",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094448郑州-手持端-03地铁线路信息-详细.png"
+                        },
+                        {
+                            "FileName": "20150324094439remit.PNG",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094439remit.PNG"
+                        }
+                    ]
+                },
+                {
+                    "ProjectID": "6c20d4c8-8d2d-4586-971c-6158263b35f2",
+                    "ProjectName": "123",
+                    "ProjectClass": 2,
+                    "FoundationPitClass": 123,
+                    "RedLineDistance": 12,
+                    "ShoringType": "123",
+                    "StructureWater": "12",
+                    "DigArea": 123,
+                    "DigDepth": 12,
+                    "X": "123",
+                    "Y": "31",
+                    "ProjectState": 1,
+                    "ConstructionCompany": "123",
+                    "ConstructionBy": "123",
+                    "DetectionCompany": "123",
+                    "SupervisorCompany": "123",
+                    "DesignCompany": "123",
+                    "SurveyCompany": "123",
+                    "StartTime": "2015-03-18 00:00:00",
+                    "EndTime": "2016-03-09 00:00:00",
+                    "CreatTime": "2015-03-18 12:08:52",
+                    "UpdateTime": "2015-03-18 15:28:25",
+                    "ProjectAddress": "ddddd",
+                    "RelationInterval": [
+                        
+                    ],
+                    "DesignFiles": [
+                        {
+                            "FileName": "20150323052249webservice接口标准",
+                            "FilePath": "~\\UploadFile\\ProjectFile\\20150323\\20150323052249webservice接口标准.docx"
+                        }
+                    ],
+                    "ReconnanceFiles": [
+                        
+                    ],
+                    "ImplementFiles": [
+                        
+                    ],
+                    "PhotoFiles": [
+                        {
+                            "FileName": "20150324094448郑州-手持端-03地铁线路信息-详细.png",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094448郑州-手持端-03地铁线路信息-详细.png"
+                        },
+                        {
+                            "FileName": "20150324094439remit.PNG",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094439remit.PNG"
+                        }
+                    ]
+                },
+                {
+                    "ProjectID": "c6cb8953-c364-487b-9a04-71618ba71c7d",
+                    "ProjectName": "456",
+                    "ProjectClass": 2,
+                    "FoundationPitClass": 456,
+                    "RedLineDistance": 12,
+                    "ShoringType": "123",
+                    "StructureWater": "12",
+                    "DigArea": 12,
+                    "DigDepth": 13,
+                    "X": "123",
+                    "Y": "31",
+                    "ProjectState": 1,
+                    "ConstructionCompany": "123",
+                    "ConstructionBy": "123",
+                    "DetectionCompany": "123",
+                    "SupervisorCompany": "123",
+                    "DesignCompany": "123",
+                    "SurveyCompany": "123",
+                    "StartTime": "2015-03-18 00:00:00",
+                    "EndTime": "2016-03-09 00:00:00",
+                    "CreatTime": "2015-03-18 13:51:20",
+                    "UpdateTime": "2015-03-18 15:28:20",
+                    "ProjectAddress": "123123",
+                    "RelationInterval": [
+                        
+                    ],
+                    "DesignFiles": [
+                        {
+                            "FileName": "20150323052249webservice接口标准",
+                            "FilePath": "~\\UploadFile\\ProjectFile\\20150323\\20150323052249webservice接口标准.docx"
+                        }
+                    ],
+                    "ReconnanceFiles": [
+                        
+                    ],
+                    "ImplementFiles": [
+                        
+                    ],
+                    "PhotoFiles": [
+                        {
+                            "FileName": "20150324094448郑州-手持端-03地铁线路信息-详细.png",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094448郑州-手持端-03地铁线路信息-详细.png"
+                        },
+                        {
+                            "FileName": "20150324094439remit.PNG",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094439remit.PNG"
+                        }
+                    ]
+                },
+                {
+                    "ProjectID": "017a2d39-4e31-4202-b2cc-54392ce7d19e",
+                    "ProjectName": "ffff",
+                    "ProjectClass": 2,
+                    "FoundationPitClass": 123,
+                    "RedLineDistance": 12,
+                    "ShoringType": "12",
+                    "StructureWater": "12",
+                    "DigArea": 12,
+                    "DigDepth": 12,
+                    "X": "121",
+                    "Y": "31",
+                    "ProjectState": 1,
+                    "ConstructionCompany": "123",
+                    "ConstructionBy": "123",
+                    "DetectionCompany": "123",
+                    "SupervisorCompany": "123",
+                    "DesignCompany": "123",
+                    "SurveyCompany": "123",
+                    "StartTime": "2015-03-18 00:00:00",
+                    "EndTime": "2016-03-09 00:00:00",
+                    "CreatTime": "2015-03-18 15:30:33",
+                    "UpdateTime": "2015-03-18 15:30:33",
+                    "ProjectAddress": "123",
+                    "RelationInterval": [
+                        
+                    ],
+                    "DesignFiles": [
+                        {
+                            "FileName": "20150323052249webservice接口标准",
+                            "FilePath": "~\\UploadFile\\ProjectFile\\20150323\\20150323052249webservice接口标准.docx"
+                        }
+                    ],
+                    "ReconnanceFiles": [
+                        
+                    ],
+                    "ImplementFiles": [
+                        
+                    ],
+                    "PhotoFiles": [
+                        {
+                            "FileName": "20150324094448郑州-手持端-03地铁线路信息-详细.png",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094448郑州-手持端-03地铁线路信息-详细.png"
+                        },
+                        {
+                            "FileName": "20150324094439remit.PNG",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094439remit.PNG"
+                        }
+                    ]
+                },
+                {
+                    "ProjectID": "13a8ea93-7dd6-4c30-97b3-f7df1c42abc2",
+                    "ProjectName": "abc",
+                    "ProjectClass": 2,
+                    "FoundationPitClass": 123,
+                    "RedLineDistance": 456,
+                    "ShoringType": "123",
+                    "StructureWater": "321",
+                    "DigArea": 23,
+                    "DigDepth": 32,
+                    "X": "32.12",
+                    "Y": "23.45",
+                    "ProjectState": 2,
+                    "ConstructionCompany": "23",
+                    "ConstructionBy": "23",
+                    "DetectionCompany": "23",
+                    "SupervisorCompany": "23",
+                    "DesignCompany": "23",
+                    "SurveyCompany": "23",
+                    "StartTime": "2014-06-05 00:00:00",
+                    "EndTime": "2014-06-30 00:00:00",
+                    "CreatTime": "2014-06-05 18:46:03",
+                    "UpdateTime": "2015-03-18 15:28:36",
+                    "ProjectAddress": "rf",
+                    "RelationInterval": [
+                        
+                    ],
+                    "DesignFiles": [
+                        {
+                            "FileName": "20150323052249webservice接口标准",
+                            "FilePath": "~\\UploadFile\\ProjectFile\\20150323\\20150323052249webservice接口标准.docx"
+                        }
+                    ],
+                    "ReconnanceFiles": [
+                        
+                    ],
+                    "ImplementFiles": [
+                        
+                    ],
+                    "PhotoFiles": [
+                        {
+                            "FileName": "20150324094448郑州-手持端-03地铁线路信息-详细.png",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094448郑州-手持端-03地铁线路信息-详细.png"
+                        },
+                        {
+                            "FileName": "20150324094439remit.PNG",
+                            "FilePath": "\\UploadFile\\ProjectFile\\20150324\\20150324094439remit.PNG"
+                        }
+                    ]
+                }
+            ]
+        }
+    };
+}

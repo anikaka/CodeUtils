@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+  	<!--  基础对象分析-选择检查对象 -->
+    <item android:drawable="@color/detail_menu_prees_bg" android:state_pressed="true"></item>
+    <item android:drawable="@color/detail_menu_normal_bg"></item>
+</selector>

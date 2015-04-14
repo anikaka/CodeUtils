@@ -1,0 +1,16 @@
+<resources>
+	
+    <!-- common -->
+    <dimen name="shadow_width">20dp</dimen>
+    <dimen name="slidingmenu_offset">400dp</dimen>
+    <dimen name="common_padding">20dp</dimen>
+    <dimen name="textSize_small">14sp</dimen>
+    <dimen name="textSize_medium">16sp</dimen>
+    <dimen name="textSize_large">18sp</dimen>
+    <dimen name="listview_item_height">50dp</dimen>
+  
+    <dimen name="menu_height">50dp</dimen>
+    <dimen name="check_task_object_height">40dp</dimen>
+    
+    
+</resources>

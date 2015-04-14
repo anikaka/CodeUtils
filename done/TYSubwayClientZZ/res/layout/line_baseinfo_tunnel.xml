@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/detail_menu_normal_bg">
+    
+       <include layout="@layout/common_title_layout"/>
+      
+      <TextView
+        android:id="@+id/txtLineLevel5StartMileage"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <TextView
+        android:id="@+id/txtLineLevel5EndMileage"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <TextView
+        android:id="@+id/txtLineLevel5TrackbedType"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <TextView
+        android:id="@+id/txtLineLevel5MileageAddDirection"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <TextView
+        android:id="@+id/txtLineLevel5BRemark"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+      <TextView
+        android:id="@+id/txtLineLevel5TunnelInfo"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+       
+</LinearLayout>

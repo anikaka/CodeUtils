@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#000000</color>
+    <color name="lightblack">#333333</color>
+    <color name="gray">#808080</color>
+    <color name="misty_gray">#cccccc</color>
+    <color name="grey">#E1E1E1</color>
+    <color name="lightblue">#2446a7</color>
+    <color name="transparent">#00000000</color>
+    <color name="btnLoginPressed">#51acf6</color>
+    <color name="btnLoginNormal">#399ae8</color>
+    <!-- 蔚蓝 -->
+    <color name="azure">#26b6ff</color>
+    
+    <color name="deep_blue">#2446a6</color>
+    <color name="deep_blue_plus">#172d6e</color>
+    <color name="light_blue">#1b85e8</color>
+    <color name="light_blue_plus">#1156b9</color>
+    <color name="light_green">#3cc051</color>
+    <color name="deep_green">#278534</color>
+    <color name="light_light_blue">#1bb6e5</color>
+    <color name="light_light_blue_plus">#117bb3</color>
+    <color name="deeper_blue">#1c58b8</color>
+    <color name="lighter_blue">#66a1ff</color>
+    
+    <color name="detail_menu_prees_bg">#35aa47</color>
+    <color name="detail_menu_normal_bg">#eeeeee</color>
+    
+    
+    <color name="monitor_calendar_point_color">#1c58b8</color>
+    <color name="monitor_calendar_list_del_color">#aaaaaa</color>
+    
+    <color name="fresh_1">#FFFFB3</color>
+    <color name="fresh_2">#94FF85</color>
+    <color name="fresh_3">#75FFC2</color>
+    <color name="fresh_4">#8FDEFF</color>
+    <color name="fresh_5">#B3B3FF</color>
+    
+    <color name="mono_1">#042D42</color>
+    <color name="mono_2">#0B84C2</color>
+    <color name="mono_3">#075075</color>
+    <color name="mono_4">#57BEF2</color>
+    <color name="mono_5">#326E8C</color>
+    
+    <color name="liberty_1">#CFF8F6</color>
+    <color name="liberty_2">#94D4D4</color>
+    <color name="liberty_3">#88B4BB</color>
+    <color name="liberty_4">#76AEAF</color>
+    <color name="liberty_5">#2A6D82</color>
+    
+    <color name="colorful_1">#C12552</color>
+    <color name="colorful_2">#FF6600</color>
+    <color name="colorful_3">#F5C700</color>
+    <color name="colorful_4">#6A961F</color>
+    <color name="colorful_5">#008885</color>
+    
+    <color name="greens_1">#55FC70</color>
+    <color name="greens_2">#62E24C</color>
+    <color name="greens_3">#ACF960</color>
+    <color name="greens_4">#CBE24C</color>
+    <color name="greens_5">#FCF355</color>
+    
+    <color name="joyful_1">#D9508A</color>
+    <color name="joyful_2">#FE9507</color>
+    <color name="joyful_3">#FEF778</color>
+    <color name="joyful_4">#6AA786</color>
+    <color name="joyful_5">#35C2D1</color>
+    
+    <color name="pastel_1">#405980</color>
+    <color name="pastel_2">#95A57C</color>
+    <color name="pastel_3">#D9B8A2</color>
+    <color name="pastel_4">#BF8686</color>
+    <color name="pastel_5">#B33050</color>
+    
+    <color name="vordiplom_1">#C0FF8C</color>
+    <color name="vordiplom_2">#FFF78C</color>
+    <color name="vordiplom_3">#FFD08C</color>
+    <color name="vordiplom_4">#8CEAFF</color>
+    <color name="vordiplom_5">#FF8C9D</color>
+    <color name="vordiplom_6">#76AEAF</color>
+    <color name="vordiplom_7">#FF6600</color>
+    <color name="vordiplom_8">#CBE24C</color>
+    <color name="vordiplom_9">#BF8686</color>
+</resources>

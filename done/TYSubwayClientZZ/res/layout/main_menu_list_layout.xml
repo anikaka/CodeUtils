@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu_administrator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/menu_administrator_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/administrator"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+             android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_patrol_manage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp" >
+
+        <ImageView
+            android:id="@+id/menu_patrol_manage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_inspection_manage" />
+
+        <TextView
+            android:id="@+id/menu_patrol_manage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/menu_patrol_manage_view"
+            android:text="@string/patrol_management"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_check_manage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/menu_check_manage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_checking_manage" />
+
+        <TextView
+            android:id="@+id/menu_check_manage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/menu_check_manage_view"
+            android:text="@string/check_management"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_monitor_manage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        
+        <ImageView
+            android:id="@+id/menu_monitor_manage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_detection_manage" />
+
+        <TextView
+            android:id="@+id/menu_monitor_manage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/menu_monitor_manage_view"
+            android:text="@string/monitor_management"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+             android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_protect_manage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/menu_protect_manage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_protect_manage" />
+
+        <TextView
+            android:id="@+id/menu_protect_manage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/menu_protect_manage_view"
+            android:text="@string/protect_management"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+             android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_line_manage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+             android:id="@+id/menu_line_manage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_line_manage" />
+
+        <TextView
+            android:id="@+id/menu_line_manage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/menu_line_manage_view"
+            android:text="@string/line_management"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+           android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_protect_info_manage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/menu_protect_info_manage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/menu_protect_info_mange" />
+
+        <TextView
+            android:id="@+id/menu_protect_info_manage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/menu_protect_info_manage_view"
+            android:text="@string/protect_info_management"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/common_arrow" />
+
+    </RelativeLayout>
+
+    <!--
+    <Button
+        android:id="@+id/menu_btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        android:text="菜单1" />
+
+    <Button
+        android:id="@+id/menu_btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:text="菜单2" />
+
+    <Button
+        android:id="@+id/menu_btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/gray"
+        android:text="菜单3" />
+    -->
+
+</LinearLayout>

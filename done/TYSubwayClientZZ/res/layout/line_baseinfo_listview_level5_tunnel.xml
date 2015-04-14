@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView 
+        android:id="@+id/txtTunnelListItemFacilityName"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/txtTunnelListItemFacilityCode"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/txtTunnelListItemStartMileage"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/txtTunnelListItemEndMileage"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/txtTunnelListItemStartCircle"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/txtTunnelListItemEndCircle"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/txtTunnelListItemRemark"
+        style="@style/protectProBaseInfoContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+</LinearLayout>

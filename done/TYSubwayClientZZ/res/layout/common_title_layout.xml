@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/menu_height"
+    android:background="@color/lightblack" >
+
+    <LinearLayout
+        android:id="@+id/title_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/title_left_target"
+        android:clickable="true"
+        android:paddingRight="15dp" >
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/line_info_back_btn" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/title_devide_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/title_back_btn"
+        android:background="@drawable/line_info_title_devide" />
+
+    <TextView
+        android:id="@+id/title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/title_devide_btn"
+        android:text="标题内容"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/title_left_target"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true" />
+	<RelativeLayout 
+	    android:id="@+id/date_checking_points"
+	    android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/back_check_manage"
+        android:visibility="gone"
+        android:clickable="true"
+	    >
+	    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/monitor_title_date" 
+         />
+	</RelativeLayout>
+    
+    <RelativeLayout 
+	    android:id="@+id/back_check_manage"
+	    android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:clickable="true"
+	    >
+	    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/monitor_title_changing" 
+         />
+	</RelativeLayout>
+    <!-- <Button
+        android:id="@+id/back_check_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title_devide_btn"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/back_check_manage" 
+        android:visibility="visible"/> -->
+       
+     <Button 
+         android:id="@+id/save"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"
+         android:layout_centerVertical="true"
+         android:visibility="invisible"
+         android:textColor="@color/white"
+         android:background="@drawable/p00_widget_switch_bluebround"/>
+
+</RelativeLayout>

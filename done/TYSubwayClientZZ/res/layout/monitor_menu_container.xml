@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/common_detail_menu_corners"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+        <Button 
+            android:id="@+id/menu_diagram_btn"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:layout_marginLeft="2dp"
+        	android:layout_marginTop="2dp"
+        	android:layout_marginBottom="2dp"
+            android:text="@string/monitor_data_table"
+            android:background="@color/transparent"
+            android:textColor="@color/white"
+            />
+        <Button 
+            android:id="@+id/menu_checking_points_btn"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+            android:background="@color/detail_menu_normal_bg"
+            android:layout_marginTop="2dp"
+        	android:layout_marginBottom="2dp"
+        	android:layout_marginRight="2dp"
+        	android:text="@string/monitor_checking_points"
+        	android:textColor="@color/detail_menu_prees_bg"
+            />
+</LinearLayout>
