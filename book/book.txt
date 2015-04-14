@@ -1,0 +1,30 @@
+网络通信
+
+
+《计算机网络：自顶向下方法（原书第4版） 》
+
+《计算机网络系统方法（原书第4版）》
+
+
+TCP/IP详解 卷1,卷2,卷3
+
+
+
+《Unix环境高级编程》，《Unix网络编程》有两卷
+
+
+<<图解HTTP>>
+
+
+
+C
+
+C程序设计语言（第2版·新版）,C程序设计语言( The C Programming language)
+
+<<C Primer Plus>>
+
+
+Pointers on C(C和指针)
+
+
+The C Progamming Language K&R版本 一本足够了 可以买一本收藏
