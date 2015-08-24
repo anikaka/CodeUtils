@@ -136,4 +136,63 @@ android:configChanges="orientation|keyboardHidden"
 20.数据库如何更新版本?
 
  
+(一)事件分发问题
+
+1.双层嵌套ViewPager 事件冲突,怎么解决? 
+如果拦截父类，为什么会导致子类事件无法分发？
+
+
+
+3.ScorllView和ListView 使用会导致什么问题，怎么解决?
+
+
+2 ImagetView动态添加 setPadding失效
+
+为什么要设置一张图片setPadding才有效果,比如banner indicator圆点设置
+
+
+
+3.LinearLayout 和RelativeLayout,FrameLayout 的区别?
+
+4.LinearLayout 设置权重的时候，是如何计算高度和宽度的，如果设置宽度为wrapContent或者match_parent
+这两种方式有什么区别
+
+5.重写ViewGourp，实现ViewPager左右滑动的原理?
+
+
+6.TextView 如何加文字和图片
+
+7.xmlns 是什么？
+
+最大难题
+
+1下拉刷新嵌套ListView 只显示一条数据
+
+
+2.双层ViewPager,事件冲突
+
+3.XML 层级嵌套太深会导致低性能机器崩溃
+
+
+
+
+2015/08/17
+
+1.scorllView 嵌套Linearlayout，LinearLayotu的选项不能设置权重
+
+2.设置圆形图片，比如说设置有一张100*100的图片，如何设置圆角为多少，才能使得这张图片是一张圆形图片。
+圆角是如何计算？
+
+
+
+2015/08/18
+
+
+1.srocllView嵌套ListView 会导致什么情况?提示:事件冲突,ListView的大小显示为1。
+
+2.pullToRefresh 和ListView 共用的时候，会出现pullToRefresh会被截取一部分,找出原因?
+
+
+
+
 二、情商。
