@@ -185,6 +185,20 @@ android:configChanges="orientation|keyboardHidden"
 
 
 
+
+1.位移动画(popupwindow里面的内容动画)
+
+2.ant如何打趣道包
+
+3.git解决新增的文件被忽略掉
+
+4.Fragment replace 和hide的区别	
+
+
+
+
+
+
 2015/08/18
 
 
